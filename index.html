@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Convivencia - I.E Antonio Lenis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header con logos y botón de menú -->
+  <header class="header">
+    <button class="menu-btn" id="menuBtn" title="Abrir menú">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+      </svg>
+    </button>
+    
+    <div class="header-content">
+      <img src="images/escudo_ieal.jpeg" alt="Escudo" class="header-logo">
+      <div class="header-text">
+        <span class="header-type">Institución Educativa</span>
+        <h1 class="header-title">Antonio Lenis</h1>
+        
+      </div>
+     
+    </div>
+    
+    <div class="header-spacer"></div>
+  </header>
+
+  <div class="main-container">
+    
+    <!-- Sidebar oculta -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+
+        <span class="sidebar-title">Contenido</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <span class="nav-section-title">Informacion</span>
+         
+          
+          <a href="#cap-1" class="nav-item active" data-section="cap-1">
+            
+            <span class="nav-label">Perfil Institucional</span>
+          </a>
+          
+          <a href="#cap-2" class="nav-item" data-section="cap-2">
+            
+            <span class="nav-label">Símbolos Institucionales</span>
+          </a>
+          
+          <a href="#cap-3" class="nav-item" data-section="cap-3">
+
+            <span class="nav-label">.</span>
+          </a>
+          
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title">Capitulo 1</span>
+          
+          <a href="#cap-6" class="nav-item" data-section="cap-6">
+            <span class="nav-num">06</span>
+            <span class="nav-label">Gestión de Conflictos</span>
+          </a>
+          
+          <a href="#cap-7" class="nav-item" data-section="cap-7">
+            <span class="nav-num">07</span>
+            <span class="nav-label">Sanciones y Faltas</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title">Institución</span>
+          
+          <a href="#cap-8" class="nav-item" data-section="cap-8">
+            <span class="nav-num">08</span>
+            <span class="nav-label">Historia Institucional</span>
+          </a>
+          
+          <a href="#cap-9" class="nav-item" data-section="cap-9">
+            <span class="nav-num">09</span>
+            <span class="nav-label">Reglamento Interno</span>
+          </a>
+          
+          <a href="#cap-4" class="nav-item" data-section="cap-4">
+            <span class="nav-num">04</span>
+            <span class="nav-label">Espacios Comunes</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title">Convivencia</span>
+          
+          <a href="#cap-5" class="nav-item" data-section="cap-5">
+            <span class="nav-num">05</span>
+            <span class="nav-label">Gestión de Conflictos</span>
+          </a>
+          
+          <a href="#cap-6" class="nav-item" data-section="cap-6">
+            <span class="nav-num">06</span>
+            <span class="nav-label">Sanciones y Faltas</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title">Institución</span>
+          
+          <a href="#cap-7" class="nav-item" data-section="cap-7">
+            <span class="nav-num">07</span>
+            <span class="nav-label">Historia Institucional</span>
+          </a>
+          
+          <a href="#cap-8" class="nav-item" data-section="cap-8">
+            <span class="nav-num">08</span>
+            <span class="nav-label">Reglamento Interno</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span class="footer-year">IEAL 2026</span><br>
+        <a href="https://www.antoniolenis.edu.co/" target="_blank" style="color: var(--green);">www.antoniolenis.edu.co</a>
+      </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Contenido Principal - Secciones separadas -->
+    <main class="content">
+
+      <!-- Sección 1: Introducción -->
+      <section class="section-panel active" id="cap-1">
+        <div class="section-header">
+          
+          <h2 class="section-title" style="text-align: center;">INSTITUCIÓN EDUCATIVA ANTONIO LENIS</h2>
+        </div>
+      
+        <div class="profile-card" style="background: white; color: #333; border-radius: 16px; padding: 30px; margin: 20px 0; box-shadow: 0 8px 32px rgba(0,0,0,0.15); border: 2px solid #239c5a; overflow: hidden;">
+          <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center;">
+            <div style="text-align: center; flex: 0 0 auto;">
+              <img src="images/rector_ieal.jpeg" alt="Rector" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 4px solid #239c5a; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+            </div>
+            <div style="flex: 1 1 280px; min-width: 0;">
+              <h3 style="color: #239c5a; margin-bottom: 8px; font-size: 16px;">RECTOR</h3>
+              <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; word-break: break-word;">UBALDO JOSÉ BUELVAS SOLORZANO</h2>
+              <p style="margin: 4px 0; font-size: 14px; word-break: break-all;"><strong>Correo:</strong> ubaldo.buelvas43@sincelejoaprende.edu.co</p>
+            </div>
+            <div style="flex: 1 1 280px; min-width: 0; border-left: 2px solid #239c5a; padding-left: 20px;">
+              <h3 style="color: #239c5a; margin-bottom: 12px; font-size: 16px;">INFORMACIÓN INSTITUCIONAL</h3>
+              <p style="margin: 6px 0; font-size: 14px;"><strong>NIT:</strong> 892200156-5</p>
+              <p style="margin: 6px 0; font-size: 14px; word-break: break-all;"><strong>Correo:</strong> ee170001000180@sincelejoaprende.edu.co</p>
+              <p style="margin: 6px 0; font-size: 14px;"><strong>Web:</strong> <a href="https://www.antoniolenis.edu.co/" target="_blank" style="color: #239c5a;">www.antoniolenis.edu.co</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-grid dane-cards">
+          <div class="card dane-card">
+            <h5 class="sede-name">Sede Principal</h5>
+            <h3 class="dane-label">Código DANE</h3>
+            <p class="dane-code">170001000180</p>
+            
+          </div>
+          <div class="card dane-card">
+            <h5 class="sede-name">Sede Carrenales</h5>
+            <h3 class="dane-label">Código DANE</h3>
+            <p class="dane-code">170001000210</p>          
+          </div>
+          <div class="card dane-card">
+            <h5 class="sede-name">Sede Mercedes Abrego</h5>
+            <h3 class="dane-label">Código DANE</h3>
+            <p class="dane-code">170001000341</p>
+          </div>
+        </div>
+
+     
+
+        
+        <div class="card" style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 16px; box-shadow: var(--shadow); border-left: 4px solid var(--green);">
+          <h3 style="color: var(--green); margin-bottom: 12px;">Política de Calidad</h3>
+          <p style="font-size: 14px; line-height: 1.6;">La Institución Educativa Antonio Lenis, ente público, presta un servicio educativo en los niveles preescolar, básica primaria, básica secundaria y media académica con el apoyo y orientación de talento humano calificado y comprometido con el mejoramiento continuo de los procesos, respondiendo a las necesidades y expectativas de la comunidad educativa.</p>
+        </div>
+        
+       
+      </section>
+
+      <!-- Sección 2: Símbolos Institucionales -->
+      <section class="section-panel" id="cap-2">
+        <div class="section-header">
+          <h2 class="section-title">Símbolos Institucionales</h2>
+        </div>
+        
+        <p class="section-intro">La Institución Educativa Antonio Lenis cuenta con símbolos que representan su identidad, historia y valores.</p>
+
+        <div class="info-cards" style="display: flex; gap: 16px; margin: 24px 0; flex-wrap: wrap;">
+          <div class="info-card" style="flex: 1; min-width: 250px; background: #239c5a; color: white; padding: 16px; border-radius: 10px; box-shadow: var(--shadow);">
+            <h3 style="color: #dacb06; margin-bottom: 8px;">Misión</h3>
+            <p style="font-size: 14px;">Formar integralmente ciudadanos críticos, reflexivos y comprometidos con la transformación social, mediante una educación de calidad que promueva el desarrollo de competencias académicas, ciudadanas y laborales, en un ambiente de inclusión, respeto y participación comunitaria.</p>
+          </div>
+          <div class="info-card" style="flex: 1; min-width: 250px; background: #d13040; color: white; padding: 16px; border-radius: 10px; box-shadow: var(--shadow);">
+            <h3 style="color: #d1d406; margin-bottom: 8px;">Visión</h3>
+            <p style="font-size: 14px;">Para el 2030, la Institución Educativa Antonio Lenis será líder en la región por su excelencia académica, formación en valores ciudadanos y compromiso con el desarrollo sostenible, generando egresados capaces de transformar su entorno con ética, innovación y responsabilidad social.</p>
+          </div>
+        </div>
+
+        <div class="two-columns">
+          <div class="column rights" style="text-align: center;">
+            <img src="images/escudo_ieal.jpeg" alt="Escudo Institucional" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow);">
+            <h3 class="column-title" style="margin-top: 16px;">Escudo</h3>
+          </div>
+          <div class="column duties" style="text-align: center;">
+            <img src="images/bandera.png" alt="Bandera Institucional" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow);">
+            <h3 class="column-title" style="margin-top: 16px;">Bandera</h3>
+          </div>
+        </div>
+
+        <div class="song-container">
+          <h3 class="song-title" style="text-align: center; margin-top: 24px;">
+            <a  style="text-decoration: none; color: inherit;">HIMNO INSTITUCIONAL</a>
+          </h3>
+          
+          <audio controls style="display: block; margin: 16px auto; width: 100%; max-width: 400px;">
+            <source src="music/HIMNO_LENIS.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+          
+          <div class="verse" style="text-align: center; margin: 16px 0;">
+            <p>Colegio Lenis centro formador</p>
+            <p>de juven<br>tudes con tesón</p>
+            <p>tu experiencia en la educación</p>
+            <p>la recebimos con honor.</p>
+          </div>
+          
+          <div class="verse" style="text-align: center; margin: 16px 0;">
+            <p>Llevas el nombre de un gran educador</p>
+            <p>que a Sincelejo su talento dio</p>
+            <p>Antonio Lenis maestro de gran valor</p>
+            <p>con su experiencia la niñez guió.</p>
+          </div>
+          
+          <div class="verse" style="text-align: center; margin: 16px 0;">
+            <p>Eres la voz de un pueblo luchador</p>
+            <p>que con esfuerzo has logrado encauzar</p>
+            <p>y la ignorancia has derrotado,</p>
+            <p>guardas la ciencia en tus claustros queridos</p>
+            <p>pues la enseñanza ha sido tu misión.</p>
+          </div>
+          
+          <div class="verse" style="text-align: center; margin: 16px 0;">
+            <p>Compañero Lenista, adelante,</p>
+            <p>avancemos con fe y lealtad</p>
+            <p>demostremos que somos capaces,</p>
+            <p>de nuestras metas conquistar.</p>
+          </div>
+          
+          <div class="verse" style="text-align: center; margin: 16px 0;">
+            <p>Victorioso será nuestro grito,</p>
+            <p>como emblema de libertad</p>
+            <p>debemos todos cantar este coro</p>
+            <p>la educación sea popular.</p>
+          </div>
+          
+          <p class="song-author" style="text-align: center; margin-top: 24px;">Autor: Marco Saúl Herrera Aguas (Q.E.P.D)</p>
+        </div>
+        
+      </section>
+  
+
+      <!-- Sección 4: Normas de Conducta -->
+      <section class="section-panel" id="cap-4">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2 class="section-title">Normas de Conducta</h2>
+        </div>
+        
+        <p class="section-intro">Las normas de conducta buscan mantener un ambiente escolar armonioso, seguro y propicio para el aprendizaje de toda la comunidad.</p>
+
+        <div class="list-items">
+          <div class="list-item">
+            <div class="item-marker"></div>
+            <div class="item-content">
+              <h3>Puntualidad y Asistencia</h3>
+              <p>Los estudiantes deben asistir puntualmente a todas las clases y actividades académicas programadas por la institución.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-marker"></div>
+            <div class="item-content">
+              <h3>Uso del Uniforme</h3>
+              <p>El uniforme debe portarse correctamente durante toda la jornada escolar como símbolo de pertenencia e identidad institucional.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-marker"></div>
+            <div class="item-content">
+              <h3>Comportamiento en Clase</h3>
+              <p>Se espera una actitud de escucha activa, respeto hacia el docente y compañeros, y participación constructiva.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Disciplina</span>
+          <span class="tag">Orden</span>
+          <span class="tag">Respeto</span>
+          <span class="tag">Identidad</span>
+        </div>
+      </section>
+
+      <!-- Sección 5: Espacios Comunes -->
+      <section class="section-panel" id="cap-5">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2 class="section-title">Uso de Espacios Comunes</h2>
+        </div>
+        
+        <p class="section-intro">El cuidado de los espacios compartidos es responsabilidad de todos. Su buen uso garantiza un ambiente agradable para aprender y convivir.</p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Biblioteca</h3>
+            <p>Se debe guardar silencio y cuidar los materiales. Los libros deben devolverse en las fechas establecidas.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚽</div>
+            <h3>Canchas Deportivas</h3>
+            <p>El uso está sujeto a horarios asignados. Se prohíbe el ingreso con alimentos o bebidas.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🍽️</div>
+            <h3>Cafetería</h3>
+            <p>Los estudiantes deben hacer fila respetando el turno y depositar los residuos en los contenedores.</p>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Cuidado</span>
+          <span class="tag">Respeto</span>
+          <span class="tag">Limpieza</span>
+          <span class="tag">Orden</span>
+        </div>
+      </section>
+
+      <!-- Sección 6: Gestión de Conflictos -->
+      <section class="section-panel" id="cap-6">
+        <div class="section-header">
+          <span class="section-num">06</span>
+          <h2 class="section-title">Gestión de Conflictos</h2>
+        </div>
+        
+        <p class="section-intro">Los conflictos son situaciones naturales en toda comunidad. La institución promueve su resolución pacífica mediante el diálogo y la mediación.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Mediación Escolar</h3>
+              <p>Antes de acudir a instancias disciplinarias, se recomienda recurrir al comité de mediación conformado por estudiantes capacitados.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Ruta de Atención</h3>
+              <p>Los casos que no se resuelvan entre las partes serán atendidos por el director de grupo, coordinación y, de ser necesario, rectoría.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Acuerdos de Convivencia</h3>
+              <p>Al finalizar un proceso de mediación, las partes firmarán compromisos concretos que serán registrados y verificados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Diálogo</span>
+          <span class="tag">Mediación</span>
+          <span class="tag">Paz</span>
+          <span class="tag">Acuerdo</span>
+        </div>
+      </section>
+
+      <!-- Sección 7: Sanciones y Faltas -->
+      <section class="section-panel" id="cap-7">
+        <div class="section-header">
+          <span class="section-num">07</span>
+          <h2 class="section-title">Sanciones y Faltas</h2>
+        </div>
+        
+        <p class="section-intro">Las sanciones son medidas formativas que buscan la reflexión y el cambio de conducta, no el castigo. Se aplican de forma gradual y justa.</p>
+
+        <div class="table-container">
+          <table class="infraction-table">
+            <thead>
+              <tr>
+                <th>Tipo de Falta</th>
+                <th>Ejemplos</th>
+                <th>Medida Formativa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="level-light">Leves</td>
+                <td>Atrasos reiterados, no portar uniforme, interrumpir clases</td>
+                <td>Amonestación verbal y registro en el observador</td>
+              </tr>
+              <tr>
+                <td class="level-medium">Graves</td>
+                <td>Agresiones verbales, daño a la propiedad, deshonestidad académica</td>
+                <td>Citación a padres y compromiso escrito</td>
+              </tr>
+              <tr>
+                <td class="level-high">Gravísimas</td>
+                <td>Agresiones físicas, porte de objetos peligrosos, consumo de sustancias</td>
+                <td>Suspensión o matrícula en observación</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Leves</span>
+          <span class="tag">Graves</span>
+          <span class="tag">Gravísimas</span>
+          <span class="tag">Formación</span>
+        </div>
+      </section>
+
+      <!-- Sección 8: Historia Institucional -->
+      <section class="section-panel" id="cap-8">
+        <div class="section-header">
+          <span class="section-num">08</span>
+          <h2 class="section-title">Historia Institucional</h2>
+        </div>
+        
+        <p class="section-intro">La Institución Educativa Antonio Lenis tiene una rica trayectoria forjada por generaciones de estudiantes, maestros y familias comprometidas.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Fundación</h3>
+              <p>La institución fue fundada con el propósito de ofrecer educación de calidad a la comunidad, consolidándose como referente en la región.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Trayectoria Académica</h3>
+              <p>A lo largo de los años, la institución ha formado miles de bachilleres que hoy se desempeñan con éxito en diversas áreas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Reconocimientos</h3>
+              <p>Reconocida por resultados en pruebas Saber, proyectos culturales y deportivos a nivel municipal y departamental.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Tradición</span>
+          <span class="tag">Orgullo</span>
+          <span class="tag">Comunidad</span>
+          <span class="tag">Excelencia</span>
+        </div>
+      </section>
+
+      <!-- Sección 9: Reglamento Interno -->
+      <section class="section-panel" id="cap-9">
+        <div class="section-header">
+          <span class="section-num">09</span>
+          <h2 class="section-title">Reglamento Interno</h2>
+        </div>
+        
+        <p class="section-intro">El reglamento interno establece las normas específicas que rigen el funcionamiento diario de la institución.</p>
+
+        <div class="regulations">
+          <div class="regulation">
+            <div class="reg-icon">🏕️</div>
+            <div class="reg-content">
+              <h3>Jornada Escolar</h3>
+              <p>La jornada inicia a las <strong>6:30 a.m.</strong> y finaliza a la <strong>1:00 p.m.</strong> Los estudiantes deben estar en sus salones antes del toque del timbre.</p>
+            </div>
+          </div>
+          <div class="regulation">
+            <div class="reg-icon">🚪</div>
+            <div class="reg-content">
+              <h3>Salida de la Institución</h3>
+              <p>Durante la jornada, ningún estudiante puede abandonar las instalaciones sin autorización escrita del acudiente y visto bueno de coordinación.</p>
+            </div>
+          </div>
+          <div class="regulation">
+            <div class="reg-icon">📱</div>
+            <div class="reg-content">
+              <h3>Uso de Dispositivos Electrónicos</h3>
+              <p>El uso de celulares está restringido durante las clases. Solo se permite en descansos y para fines académicos con autorización del docente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Jornada</span>
+          <span class="tag">Normas</span>
+          <span class="tag">Organización</span>
+          <span class="tag">Disciplina</span>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
