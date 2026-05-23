@@ -97,4 +97,36 @@ document.addEventListener('DOMContentLoaded', function() {
       showSection(sectionId);
     });
   });
+  
+  // Profile tabs functionality
+  const profileTabBtns = document.querySelectorAll('.profile-tab-btn');
+  const profileTabContents = document.querySelectorAll('.profile-tab-content');
+  
+  profileTabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      
+      profileTabBtns.forEach(b => b.classList.remove('active'));
+      profileTabContents.forEach(c => c.classList.remove('active'));
+      
+      this.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+  
+  // Process buttons functionality (Inscripcion, Admision, Matricula)
+  const processTabBtns = document.querySelectorAll('.process-tab-btn');
+  const processTabContents = document.querySelectorAll('.process-tab-content');
+  
+  processTabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      
+      processTabBtns.forEach(b => b.classList.remove('active'));
+      processTabContents.forEach(c => c.classList.remove('active'));
+      
+      this.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
 });

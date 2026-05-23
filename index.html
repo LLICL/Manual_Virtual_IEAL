@@ -5,6 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manual de Convivencia - I.E Antonio Lenis</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .profile-tabs-bar {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      background: #f5f5f5;
+      padding: 8px 8px 0;
+      border-radius: 10px 10px 0 0;
+    }
+    .profile-tab-btn {
+      padding: 12px 20px;
+      border: none;
+      background: transparent;
+      color: #666;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 8px 8px 0 0;
+      transition: all 0.3s;
+      font-family: inherit;
+    }
+    .profile-tab-btn:hover {
+      background: #e8f5ee;
+      color: #0a6b3c;
+    }
+    .profile-tab-btn.active {
+      background: white;
+      color: #0a6b3c;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    }
+    .profile-tab-content {
+      display: none;
+      background: white;
+      padding: 24px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: var(--shadow);
+      border-top: 3px solid #0a6b3c;
+    }
+    .profile-tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .process-tabs-bar {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      background: #f5f5f5;
+      padding: 8px 8px 0;
+      border-radius: 10px 10px 0 0;
+    }
+    .process-tab-btn {
+      padding: 12px 24px;
+      border: none;
+      background: transparent;
+      color: #666;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 8px 8px 0 0;
+      transition: all 0.3s;
+      font-family: inherit;
+    }
+    .process-tab-btn:hover {
+      background: #e8f5ee;
+      color: #0a6b3c;
+    }
+    .process-tab-btn.active {
+      background: white;
+      color: #0a6b3c;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    }
+    .process-tab-content {
+      display: none;
+      background: white;
+      padding: 24px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: var(--shadow);
+      border-top: 3px solid #0a6b3c;
+    }
+    .process-tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+  </style>
 </head>
 <body>
 
@@ -53,33 +143,25 @@
             <span class="nav-label">Símbolos Institucionales</span>
           </a>
           
-          <a href="#cap-3" class="nav-item" data-section="cap-3">
-
-            <span class="nav-label">.</span>
-          </a>
           
         </div>
 
         <div class="nav-section">
-          <span class="nav-section-title">Capitulo 1</span>
+          <span class="nav-section-title">Capitulo 1: Fundamentos Legales</span>
           
           <a href="#cap-6" class="nav-item" data-section="cap-6">
-            <span class="nav-num">06</span>
-            <span class="nav-label">Gestión de Conflictos</span>
-          </a>
           
-          <a href="#cap-7" class="nav-item" data-section="cap-7">
-            <span class="nav-num">07</span>
-            <span class="nav-label">Sanciones y Faltas</span>
+            <span class="nav-label">Perfil De los Actores</span>
+            
           </a>
-        </div>
+           
 
         <div class="nav-section">
-          <span class="nav-section-title">Institución</span>
+          <span class="nav-section-title">Capitulo 2: Procesos de Estudiantes</span>
           
-          <a href="#cap-8" class="nav-item" data-section="cap-8">
-            <span class="nav-num">08</span>
-            <span class="nav-label">Historia Institucional</span>
+          <a href="#cap-9" class="nav-item" data-section="cap-9">
+            
+            <span class="nav-label">Inscripcion-Admisión-Matricula</span>
           </a>
           
           <a href="#cap-9" class="nav-item" data-section="cap-9">
@@ -186,8 +268,9 @@
           <h3 style="color: var(--green); margin-bottom: 12px;">Política de Calidad</h3>
           <p style="font-size: 14px; line-height: 1.6;">La Institución Educativa Antonio Lenis, ente público, presta un servicio educativo en los niveles preescolar, básica primaria, básica secundaria y media académica con el apoyo y orientación de talento humano calificado y comprometido con el mejoramiento continuo de los procesos, respondiendo a las necesidades y expectativas de la comunidad educativa.</p>
         </div>
+
         
-       
+      
       </section>
 
       <!-- Sección 2: Símbolos Institucionales -->
@@ -199,24 +282,28 @@
         <p class="section-intro">La Institución Educativa Antonio Lenis cuenta con símbolos que representan su identidad, historia y valores.</p>
 
         <div class="info-cards" style="display: flex; gap: 16px; margin: 24px 0; flex-wrap: wrap;">
-          <div class="info-card" style="flex: 1; min-width: 250px; background: #239c5a; color: white; padding: 16px; border-radius: 10px; box-shadow: var(--shadow);">
-            <h3 style="color: #dacb06; margin-bottom: 8px;">Misión</h3>
+          <div class="info-card" style="flex: 1; min-width: 250px; background: #632727; color: white; padding: 16px; border-radius: 10px; box-shadow: var(--shadow);">
+            <h3 style="color: #ffffff; margin-bottom: 8px;">Misión</h3>
             <p style="font-size: 14px;">Formar integralmente ciudadanos críticos, reflexivos y comprometidos con la transformación social, mediante una educación de calidad que promueva el desarrollo de competencias académicas, ciudadanas y laborales, en un ambiente de inclusión, respeto y participación comunitaria.</p>
           </div>
-          <div class="info-card" style="flex: 1; min-width: 250px; background: #d13040; color: white; padding: 16px; border-radius: 10px; box-shadow: var(--shadow);">
-            <h3 style="color: #d1d406; margin-bottom: 8px;">Visión</h3>
+          <div class="info-card" style="flex: 1; min-width: 250px; background: #632727; color: white; padding: 16px; border-radius: 10px; box-shadow: var(--shadow);">
+            <h3 style="color: #ffffff; margin-bottom: 8px;">Visión</h3>
             <p style="font-size: 14px;">Para el 2030, la Institución Educativa Antonio Lenis será líder en la región por su excelencia académica, formación en valores ciudadanos y compromiso con el desarrollo sostenible, generando egresados capaces de transformar su entorno con ética, innovación y responsabilidad social.</p>
           </div>
         </div>
 
         <div class="two-columns">
-          <div class="column rights" style="text-align: center;">
-            <img src="images/escudo_ieal.jpeg" alt="Escudo Institucional" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow);">
-            <h3 class="column-title" style="margin-top: 16px;">Escudo</h3>
+          <div class="column" style="text-align: center; background: white; padding: 30px 20px; border-radius: 10px; box-shadow: var(--shadow);">
+            <div style="width: 200px; height: 200px; margin: 0 auto 16px; border-radius: 50%; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/escudo_ieal.jpeg" alt="Escudo Institucional" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--green);">Escudo</h3>
           </div>
-          <div class="column duties" style="text-align: center;">
-            <img src="images/bandera.png" alt="Bandera Institucional" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow);">
-            <h3 class="column-title" style="margin-top: 16px;">Bandera</h3>
+          <div class="column" style="text-align: center; background: white; padding: 30px 20px; border-radius: 10px; box-shadow: var(--shadow);">
+            <div style="width: 200px; height: auto; margin: 0 auto 16px; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow);">
+              <img src="images/bandera.png" alt="Bandera Institucional" style="width: 100%; height: auto; display: block;">
+            </div>
+            <h3 style="font-size: 18px; font-weight: 700; color: var(--red);">Bandera</h3>
           </div>
         </div>
 
@@ -270,213 +357,202 @@
         </div>
         
       </section>
-  
 
-      <!-- Sección 4: Normas de Conducta -->
-      <section class="section-panel" id="cap-4">
-        <div class="section-header">
-          <span class="section-num">04</span>
-          <h2 class="section-title">Normas de Conducta</h2>
-        </div>
-        
-        <p class="section-intro">Las normas de conducta buscan mantener un ambiente escolar armonioso, seguro y propicio para el aprendizaje de toda la comunidad.</p>
-
-        <div class="list-items">
-          <div class="list-item">
-            <div class="item-marker"></div>
-            <div class="item-content">
-              <h3>Puntualidad y Asistencia</h3>
-              <p>Los estudiantes deben asistir puntualmente a todas las clases y actividades académicas programadas por la institución.</p>
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item-marker"></div>
-            <div class="item-content">
-              <h3>Uso del Uniforme</h3>
-              <p>El uniforme debe portarse correctamente durante toda la jornada escolar como símbolo de pertenencia e identidad institucional.</p>
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item-marker"></div>
-            <div class="item-content">
-              <h3>Comportamiento en Clase</h3>
-              <p>Se espera una actitud de escucha activa, respeto hacia el docente y compañeros, y participación constructiva.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="tags">
-          <span class="tag">Disciplina</span>
-          <span class="tag">Orden</span>
-          <span class="tag">Respeto</span>
-          <span class="tag">Identidad</span>
-        </div>
-      </section>
-
-      <!-- Sección 5: Espacios Comunes -->
-      <section class="section-panel" id="cap-5">
-        <div class="section-header">
-          <span class="section-num">05</span>
-          <h2 class="section-title">Uso de Espacios Comunes</h2>
-        </div>
-        
-        <p class="section-intro">El cuidado de los espacios compartidos es responsabilidad de todos. Su buen uso garantiza un ambiente agradable para aprender y convivir.</p>
-
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card-icon">📚</div>
-            <h3>Biblioteca</h3>
-            <p>Se debe guardar silencio y cuidar los materiales. Los libros deben devolverse en las fechas establecidas.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">⚽</div>
-            <h3>Canchas Deportivas</h3>
-            <p>El uso está sujeto a horarios asignados. Se prohíbe el ingreso con alimentos o bebidas.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">🍽️</div>
-            <h3>Cafetería</h3>
-            <p>Los estudiantes deben hacer fila respetando el turno y depositar los residuos en los contenedores.</p>
-          </div>
-        </div>
-
-        <div class="tags">
-          <span class="tag">Cuidado</span>
-          <span class="tag">Respeto</span>
-          <span class="tag">Limpieza</span>
-          <span class="tag">Orden</span>
-        </div>
-      </section>
-
-      <!-- Sección 6: Gestión de Conflictos -->
+      <!-- Sección 6: perfil de los actores -->
       <section class="section-panel" id="cap-6">
-        <div class="section-header">
-          <span class="section-num">06</span>
-          <h2 class="section-title">Gestión de Conflictos</h2>
-        </div>
-        
-        <p class="section-intro">Los conflictos son situaciones naturales en toda comunidad. La institución promueve su resolución pacífica mediante el diálogo y la mediación.</p>
+        <h3 style="color: var(--green); font-size: 20px; font-weight: 700; margin-bottom: 16px;">Perfil de los Actores</h3>
+        <div class="profile-tabs-container" style="margin-top: 0;">
+          <div class="profile-tabs-bar">
+            <button class="profile-tab-btn active" data-tab="tab-estudiante">Estudiante</button>
+            <button class="profile-tab-btn" data-tab="tab-personero">Personero</button>
+            <button class="profile-tab-btn" data-tab="tab-docente">Docente</button>
+            <button class="profile-tab-btn" data-tab="tab-padre">Padre de Familia</button>
+            <button class="profile-tab-btn" data-tab="tab-egresado">Egresado</button>
+          </div>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Mediación Escolar</h3>
-              <p>Antes de acudir a instancias disciplinarias, se recomienda recurrir al comité de mediación conformado por estudiantes capacitados.</p>
-            </div>
+          <div class="profile-tab-content active" id="tab-estudiante">
+            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">El educando, de nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; en su proceso de formación, debe caracterizarse por los valores que fundamentan el sentido de ser del plantel, como una institución orientada al desarrollo integro e integral del educando, teniendo en cuenta los siguientes valores sociales: Identidad propia, buen ciudadano, disciplinado, ético, comunicativo, participativo, solidario, productivo, ambientalista y analítico.</p>
+            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 16px;">Son educandos, comprometidos con la identidad de nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; y cuyo compromiso de ejemplo en todo su proceder, a través del respeto, la disciplina, la dignidad, la amistad fraterna, la tolerancia, como ejes del desarrollo personal, social, espiritual e intelectual.</p>
+            <ul style="list-style: none; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+              <li style="margin-bottom: 8px;">⮚ Líderes dinamizadores de la comunidad y comprometidos con su grupo social, buscando la cooperación, la concertación y el desarrollo de iniciativas.</li>
+              <li style="margin-bottom: 8px;">⮚ Autónomos en el sentido intelectual y moral, capaces de auto educarse; de administrar su aprendizaje mediante el ejercicio responsable de la libertad, asumiendo las consecuencias de sus actos y sus decisiones, respondiendo a una madurez y formación de carácter.</li>
+              <li style="margin-bottom: 8px;">⮚ Introspectivos: Íntegros al dirigir la mirada a su interior con lealtad y sinceridad para luego emplear ese autoconocimiento en beneficio y transformación de su entorno social.</li>
+              <li style="margin-bottom: 8px;">⮚ Comunitarios: capaces de amar, compartir y de aceptar a sus pares y a los demás, construyendo una comunidad más amable mediante el ejercicio de la ciudadanía y la democracia.</li>
+              <li style="margin-bottom: 8px;">⮚ Buscadores de la verdad, con miras a enriquecer su crecimiento integral, su auto superación de manera constante y su relación con el entorno y la comunidad.</li>
+              <li style="margin-bottom: 8px;">⮚ Creativos, innovadores, investigativos y transformadores de su entorno.</li>
+              <li style="margin-bottom: 8px;">⮚ El o La estudiante además de las anteriores, tendrán que ser un ejemplo valioso positivo e imperativo para su entorno social.</li>
+              <li style="margin-bottom: 8px;">⮚ Únicos e irrepetibles y alejados de la imitación irracional, de las modas vacías e inmaduras y coherentes con su edad, su carácter, sus saberes y su madurez conceptual.</li>
+            </ul>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Ruta de Atención</h3>
-              <p>Los casos que no se resuelvan entre las partes serán atendidos por el director de grupo, coordinación y, de ser necesario, rectoría.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Acuerdos de Convivencia</h3>
-              <p>Al finalizar un proceso de mediación, las partes firmarán compromisos concretos que serán registrados y verificados.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="tags">
-          <span class="tag">Diálogo</span>
-          <span class="tag">Mediación</span>
-          <span class="tag">Paz</span>
-          <span class="tag">Acuerdo</span>
+          <div class="profile-tab-content" id="tab-personero">
+            <p style="font-size: 14px; line-height: 1.6;">El personero o Personera, debe ser un(a) líder con gran calidad humana comprometido con el mejoramiento de la convivencia y calidad de vida de toda la comunidad educativa.</p>
+          </div>
+
+          <div class="profile-tab-content" id="tab-docente">
+            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">El docente de la Institución Educativa Antonio Lenis, debe ser:</p>
+            <ul style="list-style: none; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+              <li style="margin-bottom: 8px;">⮚ Conocedor del modelo pedagógico institucional, fundamentos de las teorías de aprendizaje y enfoques pedagógicos pertinentes.</li>
+              <li style="margin-bottom: 8px;">⮚ Especializado en la disciplina a su cargo.</li>
+              <li style="margin-bottom: 8px;">⮚ Comprometido con la calidad de la enseñanza y la educación.</li>
+              <li style="margin-bottom: 8px;">⮚ Amable en su trato y firme en sus convicciones y criterios.</li>
+              <li style="margin-bottom: 8px;">⮚ Activo en la construcción y ejecución del proyecto educativo local e institucional.</li>
+              <li style="margin-bottom: 8px;">⮚ Líder que eduque con su buen ejemplo, dando testimonio de autogestión, protagonismo, compromiso, laboriosidad, participación democrática y creatividad.</li>
+              <li style="margin-bottom: 8px;">⮚ Gestor de cambios permanentes, innovador en su quehacer pedagógico.</li>
+              <li style="margin-bottom: 8px;">⮚ Poseedor de un amplio sentido de pertenencia con la institución.</li>
+              <li style="margin-bottom: 8px;">⮚ Amante y facilitador de la paz y la convivencia armoniosa.</li>
+              <li style="margin-bottom: 8px;">⮚ Generador en los estudiantes del juicio, de actitudes del modelo y de desarrollo cognitivo.</li>
+            </ul>
+          </div>
+
+          <div class="profile-tab-content" id="tab-padre">
+            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">El padre de familia de la Institución Educativa Antonio Lenis, debe ser una persona:</p>
+            <ul style="list-style: none; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+              <li style="margin-bottom: 8px;">⮚ Conocedora de los proyectos educativos institucionales</li>
+              <li style="margin-bottom: 8px;">⮚ Proveedora de los elementos necesarios para el buen desarrollo de las actividades académica de sus hijos</li>
+              <li style="margin-bottom: 8px;">⮚ Facilitadora en los procesos de aprendizaje de sus hijos.</li>
+              <li style="margin-bottom: 8px;">⮚ Formadora permanente de los más altos valores que exige la sociedad.</li>
+              <li style="margin-bottom: 8px;">⮚ Comprometida con el desarrollo integral de su núcleo familiar.</li>
+              <li style="margin-bottom: 8px;">⮚ Fomentadora y dinamizadora de las políticas y objetivos institucionales.</li>
+              <li style="margin-bottom: 8px;">⮚ Con alto sentido de pertenencia con la institución, con espíritu de servicio y lealtad.</li>
+              <li style="margin-bottom: 8px;">⮚ Participante, activa y visionaria en los distintos entes del gobierno escolar.</li>
+              <li style="margin-bottom: 8px;">⮚ Respetuosa con los miembros de la comunidad educativa.</li>
+              <li style="margin-bottom: 8px;">⮚ Amante de la paz y el progreso de su región.</li>
+              <li style="margin-bottom: 8px;">⮚ Comprometida con la calidad de la enseñanza, la educación nacional y en particular de la institución.</li>
+            </ul>
+          </div>
+
+          <div class="profile-tab-content" id="tab-egresado">
+            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">El egresado de la Institución Educativa Antonio Lenis, debe ser una persona.</p>
+            <ul style="list-style: none; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+              <li style="margin-bottom: 8px;">⮚ Respetuosa de los derechos humanos.</li>
+              <li style="margin-bottom: 8px;">⮚ Restauradora y conservadora del medio ambiente.</li>
+              <li style="margin-bottom: 8px;">⮚ Con altas capacidades analíticas, críticas, reflexivas, comunicativas, laborioso.</li>
+              <li style="margin-bottom: 8px;">⮚ Con gran sentido de superación y progreso mediante el esfuerzo y el trabajo.</li>
+              <li style="margin-bottom: 8px;">⮚ Amante y defensor de la cultura local, regional, nacional y universal.</li>
+              <li style="margin-bottom: 8px;">⮚ Líder en la participación ciudadana en lo que tiene que ver con las decisiones políticas, económicas y sociales del país.</li>
+              <li style="margin-bottom: 8px;">⮚ Gestora del desarrollo del núcleo familiar, comunidad y región.</li>
+              <li style="margin-bottom: 8px;">⮚ Con gran sentido de pertenencia con la institución.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <!-- Sección 7: Sanciones y Faltas -->
-      <section class="section-panel" id="cap-7">
-        <div class="section-header">
-          <span class="section-num">07</span>
-          <h2 class="section-title">Sanciones y Faltas</h2>
-        </div>
-        
-        <p class="section-intro">Las sanciones son medidas formativas que buscan la reflexión y el cambio de conducta, no el castigo. Se aplican de forma gradual y justa.</p>
 
-        <div class="table-container">
-          <table class="infraction-table">
-            <thead>
-              <tr>
-                <th>Tipo de Falta</th>
-                <th>Ejemplos</th>
-                <th>Medida Formativa</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="level-light">Leves</td>
-                <td>Atrasos reiterados, no portar uniforme, interrumpir clases</td>
-                <td>Amonestación verbal y registro en el observador</td>
-              </tr>
-              <tr>
-                <td class="level-medium">Graves</td>
-                <td>Agresiones verbales, daño a la propiedad, deshonestidad académica</td>
-                <td>Citación a padres y compromiso escrito</td>
-              </tr>
-              <tr>
-                <td class="level-high">Gravísimas</td>
-                <td>Agresiones físicas, porte de objetos peligrosos, consumo de sustancias</td>
-                <td>Suspensión o matrícula en observación</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+       <!-- Sección 9: Inscripcion-Admision-Matricula -->
+       <section class="section-panel" id="cap-9">
+         <div class="section-header">
+      
+           <h2 class="section-title">Inscripcion-Admisión-Matricula</h2>
+         </div>
+         
+         <p class="section-intro">Proceso de ingreso y admisión a la Institución Educativa Antonio Lenis.</p>
 
-        <div class="tags">
-          <span class="tag">Leves</span>
-          <span class="tag">Graves</span>
-          <span class="tag">Gravísimas</span>
-          <span class="tag">Formación</span>
-        </div>
-      </section>
+         <div class="process-tabs-container">
+           <div class="process-tabs-bar">
+             <button class="process-tab-btn active" data-tab="tab-inscripcion">Inscripción - Admisión</button>
+             <button class="process-tab-btn" data-tab="tab-matricula">Matrícula - Renovación</button>
+           </div>
 
-      <!-- Sección 8: Historia Institucional -->
-      <section class="section-panel" id="cap-8">
-        <div class="section-header">
-          <span class="section-num">08</span>
-          <h2 class="section-title">Historia Institucional</h2>
-        </div>
-        
-        <p class="section-intro">La Institución Educativa Antonio Lenis tiene una rica trayectoria forjada por generaciones de estudiantes, maestros y familias comprometidas.</p>
+           <div class="process-tab-content active" id="tab-inscripcion">
+             <h3 style="color: var(--green); margin-bottom: 16px; font-size: 18px;">Pasos para la Inscripción - Admisión</h3>
+             
+             <p style="font-size: 14px; line-height: 1.6; margin-bottom: 16px;">Puede entrar desde la página <a href="https://antoniolenis.edu.co/" target="_blank" style="color: var(--green);">https://antoniolenis.edu.co/</a>, o puede ir directamente a <a href="https://plana.a2hosted.com/preinscripcion" target="_blank" style="color: var(--green);">https://plana.a2hosted.com/preinscripcion</a></p>
+             
+             <div class="steps" style="margin-bottom: 20px;">
+               <div class="step">
+                 <div class="step-number">1</div>
+                 <div class="step-content">
+                   <h3>Diligenciar formulario</h3>
+                   <p>Diligenciar el formulario de inscripción con todos los datos solicitados</p>
+                 </div>
+               </div>
+               <div class="step">
+                 <div class="step-number">2</div>
+                 <div class="step-content">
+                   <h3>Cargar documentos</h3>
+                   <p>Cargar o subir los documentos solicitados en formato PDF. Como son:</p>
+                 </div>
+               </div>
+             </div>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Fundación</h3>
-              <p>La institución fue fundada con el propósito de ofrecer educación de calidad a la comunidad, consolidándose como referente en la región.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Trayectoria Académica</h3>
-              <p>A lo largo de los años, la institución ha formado miles de bachilleres que hoy se desempeñan con éxito en diversas áreas.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Reconocimientos</h3>
-              <p>Reconocida por resultados en pruebas Saber, proyectos culturales y deportivos a nivel municipal y departamental.</p>
-            </div>
-          </div>
-        </div>
+             <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Registro civil de nacimiento del aspirante (menores de 7 años)</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Documento de identidad del estudiante (aspirante) (tarjeta de identidad para mayores de 7 años y cédula de ciudadanía para mayores de 18 años)</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Documento de identificación para extranjeros (visa o cédula de extranjería o Permiso especial de permanencia para el sector educación, permiso especial de permanencia para la formación y reconociendo de aprendizajes previos, Tarjeta de movilidad fronteriza, permiso de protección especial (PPT))</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Documento de identidad padre y/o madre</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Documento de identidad acudiente si es diferente al padre y/o madre</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Observador del estudiante o certificación de comportamiento y disciplina (Es opcional y no aplica para transición)</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Informe o notas de los periodos académicos cursados a la fecha o el boletín final (no aplica transición)</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Carnet de salud o certificado de afiliación a salud</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Carnet de vacunación (solo para transición)</p>
+               </div>
+               <div class="doc-box" style="padding: 12px 16px; border: 2px solid #333; border-radius: 8px; flex: 1 1 300px; min-width: 250px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#d4edda'; this.style.borderColor='var(--green)';" onmouseout="this.style.backgroundColor='white'; this.style.borderColor='#333';">
+                 <p style="margin: 0; font-size: 13px;">Documento de Crecimiento y desarrollo (solo para transición)</p>
+               </div>
+             </div>
 
-        <div class="tags">
-          <span class="tag">Tradición</span>
-          <span class="tag">Orgullo</span>
-          <span class="tag">Comunidad</span>
-          <span class="tag">Excelencia</span>
-        </div>
-      </section>
+             <div style="background-color: #ffe6e6; border: 2px solid red; border-radius: 8px; padding: 16px; margin-top: 20px;">
+               <p style="margin: 0; color: red; font-size: 14px; line-height: 1.6;"><strong>NOTA:</strong> La admisión es el proceso mediante el cual, la institución selecciona de la población estudiantil que solicita ingreso por traslado o inscripción para los diferentes grados, a quienes podrán ser matriculados. En ningún caso la admisión de estudiantes estará sujeta a consideraciones de etnia, filiación política, religión, sexo, condición social o económica sobre el aspirante.</p>
+             </div>
+           </div>
 
-      <!-- Sección 9: Reglamento Interno -->
+           <div class="process-tab-content" id="tab-matricula">
+             <div style="display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; flex-wrap: wrap;">
+               <div style="flex: 1;">
+                 <h3 style="color: var(--green); margin-bottom: 12px; font-size: 18px;">Matrícula y Renovación</h3>
+                 <p style="font-size: 14px; line-height: 1.6;">Para la matrícula o su renovación, se realizará a través de la página web <a href="https://www.antoniolenis.edu.co/" target="_blank" style="color: var(--green);">www.antoniolenis.edu.co</a>.</p>
+               </div>
+             </div>
+
+             <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">Los estudiantes nuevos diligenciaran el formulario de matrícula y aceptaran las condiciones institucionales contempladas en el presente Manual de Convivencia, a través de una ventana emergente que aparecerá durante el proceso al momento de legalizar, generando dos documentos automáticos como son el <strong>ACTA DE COMPROMISO</strong> y la <strong>DECLARATORIA PUBLICA</strong>.</p>
+
+             <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">Tanto para la matrícula como para la renovación, el acudiente descargará el formulario respectivo, lo imprimirá, lo firmará y deberá presentarse a la institución con el estudiante para legalizar la matricula en las fechas y horario estipulados por la institución. En ese momento deberá tomar el seguro de accidentes escolares. El seguro de accidentes, <strong>NO es optativo</strong>, ver artículos 10, 14, 17, 18, 20 numeral 1 y 39 literal 1 de ley 1098 de 2006.</p>
+
+             <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">Para finalizar deberá terminar de cargar en formato PDF en el módulo correspondiente:</p>
+             <ul style="list-style: none; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+               <li style="margin-bottom: 6px;">- Certificados estudios cursados</li>
+               <li style="margin-bottom: 6px;">- Carnet de salud o certificado de afiliación a salud</li>
+               <li style="margin-bottom: 6px;">- Liberación del SIMAT (Opcional)</li>
+             </ul>
+
+             <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">Para la renovación de matrícula los estudiantes antiguos actualizarán en la plataforma la información personal y familiar y los documentos que haya lugar si hay cambio en el documento de identificación y/o afiliación a salud.</p>
+
+             <div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 14px; margin: 16px 0;">
+               <p style="margin: 0; color: #856404; font-size: 14px; line-height: 1.6;"><strong>PARÁGRAFO:</strong> Los estudiantes que tengan diagnósticos especializados de discapacidad o necesidades educativas especiales, deberán presentar la correspondiente historia clínica, en la primera semana de actividades académicas</p>
+             </div>
+
+             <h4 style="color: var(--green); margin: 20px 0 12px; font-size: 16px;">Traslado de Matrícula</h4>
+             <p style="font-size: 14px; line-height: 1.6; margin-bottom: 12px;">Se entiende por TRASLADO DE MATRÍCULA cualquiera de las siguientes situaciones:</p>
+             <ul style="list-style: none; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+               <li style="margin-bottom: 6px;"><strong>a.</strong> Cambio de un estudiante de la jornada Matinal a la Vespertina o viceversa en la misma sede o el cambio de un estudiante de una a otra sede en la institución.</li>
+               <li style="margin-bottom: 6px;"><strong>b.</strong> Cambio de profundización, en el primer nivel de media, de un estudiante en la misma jornada o hacia otra jornada.</li>
+               <li style="margin-bottom: 6px;"><strong>c.</strong> Cambio de un estudiante de un grupo a otro dentro del mismo grado y jornada.</li>
+               <li style="margin-bottom: 6px;"><strong>d.</strong> Cambio de un estudiante de una institución educativa OFICIAL, ubicada en el municipio de Sincelejo, a esta institución o viceversa</li>
+             </ul>
+           </div>
+         </div>
+
+       </section>
+
+       <!-- Sección 10: Reglamento Interno -->
       <section class="section-panel" id="cap-9">
         <div class="section-header">
           <span class="section-num">09</span>
