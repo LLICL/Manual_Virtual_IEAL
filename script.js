@@ -130,3 +130,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+function openModal(type) {
+  const modal = document.getElementById('infoModal');
+  const title = document.getElementById('modalTitle');
+  const body = document.getElementById('modalBody');
+
+  if (type === 'higiene') {
+    title.textContent = 'Higiene Ambiental';
+    body.innerHTML = `<p>Nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; cuenta con el proyecto obligatorio Ambiental, que vela por mantener, las instalaciones físicas, con las adecuadas condiciones higiénicas para el sano desarrollo del personal en general y la planta docente y obviamente de los educandos.</p>`;
+  } else if (type === 'epidemiologico') {
+    title.textContent = 'Prevención de Riesgo Epidemiológico';
+    body.innerHTML = `<p>Teniendo en cuenta, que en toda comunidad existe el riesgo de contagio epidemiológico solicitamos a los padres cumplir con las siguientes medidas:</p>
+      <ul style="list-style: none; padding-left: 0; margin-top: 12px;">
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; No podrá ingresar ningún educando con fiebre, sea por la causa que fuere, por lo que el director de Grupo, está en la obligación de reportarlo a la coordinación para que se llame el padre de familia y devolverlo a su hogar, entregándolo a su familiar o acudiente.</li>
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; Enviar al niño(a) sin enfermedades (gripes, alergias, virales y o eruptivas) entre otras, ya que se atenta contra su bienestar y el de los demás, generando un riesgo de epidemia. El niño(a) deberá presentar el alta médica el mismo día que se reintegre a clases. Si su hijo presenta sintomatología gripal déjelo en casa por un lapso mínimo de tres días, esto le permitirá una recuperación completa y evitará el contagio de los demás educandos al interior de la escuela.</li>
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; Recoger, lo más pronto posible al niño o niña, cuando Nuestra Institución educativa oficial, comunique su estado de enfermedad; remitirlo al pediatra y enviar el certificado médico en caso de incapacidad.</li>
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; Toda enfermedad infectocontagiosa, será reportada a la Secretaria de Salud del MUNICIPIO DE SINCELEJO; con el fin de llevar el control epidemiológico.</li>
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; Se realizarán revisiones durante el año escolar con el fin de evitar la pediculosis (piojos) y se realizaran charlas para que el padre o acudiente atienda la situación. Todo caso positivo será reportado al acudiente y aislado hasta que se le brindé el tratamiento adecuado y oportuno.</li>
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; En conjunto con la Secretaria de Salud del MUNICIPIO DE SINCELEJO; se realizarán campañas de vacunación, durante el año escolar, y se exigirá el carné de vacunación a todo educando.</li>
+        <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">&bullet; Se solicitará, carné de vacunación a los menores de cinco años dentro del proceso de matrícula</li>
+      </ul>`;
+  }
+
+  modal.style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('infoModal').style.display = 'none';
+}

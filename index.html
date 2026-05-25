@@ -164,14 +164,16 @@
             <span class="nav-label">Inscripcion-Admisión-Matricula</span>
           </a>
           
-          <a href="#cap-9" class="nav-item" data-section="cap-9">
-            <span class="nav-num">09</span>
-            <span class="nav-label">Reglamento Interno</span>
+          <a href="#cap-3" class="nav-item" data-section="cap-3">
+            
+            <span class="nav-label">Reglas de Presentación</span>
           </a>
           
           <a href="#cap-4" class="nav-item" data-section="cap-4">
-            <span class="nav-num">04</span>
-            <span class="nav-label">Espacios Comunes</span>
+            <span class="nav-label">Uniformes</span>
+          </a>
+          <a href="#cap-4" class="nav-item" data-section="cap-4">
+            <span class="nav-label">Reglas en Instalaciones</span>
           </a>
         </div>
 
@@ -197,8 +199,8 @@
             <span class="nav-label">Historia Institucional</span>
           </a>
           
-          <a href="#cap-8" class="nav-item" data-section="cap-8">
-            <span class="nav-num">08</span>
+          <a href="#cap-10" class="nav-item" data-section="cap-10">
+            <span class="nav-num">10</span>
             <span class="nav-label">Reglamento Interno</span>
           </a>
         </div>
@@ -358,7 +360,48 @@
         
       </section>
 
-      <!-- Sección 6: perfil de los actores -->
+        <!-- Sección 3: Reglas de Presentación -->
+        <section class="section-panel" id="cap-3">
+          <div class="section-header">
+            <h2 class="section-title">Reglas de Presentación</h2>
+           </div>
+
+          <div style="font-size: 14px; line-height: 1.7; margin-bottom: 20px;">
+            <ol style="padding-left: 20px; margin: 0;">
+              <li style="margin-bottom: 8px;">Desarrollar hábitos de higiene personal y asimilación de conductas orientadas al auto cuidado.</li>
+              <li style="margin-bottom: 8px;">Asistir al colegio pulcramente vestido, con el uniforme debidamente lavado, planchado, los zapatos embolados y los tenis limpios.</li>
+              <li style="margin-bottom: 8px;">Evitar la propagación de enfermedades infectocontagiosas y parasitarias, observando medidas preventivas apropiadas y el tratamiento pertinente, bajo la responsabilidad del estudiante y representante legal.</li>
+              <li style="margin-bottom: 8px;">Adicional a lo expuesto anteriormente, generar una conciencia clara del respeto propio y el respeto por el otro; lo cual, se encuentra parametrizado en el proyecto transversal de Educación Sexual. <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=52287" target="_blank" style="color: var(--green);">Artículo 20 de ley 1620 de 2013</a>.</li>
+            </ol>
+          </div>
+
+          <div style="display: flex; gap: 24px; margin-top: 20px; flex-wrap: wrap; justify-content: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              <button onclick="openModal('higiene')" style="width: 200px; height: 200px; background: #632727; border: 3px solid #632727; border-radius: 16px; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; padding: 12px;" onmouseover="this.style.backgroundColor='#7a2e2e'; this.style.borderColor='#7a2e2e';" onmouseout="this.style.backgroundColor='#632727'; this.style.borderColor='#632727';">
+                <img src="images/recoger_basura.png" alt="Higiene Ambiental" style="max-width: 100%; max-height: 100%; border-radius: 8px; object-fit: contain;">
+              </button>
+              <span style="font-size: 15px; font-weight: 600; color: var(--green); text-align: center;">Higiene Ambiental</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              <button onclick="openModal('epidemiologico')" style="width: 200px; height: 200px; background: #632727; border: 3px solid #632727; border-radius: 16px; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; padding: 12px;" onmouseover="this.style.backgroundColor='#7a2e2e'; this.style.borderColor='#7a2e2e';" onmouseout="this.style.backgroundColor='#632727'; this.style.borderColor='#632727';">
+                <img src="images/riesgo_epidemologico.png" alt="Prevención Epidemiológico" style="max-width: 100%; max-height: 100%; border-radius: 8px; object-fit: contain;">
+              </button>
+              <span style="font-size: 15px; font-weight: 600; color: var(--green); text-align: center;">Prevención Epidemiológico</span>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div id="infoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; align-items: center; justify-content: center;" onclick="closeModal()">
+            <div style="background: white; border-radius: 12px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto; padding: 28px; box-shadow: 0 8px 32px rgba(0,0,0,0.2); position: relative;" onclick="event.stopPropagation()">
+              <button onclick="closeModal()" style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 28px; cursor: pointer; color: #666; line-height: 1;">&times;</button>
+              <h3 id="modalTitle" style="color: var(--green); font-size: 18px; margin-bottom: 16px; padding-right: 30px;"></h3>
+              <div id="modalBody" style="font-size: 14px; line-height: 1.7; color: #333;"></div>
+            </div>
+          </div>
+        </section>
+
+       <!-- Sección 6: perfil de los actores -->
       <section class="section-panel" id="cap-6">
         <h3 style="color: var(--green); font-size: 20px; font-weight: 700; margin-bottom: 16px;">Perfil de los Actores</h3>
         <div class="profile-tabs-container" style="margin-top: 0;">
@@ -439,11 +482,11 @@
       </section>
 
 
-       <!-- Sección 9: Inscripcion-Admision-Matricula -->
+        <!-- Sección 9: Inscripcion-Admision-Matricula -->
        <section class="section-panel" id="cap-9">
-         <div class="section-header">
-      
-           <h2 class="section-title">Inscripcion-Admisión-Matricula</h2>
+          <div class="section-header">
+       
+            <h2 class="section-title">Inscripcion-Admisión-Matricula</h2>
          </div>
          
          <p class="section-intro">Proceso de ingreso y admisión a la Institución Educativa Antonio Lenis.</p>
@@ -451,8 +494,9 @@
          <div class="process-tabs-container">
            <div class="process-tabs-bar">
              <button class="process-tab-btn active" data-tab="tab-inscripcion">Inscripción - Admisión</button>
-             <button class="process-tab-btn" data-tab="tab-matricula">Matrícula - Renovación</button>
-           </div>
+              <button class="process-tab-btn" data-tab="tab-matricula">Matrícula - Renovación</button>
+              <button class="process-tab-btn" data-tab="tab-permanencia">Condiciones Permanencia</button>
+            </div>
 
            <div class="process-tab-content active" id="tab-inscripcion">
              <h3 style="color: var(--green); margin-bottom: 16px; font-size: 18px;">Pasos para la Inscripción - Admisión</h3>
@@ -512,9 +556,73 @@
              <div style="background-color: #ffe6e6; border: 2px solid red; border-radius: 8px; padding: 16px; margin-top: 20px;">
                <p style="margin: 0; color: red; font-size: 14px; line-height: 1.6;"><strong>NOTA:</strong> La admisión es el proceso mediante el cual, la institución selecciona de la población estudiantil que solicita ingreso por traslado o inscripción para los diferentes grados, a quienes podrán ser matriculados. En ningún caso la admisión de estudiantes estará sujeta a consideraciones de etnia, filiación política, religión, sexo, condición social o económica sobre el aspirante.</p>
              </div>
-           </div>
+            </div>
 
-           <div class="process-tab-content" id="tab-matricula">
+            <div class="process-tab-content" id="tab-permanencia">
+             <h3 style="color: var(--green); margin-bottom: 16px; font-size: 18px;">Condiciones de Permanencia</h3>
+
+             <div style="display: flex; flex-direction: column; gap: 12px;">
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>1.</strong> Según el artículo 9 del Decreto No. 3788 de 1986, y el artículo 34 y 39 de la ley 1801 de 2016 o ley de convivencia ciudadana, se prohíbe el porte y el consumo de estupefacientes y sustancias psicotrópicas, así como el uso o porte indebido de armas u objetos intimidatorios. Después de dar cumplimiento al debido proceso y al Decreto No. 3788 de 1986, se excluirá del establecimiento a quien infrinja estas normas. Ver artículo 19 de ley 1098 de 2006. Y ver artículo 381 del código penal, si llegare a aplicar, para el suministro de sustancias a otros educandos o estudiantes.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>2.</strong> Inasistencia habitual injustificada según Artículo 6, Decreto 1290 del 16 de mayo de 2009.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>3.</strong> Cancelación voluntaria de la matrícula por mutuo acuerdo.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>4.</strong> La inasistencia del padre o acudiente a tres (3) de las reuniones programadas por nuestra Institución educativa oficial, o cuando se requiera de su presencia según se establece en el contrato de matrícula. Y NO acuda, sin excusa o sin motivación real y coherente. Ver ley 2025 de 2020. Ver artículo 20 literal 1 de ley 1098 de 2006.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>5.</strong> Falta de acompañamiento de los padres. Ver artículo 2.3.4.3. del decreto 1075 de 2015.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>6.</strong> Perfil inadecuado del educando en el área disciplinaria o actitudinal, luego del acompañamiento de apoyo y concertación de compromisos, que incumpla reiteradamente.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>7.</strong> Incumplimiento de los acuerdos pactados entre el educando, acudiente y nuestra Institución educativa oficial.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>8.</strong> Incumplimiento reincidente de las normas establecidas en el presente Manual de Convivencia.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>9.</strong> Cuando el educando, repruebe un año académico por segunda vez.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>10.</strong> Cuando el educando, haya firmado acta de compromiso comportamental o por bajo rendimiento académico, durante dos años consecutivos incumpliendo, sus compromisos adquiridos.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>11.</strong> Cualquier tipo de irrespeto verbal o físico, o amenazas o agresiones, de parte de los padres o acudientes del educando, familiares o y hasta tercer grado de consanguinidad o de cercanos, que obre en contra de la vida, la honra, el buen nombre, la dignidad humana, y la salud y la integridad personal de cualquier miembro de nuestra comunidad. Sin perjuicio de la denuncia penal, por el presunto delito de VIOLENCIA CONTRA SERVIDOR PÚBLICO: Código Penal. Artículo 429. Violencia contra servidor público. El que ejerza violencia contra servidor público, por razón de sus funciones o para obligarlo a ejecutar u omitir algún acto propio de su cargo o a realizar uno contrario a sus deberes oficiales, incurrirá en prisión de cuatro (4) a ocho (8) años.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>12.</strong> Retiro voluntario por parte de la familia, presentando carta a rectoría especificando las causas del mismo; y obviamente garantizando el estar a paz y salvo, por todo concepto, con nuestra Institución educativa oficial.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>13.</strong> No firmar la matrícula, dentro de las fechas estipuladas para tales fines, y con el lleno de los requisitos establecidos por nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>14.</strong> Cuando nuestra Institución educativa oficial, compruebe falsedad u omisión en la documentación presentada para el ingreso del educando, en su matrícula, se declara nula esa matrícula.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>15.</strong> Cuando se ordene, la cancelación de la matrícula, por mandato del Consejo Directivo de nuestra Institución educativa oficial, previo cumplimiento del conducto regular y agotamiento del debido proceso.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>16.</strong> Cuando los padres de familia y/o acudientes, que han firmado la matrícula; acuden en una ocasión o acuden de manera reiterativa, o grotesca o grosera, o no estén reiterativamente de acuerdo con las normas de nuestra institución educativa pública y oficial, y se conviertan en un obstáculo, frente al proceso de formación integral estipulado por nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>17.</strong> Cuando los padres o acudientes incumplan con los deberes estipulados en el presente Manual de Convivencia, sobre todo, lo atinente a sus deberes de asistencia a las citaciones, y reuniones de padres de familia de carácter obligatorio, a voces de la ley 2025 de 2020. Dado que, dicha ley 2025 de 2020, declara taxativo que, es OBLIGATORIA LA ASISTENCIA DE LOS PADRES DE FAMILIA A LOS TALLERES DE PADRES, conexo con el artículo 18 y 20 numeral 1 de la ley 1098 de 2006. Y artículos 02 y 04 de la ley 2025 de 2020.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>18.</strong> El incumplimiento reiterativo y constante, de las normas, deberes y compromisos, que aparecen taxativos en el presente texto de manual de convivencia escolar y que se acogen a lo pactado en el Contrato de Cooperación Educativa del Colegio o matrícula; ver artículos 87 y 96 de ley 115 de 1994. Ley 115 de 1994. Artículo 96º.- Permanencia en el establecimiento educativo. El reglamento interno de la institución educativa establecerá las condiciones de permanencia del alumno en el plantel y el procedimiento en caso de exclusión.</p>
+               </div>
+               <div style="background: #f8f9fa; border-left: 4px solid var(--green); border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
+                 <p style="margin: 0; font-size: 14px; line-height: 1.6;"><strong>19.</strong> Cuando los padres de familia, acudientes y cuidadores, violen, inapliquen, incumplan y desatiendan reiterativa y sistemáticamente, el proceso de familia – escuela. Del decreto 0459 del 10 de abril de 2024.</p>
+               </div>
+             </div>
+             </div>
+
+            <div class="process-tab-content" id="tab-matricula">
              <div style="display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; flex-wrap: wrap;">
                <div style="flex: 1;">
                  <h3 style="color: var(--green); margin-bottom: 12px; font-size: 18px;">Matrícula y Renovación</h3>
@@ -552,8 +660,8 @@
 
        </section>
 
-       <!-- Sección 10: Reglamento Interno -->
-      <section class="section-panel" id="cap-9">
+        <!-- Sección 10: Reglamento Interno -->
+       <section class="section-panel" id="cap-10">
         <div class="section-header">
           <span class="section-num">09</span>
           <h2 class="section-title">Reglamento Interno</h2>
