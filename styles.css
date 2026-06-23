@@ -860,3 +860,154 @@ body {
     font-size: 12px;
   }
 }
+
+/* ── UNIFORMES LAYOUT ── */
+.uniformes-wrap {
+  max-width: 100%;
+  font-family: inherit;
+}
+
+.uniformes-tab-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.uniformes-tab {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: default;
+  border: 1.5px solid transparent;
+}
+.uniformes-tab.tab-red    { background: #FCEBEB; color: #791F1F; border-color: #F09595; }
+.uniformes-tab.tab-green  { background: #EAF3DE; color: #27500A; border-color: #97C459; }
+.uniformes-tab.tab-amber  { background: #FAEEDA; color: #633806; border-color: #EF9F27; }
+
+.uniformes-block-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.uniformes-bar {
+  width: 4px;
+  height: 18px;
+  border-radius: 2px;
+  background: #A32D2D;
+  flex-shrink: 0;
+}
+.uniformes-bar.green { background: #3B6D11; }
+.uniformes-bar.amber { background: #EF9F27; }
+.uniformes-block-title span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.uniformes-prenda-row {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  margin-bottom: 8px;
+}
+.uniformes-prenda-num {
+  width: 28px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.uniformes-circle {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #A32D2D;
+  color: #FCEBEB;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 500;
+}
+.uniformes-line {
+  flex: 1;
+  width: 1.5px;
+  background: #F09595;
+  margin: 4px auto 0;
+}
+.uniformes-prenda-body  { flex: 1; padding-bottom: 12px; }
+.uniformes-prenda-head  { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
+.uniformes-prenda-text  { font-size: 13px; line-height: 1.55; }
+
+.uniformes-sep { height: 0.5px; background: #e0e0e0; margin: 14px 0; }
+
+.uniformes-info-strip {
+  background: #EAF3DE;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex; gap: 10px; align-items: flex-start;
+  margin-bottom: 14px;
+}
+.uniformes-info-strip i { font-size: 16px; color: #3B6D11; flex-shrink: 0; margin-top: 1px; }
+.uniformes-info-strip p { font-size: 13px; color: #27500A; line-height: 1.55; }
+
+.uniformes-promo-grid { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+.uniformes-promo-row {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 9px 10px;
+}
+.uniformes-promo-pill {
+  width: 22px; height: 22px;
+  border-radius: 6px;
+  background: #A32D2D; color: #fff;
+  font-size: 11px; font-weight: 600;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.uniformes-promo-row p { font-size: 13px; line-height: 1.5; }
+
+.uniformes-buzo-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: #FAEEDA; color: #633806;
+  font-size: 12px; font-weight: 500;
+  padding: 3px 10px; border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.uniformes-parags { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.uniformes-parag {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 0.5px solid #ddd;
+}
+.uniformes-parag-head {
+  background: #A32D2D;
+  padding: 7px 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.uniformes-parag-head i   { font-size: 14px; color: #FCEBEB; }
+.uniformes-parag-head span { font-size: 12px; font-weight: 600; color: #FCEBEB; letter-spacing: 0.03em; }
+.uniformes-parag-body {
+  padding: 9px 12px;
+  font-size: 13px; line-height: 1.55;
+  background: #fff;
+}
+
+.uniformes-nota-box {
+  border-radius: 8px;
+  border: 1.5px solid #E24B4A;
+  overflow: hidden;
+}
+.uniformes-nota-head {
+  background: #E24B4A;
+  padding: 7px 12px;
+  display: flex; align-items: center; gap: 6px;
+}
+.uniformes-nota-head i    { font-size: 14px; color: #fff; }
+.uniformes-nota-head span { font-size: 12px; font-weight: 600; color: #fff; }
+.uniformes-nota-body {
+  padding: 9px 12px;
+  font-size: 13px; line-height: 1.55;
+  background: #fff;
+}

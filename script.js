@@ -159,3 +159,15 @@ function openModal(type) {
 function closeModal() {
   document.getElementById('infoModal').style.display = 'none';
 }
+
+function toggleCorte() {
+  const content = document.getElementById('corteContent');
+  const arrow = document.getElementById('corteArrow');
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    arrow.style.transform = 'rotate(180deg)';
+  } else {
+    content.style.display = 'none';
+    arrow.style.transform = 'rotate(0deg)';
+  }
+}
