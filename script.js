@@ -77,8 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
       closeSidebar();
     }
     
-    // Scroll al inicio del contenido
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Scroll a la sección activa (descontando header fijo 72px)
+    if (targetSection) {
+      var headerH = 72;
+      var rect = targetSection.getBoundingClientRect();
+      var top = rect.top + window.pageYOffset - headerH;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
   }
   
   // Event listeners para tabs
@@ -171,3 +176,34 @@ function toggleCorte() {
     arrow.style.transform = 'rotate(0deg)';
   }
 }
+
+function toggleSidebarGroup(el) {
+  const section = el.closest('.nav-section');
+  if (!section) return;
+  const items = section.querySelectorAll('.nav-item');
+  const icon = el.querySelector('.toggle-icon');
+  let hidden = false;
+  items.forEach(function(item) {
+    if (item.style.display === 'none') {
+      item.style.display = '';
+      hidden = true;
+    } else {
+      item.style.display = 'none';
+    }
+  });
+  if (icon) {
+    icon.textContent = hidden ? '\u25BC' : '\u25B6';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.toggle-title').forEach(function(title) {
+    const section = title.closest('.nav-section');
+    if (section) {
+      const items = section.querySelectorAll('.nav-item');
+      items.forEach(function(item) { item.style.display = 'none'; });
+      const icon = title.querySelector('.toggle-icon');
+      if (icon) icon.textContent = '\u25B6';
+    }
+  });
+});
