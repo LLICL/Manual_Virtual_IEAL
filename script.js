@@ -103,6 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Exponer showSection globalmente para búsqueda
+  window.showSection = showSection;
+  
   // Profile tabs functionality
   const profileTabBtns = document.querySelectorAll('.profile-tab-btn');
   const profileTabContents = document.querySelectorAll('.profile-tab-content');
@@ -132,6 +135,40 @@ document.addEventListener('DOMContentLoaded', function() {
       
       this.classList.add('active');
       document.getElementById(tabId).classList.add('active');
+    });
+  });
+  
+  // Derechos tabs functionality (cap-9)
+  const derechosTabBtns = document.querySelectorAll('.derechos-tab-btn');
+  const derechosTabContents = document.querySelectorAll('.derechos-tab-content');
+  
+  derechosTabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      
+      derechosTabBtns.forEach(b => b.classList.remove('active'));
+      derechosTabContents.forEach(c => c.classList.remove('active'));
+      
+      this.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+
+  // Deberes tabs functionality (cap-13, cap-14)
+  document.querySelectorAll('.deberes-tabs-bar').forEach(function(bar) {
+    const btns = bar.querySelectorAll('.deberes-tab-btn');
+    const contents = bar.parentElement.querySelectorAll('.deberes-tab-content');
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const tabId = this.getAttribute('data-tab');
+
+        btns.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
     });
   });
 });
@@ -207,3 +244,99 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// Búsqueda en portada
+(function() {
+  var searchInput = document.getElementById('homeSearchInput');
+  var resultsContainer = document.getElementById('homeSearchResults');
+  if (!searchInput || !resultsContainer) return;
+
+  var sections = document.querySelectorAll('.section-panel');
+  var sectionData = [];
+
+  sections.forEach(function(sec) {
+    if (sec.id === 'cap-home') return;
+    var titleEl = sec.querySelector('.section-title');
+    var sectionName = titleEl ? titleEl.textContent.trim() : sec.id;
+    var text = sec.textContent.replace(/\s+/g, ' ').trim();
+    sectionData.push({ id: sec.id, name: sectionName, text: text });
+  });
+
+  searchInput.addEventListener('input', function() {
+    var query = this.value.trim().toLowerCase();
+    if (query.length < 3) {
+      resultsContainer.style.display = 'none';
+      resultsContainer.innerHTML = '';
+      return;
+    }
+
+    var results = [];
+    sectionData.forEach(function(sec) {
+      var idx = sec.text.toLowerCase().indexOf(query);
+      if (idx !== -1) {
+        var start = Math.max(0, idx - 40);
+        var end = Math.min(sec.text.length, idx + query.length + 40);
+        var snippet = (start > 0 ? '...' : '') + sec.text.substring(start, end) + (end < sec.text.length ? '...' : '');
+        snippet = snippet.replace(new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<strong>$1</strong>');
+        results.push({ id: sec.id, name: sec.name, snippet: snippet });
+      }
+    });
+
+    if (results.length === 0) {
+      resultsContainer.innerHTML = '<div class="home-search-no-results">No se encontraron resultados para "' + query + '"</div>';
+    } else {
+      var html = '';
+      results.forEach(function(r) {
+        html += '<a class="home-search-result-item" data-nav="' + r.id + '" href="#' + r.id + '">';
+        html += '<span class="home-search-result-section">' + r.name + '</span>';
+        html += r.snippet;
+        html += '</a>';
+      });
+      resultsContainer.innerHTML = html;
+    }
+    resultsContainer.style.display = 'block';
+  });
+
+  resultsContainer.addEventListener('click', function(e) {
+    var item = e.target.closest('.home-search-result-item');
+    if (!item) return;
+    e.preventDefault();
+    var sectionId = item.getAttribute('data-nav');
+    showSection(sectionId);
+    searchInput.value = '';
+    resultsContainer.style.display = 'none';
+    resultsContainer.innerHTML = '';
+  });
+
+  document.querySelectorAll('.home-card[data-nav]').forEach(function(card) {
+    card.addEventListener('click', function(e) {
+      e.preventDefault();
+      var sectionId = this.getAttribute('data-nav');
+      showSection(sectionId);
+    });
+  });
+})();
+
+// Botón flotante volver al inicio
+(function() {
+  var fab = document.getElementById('homeFab');
+  if (!fab) return;
+
+  fab.addEventListener('click', function() {
+    showSection('cap-home');
+  });
+
+  var observer = new MutationObserver(function() {
+    var homeSection = document.getElementById('cap-home');
+    if (homeSection && homeSection.classList.contains('active')) {
+      fab.classList.remove('visible');
+    } else {
+      fab.classList.add('visible');
+    }
+  });
+
+  var homeSection = document.getElementById('cap-home');
+  if (homeSection) {
+    observer.observe(homeSection, { attributes: true, attributeFilter: ['class'] });
+  }
+})();

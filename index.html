@@ -43,7 +43,11 @@
         <div class="nav-section">
           <span class="nav-section-title">Informacion</span>
 
-          <a href="#cap-1" class="nav-item active" data-section="cap-1">
+          <a href="#cap-home" class="nav-item active" data-section="cap-home">
+            <span class="nav-label">Inicio</span>
+          </a>
+
+          <a href="#cap-1" class="nav-item" data-section="cap-1">
             <span class="nav-label">Perfil Institucional</span>
           </a>
 
@@ -97,16 +101,33 @@
         <div class="nav-section">
           <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
             <span class="toggle-icon">&#9660;</span>
-            Capitulo 3: Derechos y Deberes de los Esducandos
+            Capitulo 3: Derechos y Deberes de los Educandos
           </span>
 
           <a href="#cap-9" class="nav-item" data-section="cap-9">
-            <span class="nav-label">Gestión de Conflictos</span>
+            <span class="nav-label">Derecho de los educandos</span>
           </a>
 
           <a href="#cap-10" class="nav-item" data-section="cap-10">
-            <span class="nav-label">Sanciones y Faltas</span>
+            <span class="nav-label">Derechos Jurídicos</span>
           </a>
+
+          <a href="#cap-12" class="nav-item" data-section="cap-12">
+            <span class="nav-label">Orientacion Sexual</span>
+          </a>
+
+          <a href="#cap-13" class="nav-item" data-section="cap-13">
+            <span class="nav-label">Deberes Academicos y Convivencia</span>
+          </a>
+
+          <a href="#cap-14" class="nav-item" data-section="cap-14">
+            <span class="nav-label">Deberes Lenistas</span>
+          </a>
+
+          <a href="#cap-15" class="nav-item nav-item--red" data-section="cap-15">
+            <span class="nav-label">Faltas</span>
+          </a>
+
         </div>
 
         <div class="nav-section">
@@ -115,17 +136,47 @@
             Capitulo 4: Procedimientos de Concertación
           </span>
 
-          <a href="#cap-12" class="nav-item" data-section="cap-12">
-            <span class="nav-label">Reglamento Interno</span>
-          </a>
 
-          <a href="#cap-13" class="nav-item" data-section="cap-13">
-            <span class="nav-label">Reglas en Instalaciones</span>
-          </a>
+        <div class="nav-section">
+          <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
+            <span class="toggle-icon">&#9660;</span>
+            Capítulo 5: 
+          </span>
+        </div>
 
-          <a href="#cap-14" class="nav-item" data-section="cap-14">
-            <span class="nav-label">Historia Institucional</span>
-          </a>
+        <div class="nav-section">
+          <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
+            <span class="toggle-icon">&#9660;</span>
+            Capítulo 6:
+          </span>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
+            <span class="toggle-icon">&#9660;</span>
+            Capítulo 7:
+          </span>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
+            <span class="toggle-icon">&#9660;</span>
+            Capítulo 8:
+          </span>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
+            <span class="toggle-icon">&#9660;</span>
+            Capítulo 9:
+          </span>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title toggle-title" onclick="toggleSidebarGroup(this)">
+            <span class="toggle-icon">&#9660;</span>
+            Capítulo 10:
+          </span>
         </div>
       </nav>
 
@@ -141,9 +192,71 @@
     <!-- Contenido Principal - Secciones separadas -->
         <main class="content">
 
+<!-- Sección Home: Portada -->
+      <section class="section-panel active" id="cap-home">
+
+        <!-- Tarjeta Hero -->
+        <div class="home-hero">
+          <p class="home-hero-subtitle">Institución Educativa Antonio Lenis</p>
+          <h2 class="home-hero-title">Manual de convivencia</h2>
+          <a href="archives/RESOLUCION_MANUAL_IEANL_2026.pdf" download class="home-hero-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar Manual
+          </a>
+          <span class="home-hero-info">PDF · 7.2 MB</span>
+        </div>
+
+        <!-- Barra de búsqueda -->
+        <div class="home-search">
+          <svg class="home-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="home-search-input" id="homeSearchInput" placeholder="Buscar un artículo del manual" autocomplete="off">
+        </div>
+
+        <!-- Resultados de búsqueda -->
+        <div class="home-search-results" id="homeSearchResults" style="display:none;"></div>
+
+        <!-- Accesos rápidos -->
+        <p class="home-grid-label">Accesos rápidos</p>
+        <div class="home-grid">
+
+          <a href="#cap-1" class="home-card" data-nav="cap-1">
+            <div class="home-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <span class="home-card-title">Info institucional</span>
+            <span class="home-card-desc">Rector, NIT y correos</span>
+          </a>
+
+          <a href="#cap-1" class="home-card" data-nav="cap-1">
+            <div class="home-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span class="home-card-title">Sedes</span>
+            <span class="home-card-desc">Principal, Carrenales y Mercedes Abrego</span>
+          </a>
+
+          <a href="#cap-11" class="home-card" data-nav="cap-11">
+            <div class="home-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
+            </div>
+            <span class="home-card-title">Matrícula</span>
+            <span class="home-card-desc">Inscripción, matrícula y permanencia</span>
+          </a>
+
+          <div class="home-card home-card-pending">
+            <div class="home-card-icon home-card-icon-pending">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <span class="home-card-title">Rutas de atención</span>
+            <span class="home-card-desc">Próximamente</span>
+          </div>
+
+        </div>
+
+      </section>
 
 <!-- Sección 1: Introducción -->
-      <section class="section-panel active" id="cap-1">
+      <section class="section-panel" id="cap-1">
         <div class="section-header">
           
           <h2 class="section-title" style="text-align: center;">INSTITUCIÓN EDUCATIVA ANTONIO LENIS</h2>
@@ -895,87 +1008,789 @@
         </div>
       </section>
 
-      <!-- Sección 9: Gestión de Conflictos (NUEVO) -->
+      <!-- Sección 9: Derecho de los educandos -->
       <section class="section-panel" id="cap-9">
         <div class="section-header">
           <span class="section-num">09</span>
-          <h2 class="section-title">Gestión de Conflictos</h2>
+          <h2 class="section-title">Derecho de los educandos</h2>
         </div>
-        <div style="padding: 20px; color: #666; text-align: center; font-size: 15px;">
-          <p>Contenido en construcción</p>
+
+        <div class="derechos-tabs-bar">
+          <button class="derechos-tab-btn active" data-tab="dtab-derechos">Derecho de los educandos</button>
+          <button class="derechos-tab-btn" data-tab="dtab-estimulos">Estímulos a los y las estudiantes</button>
+          <button class="derechos-tab-btn" data-tab="dtab-salidas">Salidas pedagógicas y días conmemorativos</button>
+        </div>
+
+        <!-- Pestaña 1: Derechos -->
+        <div class="derechos-tab-content active" id="dtab-derechos">
+          <p style="margin-bottom: 16px;">Los derechos de los educandos, están reconocidos dentro del ámbito Constitucional, fundamentalmente en su preámbulo y en los derechos fundamentales, sociales, culturales, económicos y psicológicos, además de los ecológicos, cuyos principios se fundamenten en el respeto a la dignidad humana.</p>
+
+          <p style="margin-bottom: 16px;">Resaltando, que nuestra Institución oficial, NO cuenta con estudiantes, que tengan supra – derechos o que tengan más derechos que los demás, nosotros rendimos culto al artículo 13 de la carta política, y todos somos iguales ante la ley. Lo que traduce que, todos los estudiantes tienen los mismos derechos, pero también, los mismos deberes, prevalecerá, el interés general por encima de un particular.</p>
+
+          <p style="margin-bottom: 16px;">Cuando el educando se matricula en nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; al firmar y legalizar el contrato de matrícula, a voces del artículo 87 de la ley 115 de 1994; adquiere los siguientes derechos:</p>
+
+          <p class="subtitle-green">Derechos de los educandos</p>
+
+          <ol class="derechos-list">
+            <li>Obtener, el día mismo de la matrícula, y al iniciar el año escolar, copia digital y total y precisa información acerca del contenido del presente Manual de Convivencia escolar, para que lo asuma como la carta de navegación indispensable. artículo 2.3.4.2. decreto 1075 de 2015.</li>
+            <li>Ser respetado en su integridad y dignidad personal.</li>
+            <li>No ser discriminado por limitaciones físicas, raza o religión o identidad u orientación o diversidad sexual.</li>
+            <li>Ser valorado, escuchado, orientado y protegido como persona.</li>
+            <li>Recibir formación ciudadana y formación en educación sexual.</li>
+            <li>Seguir el conducto regular y ser objeto de la aplicación del debido proceso establecido por nuestro reglamento, para la solución de cualquier conflicto o dificultad de orden académico, disciplinario o administrativo.</li>
+            <li>Conocer oportunamente los objetivos, la metodología y el sistema evaluativo de cada asignatura. Artículo 2.3.4.2 del decreto 1075 de 2015.</li>
+            <li>Ser evaluado cuantitativa, cualitativa y permanentemente según sus intereses, capacidades, esfuerzos, dedicación en el logro de las competencias con principios de equidad, rectitud y justicia y de acuerdo a lo dispuesto en la Resolución Rectoral que, introduce ajustes y reglamenta dentro de Nuestra Institución educativa oficial, el Sistema Institucional de Evaluación.</li>
+            <li>Participar activamente en el proceso enseñanza-aprendizaje y solicitar aclaraciones y refuerzos cuando los temas no hayan quedado suficientemente claros.</li>
+            <li>Participar oportuna y directamente, en la organización y evaluación Institucional de nuestra Institución.</li>
+            <li>Elegir y ser elegido(a) en la organización del Gobierno Escolar.</li>
+            <li>Desarrollar su creatividad social, científica, artística y deportiva para enriquecer y renovar su cultura personal y representar a nuestra Institución, en cualquiera de estos ámbitos.</li>
+            <li>Disfrutar de momentos de descanso y actividades de recreación y entretenimiento.</li>
+            <li>No ser obligado a presentar más de dos evaluaciones y trabajos escritos en un mismo día.</li>
+            <li>Conocer el observador y los registros a que hubiere lugar en los mismos.</li>
+            <li>Conocer dentro de los cinco (5) días hábiles siguientes a su presentación los resultados de las evaluaciones y trabajos escritos.</li>
+            <li>Conocer los resultados de su rendimiento académico al finalizar cada período antes de ser reportados por el profesor a la plataforma virtual de la Institución para su procesamiento.</li>
+            <li>Conocer, al iniciar el año lectivo, los logros previstos en cada área del grado que curse.</li>
+            <li>Recibir las explicaciones del caso cuando no se cumplan las horas de clases establecidas en el horario.</li>
+            <li>Solicitar segundo evaluador del aspecto cognitivo de conformidad con lo establecido por el Sistema Institucional de Evaluación y Promoción.</li>
+            <li>Utilizar los recursos de la Institución de acuerdo con los reglamentos establecidos para complementar su proceso educativo.</li>
+            <li>Gozar de un horario técnicamente elaborado</li>
+            <li>Gozar del buen trato y consideración de acuerdo a su edad.</li>
+            <li>Ser llamado por su nombre o apellidos y en ningún momento por su número de lista, apodos u otro tipo impersonal y deshumanizante.</li>
+            <li>Gozar de la amistad de sus maestros dentro del respeto y las debidas distancias de moral y de ética, cero intimidades.</li>
+          </ol>
+        </div>
+
+        <!-- Pestaña 2: Estímulos -->
+        <div class="derechos-tab-content" id="dtab-estimulos">
+          <p style="margin-bottom: 16px;">El mayor de los estímulos, será la satisfacción propia del cumplimiento de sus propios deberes, para convertirse en iconos y ejemplo de la identidad Institucional, frente a la comunidad en general, que ve en el alumno y la alumna, el presente y el futuro de toda una nación y una sociedad que espera verdaderos líderes y reales ciudadanos(as) de bien, que sean testimonio de una vida integral de fruto y de carácter positivista y constructivista, en todos sus aspectos. La institución, otorgará estímulos y distinciones a los educandos que se destaquen por su identidad y promoción de los valores y en su excelente comportamiento curricular, tales como el rendimiento académico, excelente comportamiento y cumplimiento estricto y ejemplar del presente Manual de Convivencia Escolar, así como los educandos, que representen con gallardía y orgullo nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; en las diferentes actividades, sociales, lúdicas y recreativas-deportivas; dentro de esos estímulos, resaltan, los siguientes:</p>
+
+          <p class="estimulo-title">MATRÍCULA DE HONOR</p>
+          <p style="margin-bottom: 16px;">La matrícula de honor podrá otorgarse a los estudiantes de primero (1º) a décimo (10º) grado que cumplan los siguientes requisitos:</p>
+          <ol class="derechos-list">
+            <li>Su desempeño académico en cada uno de los períodos del año lectivo haya sido ALTO o SUPERIOR.</li>
+            <li>Distinguido por la correspondiente Comisión de Evaluación y Promoción como un estudiante respetuoso, colaborador y responsable de sus obligaciones.</li>
+          </ol>
+          <p style="margin-bottom: 16px;">La matrícula de honor se conferirá a los estudiantes de 1º a 10º grado a través de las respectivas Comisiones de Evaluación Promoción; la entrega de esta distinción, representada en diploma, se hará en la sesión de clausura del respectivo año lectivo y constará en el correspondiente folio del libro de registro Escolar de Valoración, en los certificados que de ese año le sean extendidos al estudiante que la obtuvo y en el cuadro de honor que para tal fin habilitará la Institución.</p>
+
+          <p class="estimulo-title">RECONOCIMIENTO PÚBLICO</p>
+          <p style="margin-bottom: 16px;">Con imposición de medallas, diplomas o entrega de trofeos a los estudiantes que, en representación de la Institución, del Municipio, del Departamento o de la Nación se distingan por el logro de éxitos en certámenes de carácter académico, científicos, culturales o deportivos.</p>
+          <p style="margin-bottom: 16px;">El Reconocimiento a la investigación se otorgará cuando el trabajo cumpla con los siguientes requisitos:</p>
+          <ol class="derechos-list-letters">
+            <li>El tema de investigación sea de actualidad o de interés para la Comunidad Educativa.</li>
+            <li>Que constituya una innovación.</li>
+            <li>Estén orientados a plantear soluciones a problemas específicos o a la verificación de alguna teoría o a la aplicación de conocimientos.</li>
+            <li>Que la metodología empleada sea clara.</li>
+          </ol>
+          <p style="margin-bottom: 16px;">El acto de reconocimiento a la Investigación se hará mediante resolución interna y el (los) autor(es) del trabajo recibirá(n) atención especial de parte de la institución para continuar en esta línea de formación además del apoyo necesario para la publicación de los trabajos adelantados.</p>
+          <p style="margin-bottom: 16px;">El Consejo Directivo evaluará los trabajos de investigación aspirantes al reconocimiento o podrá delegar tal función si así lo estima conveniente.</p>
+
+          <p class="estimulo-title">PREMIO AL RESULTADO</p>
+          <p style="margin-bottom: 16px;">Se otorgará, en la ceremonia de graduación, a los estudiantes de UNDÉCIMO GRADO en cada uno de los siguientes casos:</p>
+          <ol class="derechos-list">
+            <li>Mayor puntaje sobre 70 en cualquiera de las pruebas del núcleo común de los exámenes de Estado (PRUEBAS SABER 11).</li>
+            <li>Ser clasificado por el ICFES, con base en los resultados de las pruebas SABER 11, entre los cinco (5) primeros puestos.</li>
+            <li>Mayor promedio, por encima de CINCUENTA (50), calculado entre los puntajes obtenidos en las áreas del núcleo común de las pruebas SABER 11.</li>
+            <li>Mejor bachiller por jornada; otorgado a quien obtenga el mayor promedio, por encima de TRES PUNTO NUEVE (3.9) en los resultados finales de cada año lectivo durante los seis (6) años del bachillerato.</li>
+            <li>Concursos de estudiantes de Grado Undécimo: según reglamentación expedida por el Consejo Directivo.</li>
+            <li>Nivel Competitivo: Reconocido a los estudiantes que obtengan distinciones significativas en competencias de carácter académicas, científicas, culturales o deportivas en las cuales participe llevando la representación de la Institución.</li>
+          </ol>
+
+          <p class="estimulo-title">IZAR LA BANDERA NACIONAL</p>
+          <p style="margin-bottom: 16px;">IZAR LA BANDERA NACIONAL, del Departamento, del municipio o de la Institución cuando se destaque durante el período por su rendimiento académico y buen comportamiento.</p>
+
+          <p class="estimulo-title">RECONOCIMIENTO AL ESFUERZO</p>
+          <p style="margin-bottom: 16px;">Se otorgará en dos (2) clasificaciones al terminar cada período académico incluido el resultado final, así:</p>
+          <p style="margin-bottom: 16px;"><strong>A. POR PUESTO INDIVIDUAL:</strong> Corresponderá a los tres (3) primeros puestos por curso, grado, jornada, sede e institución de conformidad con los requerimientos establecidos para asignación de puestos.</p>
+          <p style="margin-bottom: 16px;"><strong>B. POR PUESTO GRUPAL:</strong> A un (1) curso del ciclo de básica secundaria o nivel de media de la Institución que alcance los siguientes resultados:</p>
+          <ol class="derechos-list-letters">
+            <li>Por lo menos el 80% de sus estudiantes aprueban TODAS las áreas sin que se presenten, en ningún caso, vacíos de notas.</li>
+            <li>Mínimo el 95% de los estudiantes del grupo demuestran prácticas de excelente conducta y disciplina.</li>
+          </ol>
+          <p style="margin-bottom: 16px;">Si más de un grupo obtuviera estos resultados, el curso acreedor al correspondiente estímulo será el que presente mayor promedio, calculado entre las notas obtenidas en todas las áreas obligatorias y optativas del plan de estudio. Si se presentara empate, éste se resolverá atendiendo, en estricto orden, al mayor promedio en Matemáticas, Lengua Castellana y Ciencias Sociales; de persistir el empate se recurrirá a la menor desviación estándar.</p>
+          <p style="margin-bottom: 16px;">Los estudiantes que obtengan primero, segundo y tercer puesto en cada período, incluido el resultado final, se les otorgará un diploma de reconocimiento al rendimiento académico que les será entregado en la correspondiente sesión de entrega de informes a los padres y madres de familia y cuidadores. Además, los nombres de estos estudiantes se harán figurar en el cuadro de honor que la institución dispondrá para tales fines.</p>
+          <p style="margin-bottom: 16px;">El grupo de básica primaria conformado por los estudiantes que obtengan el primer puesto por curso, disfrutará de una jornada deportiva y cultural o de la visita a sitios históricos, culturales y/o recreativos. Además, tal distinción figurará en el cuadro de honor de la institución.</p>
+          <p style="margin-bottom: 16px;">Para el ciclo de secundaria y el nivel de media, el grupo que obtenga primer puesto recibirá como estímulo adecuaciones físicas requeridas en la respectiva aula o en su defecto la instalación de una ayuda educativa o podrá disfrutar de una jornada deportiva y cultural o de la visita a sitios históricos, culturales y/o recreativos. Además, tal distinción figurará en el cuadro de honor de la institución</p>
+
+          <p class="estimulo-title">ASIGNACIÓN DE BECAS</p>
+          <p style="margin-bottom: 16px;">De conformidad con la reglamentación expedida por el Consejo Directivo en cada caso.</p>
+
+          <div style="background: #f3f3f3; border: 1px solid #d8d8d8; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; box-shadow: inset 0 0 4px rgba(0,0,0,0.05);">
+            <details style="margin-bottom: 0;">
+              <summary style="cursor: pointer; font-weight: 700; color: var(--red);">PARÁGRAFO</summary>
+              <p style="padding: 12px 0 0 0; margin-bottom: 0;">Para efectos de asegurar el cumplimiento de la política de estímulos a los estudiantes por parte de la Institución, la Coordinación Académica de la sede Bachillerato y las Coordinaciones de las sedes de Preescolar y Básica Primaria, con el apoyo de las respectivas Comisiones de Evaluación y Promoción, llevarán un estricto seguimiento al desempeño de los educandos, tanto desde lo individual como de lo grupal, en concordancia con lo dispuesto por el Acuerdo 087 del 21 de Octubre de 2009 y lo establecido en el presente artículo, e informará al Consejo Directivo acerca de los estudiantes y/o grupos de estudiantes que se hagan acreedores a los estímulos correspondientes.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Pestaña 3: Salidas pedagógicas -->
+        <div class="derechos-tab-content" id="dtab-salidas">
+          <p style="margin-bottom: 16px;">Teniendo en cuenta que las Salidas Pedagógicas propician aprendizajes significativos y generan actitudes dinámicas y críticas en los educandos, se podrán programar cada año lectivo frente a la Coordinación de Convivencia en conjunto con la Coordinación Académica, salidas pedagógicas o convivenciales con el objetivo de reforzar las temáticas académicas, de culturizar en diferentes aspectos según las opciones encontradas, de fortalecer el vínculo, la identidad institucional y la armonía entre los grupos.</p>
+
+          <p style="margin-bottom: 16px;">Acorde con los lineamientos de la Directiva Ministerial 55 del 18 de diciembre de 2014, nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; cumple las siguientes directrices, con el fin de garantizar, la seguridad e integridad de las personas que participan en las salidas pedagógicas:</p>
+
+          <p class="estimulo-title">PLANEACIÓN</p>
+          <p style="margin-bottom: 16px;">Para cada Salida Pedagógica se determinará el número de acompañantes adultos de acuerdo a la edad y número de educandos. A todas las salidas pedagógicas, asistirá un representante de la Coordinación de Convivencia, y los acudientes que lo deseen, según sea el caso.</p>
+          <p style="margin-bottom: 16px;">Toda salida pedagógica en conjunto, deberá contener por escrito, con su objetivo, destino, cronograma, teléfonos de contacto, implementos mínimos a llevar por parte del educando, puntos de salida y regreso, será comunicada con la debida antelación (mínimo 8 días) a los padres de familia por medio del formato diseñado para éste fin.</p>
+          <p style="margin-bottom: 16px;">Cada padre deberá autorizar, la salida pedagógica, diligenciando el formato para este fin, y reportar las condiciones especiales de cuidado (enfermedades, alergias, medicamentos, etc.) de su hijo(a).</p>
         </div>
       </section>
 
-      <!-- Sección 10: Sanciones y Faltas (NUEVO) -->
+      <!-- Sección 10: Derechos Jurídicos -->
       <section class="section-panel" id="cap-10">
         <div class="section-header">
           <span class="section-num">10</span>
-          <h2 class="section-title">Sanciones y Faltas</h2>
+          <h2 class="section-title">Derechos Jurídicos</h2>
         </div>
-        <div style="padding: 20px; color: #666; text-align: center; font-size: 15px;">
-          <p>Contenido en construcción</p>
+
+        <p class="sec-main-title">DERECHOS JURÍDICOS DE LOS EDUCANDOS.</p>
+
+        <p>El educando matriculado en nuestra institución OFICIAL: I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE; además de los derechos contemplados en los acuerdos Internacionales, en la Constitución Política de Colombia, El Código de la Infancia y la adolescencia 1098º de 2006, la protección que les genera la Carta Magna, las sentencias de la Corte Constitucional, Sentencias de la Corte Suprema de Justicia, y aunado a ello, la ley 1146º de 2007 y la ley 1620º de 2013, Decreto 1965º de 2013 y Decreto 860º de 2010, así como el decreto 1075 de 2015; y los que le otorga su identidad y dignidad intrínseca y las leyes de la República. De manera que cuando el educando se matricula en nuestra Institución educativa oficial, adquiere, y en adelante gozará, de los siguientes derechos, como mínimo:</p>
+
+        <ol class="derechos-list">
+          <li>El estudiante o la Estudiante, tiene derecho a obtener, el día mismo de la matrícula, al iniciar el año escolar, la información total y clara sobre las normas y cánones que promueve el presente Manual de Convivencia Escolar, para acatarlos por convicción y cumpliendo a cabalidad lo que promueve la ley 1098 de 2006 o Código de infancia y adolescencia. Brindando estricto cumplimiento a la Ley de Infancia 1098 de 2006; en sus artículos 7 y artículo 15. Y decreto 1075 de 2015, artículo 2.3.4.2.</li>
+          <li>El estudiante o la Estudiante, tiene derecho a ser respetado en su integridad y dignidad personal, brindando estricto cumplimiento a la Ley de Infancia y Adolescencia 1098 de 2006, en sus artículos 18 y artículo 44 numeral 4.</li>
+          <li>El estudiante o la Estudiante, tiene derecho a respetar no solo su propio ser, sino el de los demás en acatamiento a la sentencia de la corte constitucional que declara.</li>
+        </ol>
+
+        <p>Para ello, entiéndase dentro del presente Manual de Convivencia, que el concepto claro de <span class="hl-green">Dignidad</span> que significa: "calidad de digna". Deriva del adjetivo latino "dignus", se traduce por "valioso"; es el sentimiento que nos hace sentir valiosos, sin importar nuestra vida material o social.</p>
+
+        <p>La dignidad, se basa en el reconocimiento de la persona de ser merecedor de respeto, es decir que todos merecemos respeto sin importar como seamos, atendiendo incluso, lo señalado por la Honorable Corte Constitucional. De igual manera el educando, tiene derecho a explorar, avanzar y, dar a conocer su <span class="hl-green">libre desarrollo de la personalidad</span>, sin que con ello, afecte de manera negativa, induciendo, coercitando, estimulando, constriñendo o induciendo, a los demás educandos y en especial deben actuar y proceder con el debido respeto hacia la primera infancia, tal y como lo señala la corte constitucional aduciendo:</p>
+
+        <div class="quote-block">
+          <p>"Al interpretar el artículo 16 de la Constitución que consagra el derecho al libre desarrollo de la personalidad, la corte constitucional y la doctrina han entendido que: ―ese derecho consagra una protección general de la capacidad que la Constitución reconoce a las personas para auto determinarse, esto es, a darse sus propias normas y desarrollar planes propios de vida, siempre y cuando no afecten derechos de terceros". Corte Constitucional, <span class="hl-green">Sentencia C-481 de 1998</span>.</p>
         </div>
+
+        <p>Igualmente existe un <span class="hl-green">programa de orientación sexual, a manera de proyecto transversal, (artículo 20 de ley 1620 de 2013)</span> dirigido a <span class="hl-red">los educandos mayores de catorce (14º) años de edad</span>, liderado por personal idóneo en el tema, el cual apoya, la construcción del proyecto de vida de cada uno de nuestros educandos, y acompañado de talleres escuela de padres en el tema de orientación sexual, y conferencias para los educandos, para que se brinde estricto acato a lo ordenado por la Honorable Corte Constitucional, en materia de la inclusión, la orientación sexual y la diversidad de género, Corte Constitucional, caso Sergio Urrego, <span class="hl-red">Sentencia 478 de 2015</span>. Igualmente, reposa de manera taxativa, en ese mismo tema, el abordaje de la orientación sexual, en punto del tratamiento con <span class="hl-red">los menores de dieciocho (18) años de edad, y mayores de catorce (14) años de edad</span>, y en ese aspecto, estos programas se presentan como anexos al presente Manual de Convivencia de manera taxativa, así: Igualmente, en acato estricto a lo ordenado por la Corte Constitucional, en materia de diversidad sexual y afines, existe un programa de orientación sexual, a manera de proyecto transversal, dirigido a <span class="hl-red">los educandos mayores de catorce (14º) años de edad</span>, liderado por personal idóneo en el tema, el cual apoya, la construcción del proyecto de vida de cada uno de nuestros educandos, y acompañado de talleres escuela de padres en el tema de orientación sexual, y conferencias para los educandos, para que se brinde estricto acato a lo ordenado por la Honorable Corte Constitucional, en materia de la inclusión, la orientación sexual y la diversidad de género. Igualmente, reposa de manera taxativa, en ese mismo tema, el abordaje de la orientación sexual, en punto del tratamiento con <span class="hl-red">los menores de dieciocho (18) años de edad, y mayores de catorce (14) años de edad</span>, y su interacción con <span class="hl-red">los menores de catorce (14) años de edad</span>.</p>
+
+        <p>En ese aspecto, estos programas, así como el texto taxativo de la forma como deben comportarse <span class="hl-red">los mayores de 14 años de edad</span>, en punto de la vulneración a <span class="hl-red">los menores de 14 años de edad</span>, en materia de su libertad, integridad y formación sexuales, como bien jurídico, especialmente protegido, se presenta como anexo al presente Manual de Convivencia de manera taxativa</p>
       </section>
 
 
 
-<!-- Sección 10: Reglamento Interno -->
+<!-- Sección 12: Orientación Sexual -->
        <section class="section-panel" id="cap-12">
         <div class="section-header">
           <span class="section-num">12</span>
-          <h2 class="section-title">Reglamento Interno</h2>
+          <h2 class="section-title">Orientación Sexual</h2>
         </div>
         
-        <p class="section-intro">El reglamento interno establece las normas específicas que rigen el funcionamiento diario de la institución.</p>
+        <p class="sec-main-title">ORIENTACION SEXUAL</p>
 
-        <div class="regulations">
-          <div class="regulation">
-            <div class="reg-icon">🏕️</div>
-            <div class="reg-content">
-              <h3>Jornada Escolar</h3>
-              <p>La jornada inicia a las <strong>6:30 a.m.</strong> y finaliza a la <strong>1:00 p.m.</strong> Los estudiantes deben estar en sus salones antes del toque del timbre.</p>
-            </div>
-          </div>
-          <div class="regulation">
-            <div class="reg-icon">🚪</div>
-            <div class="reg-content">
-              <h3>Salida de la Institución</h3>
-              <p>Durante la jornada, ningún estudiante puede abandonar las instalaciones sin autorización escrita del acudiente y visto bueno de coordinación.</p>
-            </div>
-          </div>
-          <div class="regulation">
-            <div class="reg-icon">📱</div>
-            <div class="reg-content">
-              <h3>Uso de Dispositivos Electrónicos</h3>
-              <p>El uso de celulares está restringido durante las clases. Solo se permite en descansos y para fines académicos con autorización del docente.</p>
-            </div>
-          </div>
+        <p class="estimulo-title-red">SENTENCIA DE TUTELA CORTE CONSTITUCIONAL, T – 565 DE 2013.</p>
+
+        <p class="estimulo-title">DERECHO A LA IDENTIDAD SEXUAL Y DE GENERO-Prohibición de discriminación en establecimientos educativos en razón de la opción sexual</p>
+
+        <p>Las decisiones que toma el sujeto respecto a su reconocimiento en la identidad y orientación sexual hacen parte del núcleo esencia de su dignidad, libertad y autonomía. Debe tenerse en cuenta la jurisprudencia de la Corte ha contemplado que la regla de prohibición de discriminación fundada en la opción sexual resulta aplicable, de manera específica, en el ámbito educativo.</p>
+
+        <p>Aquellos tópicos relativos a la decisión sobre la opción sexual, entendida en su doble condición de identidad u orientación, son asuntos que competen a la esfera íntima del individuo y que ejerce bajo su completa autonomía.</p>
+
+        <p>Esto trae como consecuencia que resulten contrarios a la Constitución, particularmente a los derechos a la dignidad humana, el libre desarrollo personalidad y la igualdad, aquellos comportamientos de terceros que estén dirigidos a (i) privilegiar determinada identidad u orientación sexuales como preferibles o sujeto de promoción respecto de otras; (ii) imponer, sugerir o conducir a otros hacia determinada opción sexual; y (iii) disponer sanciones en razón que el individuo no siga un patrón mayoritario de identidad u orientación sexual.</p>
+
+        <p>Esta prohibición incluye la inconstitucionalidad de la fijación de sanciones que impidan que el sujeto ejerza acciones que le permitan autoidentificarse dentro de dicha identidad u orientación que ha determinado para sí, en ejercicio de su irrestricta libertad y autonomía para ello. Adicionalmente, estas reglas resultan particularmente aplicables al ámbito educativo, en la medida en que está concebido como un espacio que promueve el pluralismo, el respeto a la diferencia y, en particular, los valores democráticos que informan al Estado Constitucional. Esto implica que el hecho que los estudiantes opten, en ejercicio de su autonomía y con plena conciencia, por una opción sexual diversa, no puede constituir una falta disciplinaria, ni menos aún un fundamento constitucionalmente válido para la imposición de sanciones en el ámbito educativo, particularmente la suspensión.</p>
+
+        <p><span class="hl-green">ARMONIZANDO,</span> los anteriores conceptos jurisprudenciales de la corte constitucional, y ampliando los mismos, tenemos que recordar y aclarar a los acudientes y a la comunidad escolar en pleno, que esta jurisprudencia, Sentencia 478 de 2015; únicamente aplica para los educandos MAYORES DE 14º AÑOS DE EDAD, como quiera que tal pronunciamiento, se refiere a un adolescente de identidad sexual diversa con quince (15) años de edad y a otro adolescente de identidad sexual diversa de diecisiete (17) años de edad.</p>
+
+        <p>Lo que NO significa en momento alguno, que se presente su orientación sexual diversa, como una excusa, para que los educandos mayores de catorce (14) años, que ya son judicializables, a través de restablecimiento de derechos, incurran en actos sexuales abusivos al interior de la escuela, puesto que el discurso de nuestra Institución educativa oficial en materia de orientación sexual, es bidireccional, eso traduce que los mayores de catorce (14) años de edad, tienen garantizado a plenitud, dentro de nuestra Institución educativa oficial, el goce de todos sus derechos como comunidad LGTBIQ+ o de orientación sexual diversa, pero que de la mano de sus derechos, tienen la inexcusable e inaplazable e indelegable, obligación de cumplir con sus deberes penales, civiles, administrativos y disciplinarios, como los académicos y curriculares, al igual que la población heterosexual, en igualdad de condiciones.</p>
+
+        <p>Y que, en conexidad, con ello, el educando, tiene como compromiso dentro del presente Manual de Convivencia, que se obliga a cumplir, al suscribir su matrícula y acatarlo por convicción, en libre aceptación, en especial, <span class="hl-green">el compromiso de:</span></p>
+
+        <div class="commit-block">
+          <p>No participar, mantener, sostener, realizar, ni promover actitudes, comportamientos ni escenas obscenas, eróticas, o sexuales degradantes, explicitas e irrespetuosas, dentro de las instalaciones de nuestra institución, ni por fuera de la misma, cuando esté portando el uniforme de nuestra Institución educativa oficial, actuaciones y hechos, realizados por pares adolescentes heterosexuales, homosexuales, lesbianas o bisexuales, transexuales o intersexuales, o LGTBIQ+, cuando sean mayores de catorce (14º) años; mostrando con ello, su calidad y dignidad humana y sus valores morales y respeto por su propio cuerpo y respeto por su dignidad intrínseca, y su propia intimidad personal.</p>
         </div>
 
-        <div class="tags">
-          <span class="tag">Jornada</span>
-          <span class="tag">Normas</span>
-          <span class="tag">Organización</span>
-          <span class="tag">Disciplina</span>
+        <p>Así como el respeto propio por la inviolabilidad de su derecho a la intimidad, en armonía con los derechos de la primera infancia y el debido respeto por los derechos de los demás, como limite a sus derechos y facultades. Igualmente velando por la integridad moral en su proceder y sus buenas prácticas, como un ejemplo hacia la primera infancia de nuestra institución, y sobre todo la comprensión del hecho indiscutible del respeto por la intimidad, para las acciones y comportamientos de Índole sexual y erótico – sexual en pareja.</p>
+
+        <p>Entendiendo que la intimidad respecto de las manifestaciones erótico – sexuales en pareja, son la base de cualquier relación afectuosa sustentada en el respeto y la responsabilidad, que conlleva la madurez y el disfrute sexual.</p>
+
+        <p>Aterrizando lo anterior, frente a la jurisprudencia de la Corte Constitucional, cuando el alumno o alumna mayor de catorce (14º) años, de manera ininteligible, incurra en actos sexuales inapropiados con menores de catorce (14º) años de edad, o delante de ellos, o en presencia de los menores de catorce (14º) años, conforme a lo consagrado en las normas penales y jurídicas vigentes, será objeto de remisión a las autoridades de Policía de Infancia y Adolescencia como corresponde al artículo 44º numeral 9 de ley 1098 de 2006 y artículos 11, 12 y 15 de Ley 1146º de 2007, actuando en punto del artículo 209 del Código Penal Colombiano.</p>
+
+        <p>Y de los artículos 18 literal 4 y 19 de la ley 1620 de 2013. Así como de la directiva 01 del 04 de marzo de 2022, emanada del M.E.N.</p>
+
+        <p>A ese respecto, debe recordarse, que el libre desarrollo de la personalidad <span class="hl-red">NO ES UN DERECHO ABSOLUTO</span>, y que debe al igual que los demás derechos, entrar en clara y absoluta ponderación de derechos, máxime dentro de un ámbito escolar que incluye la interacción con niños y niñas de primera infancia, es decir entre 0 y 6 años, y adolescentes entre 0 y 12 años; conforme a lo que señala, el artículo 03º de la Ley 1098º de 2006. Veamos, lo que indica, el artículo 29º de la Ley 1098º de 2006:</p>
+
+        <p class="estimulo-title">Artículo 29. Derecho al desarrollo integral en la primera infancia</p>
+
+        <div class="quote-block">
+          <p>La primera infancia es la etapa del ciclo vital en la que se establecen las bases para el desarrollo cognitivo, emocional y social del ser humano. Comprende la franja poblacional que va de los cero (0) a los seis (6) años de edad. Desde la primera infancia, los niños y las niñas son sujetos titulares de los derechos reconocidos en los tratados internacionales, en la Constitución Política y en este Código. Son derechos impostergables de la primera infancia, la atención en salud y nutrición, el esquema completo de vacunación, la protección contra los peligros físicos y la educación inicial. En el primer mes de vida deberá garantizarse el registro civil de todos los niños y las niñas.</p>
         </div>
+
+        <p>Emerge entonces, claro, pertinente y lógico, señalar, que los adolescentes matriculados en nuestra Institución educativa oficial, indiferente de su orientación y condición sexual, sea esta heterosexual, homosexual, lésbica, o bisexual, transexual o intersexual, NO ESTÁN AUTORIZADOS y tampoco tienen vía libre para desarrollar, sus actuaciones erótico – sexuales, en frente de los menores de catorce (14) años, y mucho menos en frente de los niños y niñas de la primera infancia, (0 a 6 años de edad), reiterando que ello, sin importar si su condición sea heterosexual, homosexual, lésbica o bisexual, intersexual o transexual; pues ello se desprende del código penal colombiano. Aclarando, de manera taxativa, tajante y específica, que lo reprochable, no es su condición o su orientación sexual, lo reprochable y delictual, obedece a lo consagrado en el artículo 209 del código penal vigente.</p>
+
+        <p>De modo, que la Jurisprudencia, ha indicado en Colombia, a través de Sentencia de unificación del 5 de noviembre de 2008, expediente 30.305. Magistrado Ponente: Augusto J. Ibáñez Guzmán, en la cual, la Corte Suprema de Justicia, estableció que:</p>
+
+        <div class="quote-block">
+          <p>"los tocamientos corporales no consentidos, realizados sin violencia sobre personas capaces, configuran el delito de injuria por vías de hecho y que, por el contrario, tratándose de niños y de persona incapaz, el legislador penalizó la conducta de actos sexuales abusivos aun sin que fuera violenta, pudiéndose tipificar ese punible bajo cualquiera de estas tres conductas:</p>
+        </div>
+
+        <p>Aclarando para el presente texto de Manual de Convivencia escolar, que NO se trata de salir a declarar, como abusadores sexuales, o como violadores a todos los educandos entre 14 y 18 años que se besen, acaricien y realicen sus actuaciones erótico-sexuales al interior, de las instalaciones de nuestra Institución educativa oficial, o portando el uniforme institucional, sea su condición heterosexual, homosexual, lésbica, o bisexual, transexual o intersexual. Ello es absurdo.</p>
+
+        <p>Pero de otro lado, tampoco, por el contrario, se trata de que se exprese de manera "absolutamente irresponsable y temeraria" que los adolescentes entre 14 y 18 años, heterosexuales, homosexuales, lesbianas, bisexuales, transexuales o intersexuales, pueden hacer y deshacer con su cuerpo y sus manifestaciones sexuales de cariño, sin una ponderación proporcional, y una regulación específica, y una clara limitación parcial, en aras de respetar, el derecho de los demás, especialmente de los menores de 14 años de edad. Artículo 209 del código penal.</p>
+
+        <p>Máxime dentro de un ámbito escolar que incluye la interacción con niños y niñas de primera infancia, es decir entre 0 y 6 años, y adolescentes entre 0 y 12 años, pues el acceso al libre desarrollo de la personalidad NO es un derecho absoluto y está condicionado a que no afecte derechos de terceros.</p>
+
+        <p>Además, porque la Jurisprudencia ha indicado que los <span class="hl-red">ACTOS SEXUALES ABUSIVOS CON MENORES DE 14 AÑOS</span>, se constituyen y traducen, como:</p>
+
+        <ul class="actos-list">
+          <li>Besos exagerados o lúbricos.</li>
+          <li>Caricias en partes íntimas en público.</li>
+          <li>Manoseos exagerados o lúbricos.</li>
+        </ul>
+
+        <p>De modo, que se incurre en este delito, por acción, cuando se desarrolla el acto sexual (1) con menor de catorce años, (2) en presencia de menores de catorce años, o (3) cuando se induce al menor de catorce años a realizar actos sexuales, pero también (4) cuando conociendo de estos hechos, se acude a ocultarlos o a omitir una acción que debía ser ejercida en favor y protección de los educandos.</p>
+
+        <p class="estimulo-title-red">CONCLUSIONES.</p>
+
+        <p>De los actos sexuales abusivos con menor de catorce (14º) años. Es claro y emerge del todo cristalino, que un, o una adolescente mayor de catorce (14º) años, que ya, es absolutamente judicializable, en restablecimiento de derechos, artículo 139 de ley 1098 de 2006; puede incurrir en la comisión de un delito de actos sexuales abusivos con menor de catorce años cuando:</p>
+
+        <ol class="faltas-list">
+          <li>Siendo mayor de catorce (14) años, sostiene o desarrolla manifestaciones de tocamientos, caricias, manoseos o besos con un o una menor de catorce (14) años, pues el menor de catorce años, a la luz de la Sentencia de unificación de la Corte Suprema de Justicia, es una persona incapaz de entender, la relación sexual.</li>
+          <li>Cuando siendo mayor de catorce (14) años, un o una adolescente, sostiene actuaciones erótico-sexuales en presencia de menores de catorce (14) años.</li>
+          <li>Cuando un mayor de catorce (14) años, induce a prácticas sexuales a un menor de catorce años.</li>
+          <li>Por omisión y complicidad, cuando conociendo de estos hechos, se acude a ocultarlos o a omitir una acción que debía ser ejercida en favor y protección de los educandos.</li>
+        </ol>
+
+        <p>Estas cuatro (4) circunstancias, INDEPENDIENTE DE SU CONDICIÓN U ORIENTACIÓN SEXUAL: HETEROSEXUAL, HOMOSEXUAL, LESBICA, TRANSEXUAL, INTERSEXUAL O TRANSEXUAL, TRANSGENERO O BISEXUAL, constituyen delito o infracción de ley; pues se violenta o vulnera el bien jurídico tutelado, que para el caso es la libertad, formación e integridad sexuales, puesto que, La Corte Suprema de Justicia, indica que el legislador, al consagrar este tipo penal, quiso prohibir cualquier ejercicio de sexualidad en los menores de Catorce (14) años, porque se presume la incapacidad para la libre disposición sexual, y que estos actos sexuales cometidos sobre ese grupo poblacional; afectan el desarrollo de su personalidad, y pueden producir alteraciones importantes que incidan luego en su vida y equilibrio futuro.</p>
+
+        <p>En otro pronunciamiento, de la Corte Suprema de Justicia, respecto del tema de la conducta sexual, se indicó respecto de la <span class="hl-red">CONDUCTA SEXUAL ABUSIVA CON MENOR DE 14 AÑOS</span>.</p>
+
+        <p>Todo lo anterior, nos dirige, a generar una minuciosa reflexión, abordaje, análisis y comparación, para lograr ponderar de manera asertiva, los derechos de unos y de otros, entre los educandos, y así mismo, desarrollar: una limitación que, sin ser prohibitoria o restrictiva del todo, si se dirija a <span class="hl-red">LIMITAR PARCIALMENTE</span>;</p>
+
+        <p>Reiteramos, parcialmente, regular, las manifestaciones erótico-sexuales y afectivas de los educandos, de los alumnos y alumnas de nuestra Institución educativa oficial, armonizando especialmente, con el artículo 25º y artículo 209º del Código Penal Colombiano y los artículos 11, 12 y 15 de Ley 1146º de 2007, y demás normas afines de protección a la infancia y la adolescencia, así como de la Directiva 01 del 04 de marzo de 2022.</p>
+
+        <p>Protegiendo, con absoluto y especial énfasis en los niños y niñas de la Primera Infancia, y menores de 14 años de edad; que debe por principio Constitucional de Publicidad, reposar de manera taxativa, dentro del texto de los manuales de convivencia escolar en todo el país. Como ocurre para nuestro caso.</p>
+
+        <p>Por tal motivo, para el presente Manual de Convivencia escolar, se ha establecido por parte del Consejo Directivo de nuestra Institución Educativa oficial a través de nuestra autonomía institucional; y ajustado a la jurisprudencia, que se ha citado previamente; que deben regularse y someter a una limitación parcial: las manifestaciones erótico sexuales y muestras de cariño entre pares escolarizados, que se desarrolle entre mayores de 14 años de edad, y aclarando tajantemente, que las relaciones emocionales y erótico sexuales de los mayores de 14 años con menores de 14 años, en nuestra Institución educativa oficial, a voces del artículo 209 del código penal, <span class="hl-red">NO PUEDEN EXISTIR</span></p>
       </section>
 
-      <!-- Sección 13: Reglas en Instalaciones (NUEVO) -->
+      <!-- Sección 13: Deberes Académicos y de Convivencia -->
       <section class="section-panel" id="cap-13">
         <div class="section-header">
           <span class="section-num">13</span>
-          <h2 class="section-title">Reglas en Instalaciones</h2>
+          <h2 class="section-title">Deberes Académicos y de Convivencia</h2>
         </div>
-        <div style="padding: 20px; color: #666; text-align: center; font-size: 15px;">
-          <p>Contenido en construcción</p>
+
+        <div class="deberes-tabs-bar">
+          <button class="deberes-tab-btn active" data-tab="dtab-deberes">Deberes Académicos</button>
+          <button class="deberes-tab-btn" data-tab="dtab-convivencia">Deberes de Convivencia</button>
+        </div>
+
+        <div class="deberes-tab-content active" id="dtab-deberes">
+          <p class="sec-main-title">DEBERES ACADÉMICOS DEL O LA ESTUDIANTE</p>
+
+          <p>Así como los educandos tienen derechos, los cuales han sido reconocidos en el presente Manual de Convivencia, correlativamente tienen obligaciones o deberes. En este sentido, directivas, docentes y padres de familia, desean inculcar a los educandos, la importancia de su cumplimiento, soportados en valores como el respeto, la honestidad, la afectividad, la responsabilidad y la lealtad a la institución. <span class="hl-green">Artículo 87 de la ley 115 de 1994.</span></p>
+
+          <p>Es menester, aclarar que, el presente Manual de Convivencia, rinde estricto acato a las normas y a las leyes, a lo legislado y a lo reglado por la constitución y las leyes, y al apego por la jurisprudencia, de las altas cortes y que, para el presente manual de convivencia, se entiende en estricto acato al <span class="hl-green">artículo 87 de la ley 115 de 1994</span>, que es el origen y la concepción de los deberes del educando, que va ligado en conexidad con el <span class="hl-green">artículo 96 de ley 115 de 1994</span> y que materializa la potestad y autonomía escolar, para definir bajo qué criterios se cancela una matrícula o se sanciona al educando, es manifiesto que para nuestro manual, la interpretación equivocada, y por cierto ilícita, de que, las faltas han desaparecido de los manuales de convivencia, <span class="hl-red">NO tiene un soporte o asidero jurídico</span>.</p>
+
+          <p>Puesto que los <span class="hl-green">artículos 87 y 96 de ley 115 de 1994, artículo 139 de ley 1098 de 2006</span> y <span class="hl-green">artículos 25 y 414 del código penal colombiano</span>, y <span class="hl-green">artículos 2346 y 2348 del código civil</span>, siguen absoluta, total y completamente, <span class="hl-green">vigentes</span>.</p>
+
+          <div class="commit-block">
+            <p>De otro lado, esa interpretación errada y bizarra, que, -presuntamente- describe que el <span class="hl-green">artículo 40 del decreto 1965 de 2013</span>, ha <span class="hl-red">"derogado"</span> la aplicación de las faltas, viola el derecho sancionador, viola el debido proceso, viola el principio de legalidad, viola la igualdad en armas, viola la lealtad procesal, viola el derecho a la defensa del educando, viola el principio de taxatividad de las normas, viola el principio de tipicidad de las faltas y de las sanciones, y desatiende los deberes y compromisos, obligaciones y sujeciones que ordena el <span class="hl-green">artículo 87 de la ley 115 de 1994</span> que, sigue vigente y por el contrario, esa afirmación bizarra de desaparecer, las faltas del texto del manual de convivencia, viola la autonomía escolar para sancionar, o para cancelar una matrícula, que emerge del <span class="hl-green">artículo 96 de ley 115 de 1994</span> que sigue vigente; desconoce el conducto regular y violenta gravemente, el principio de taxatividad de las normas. Viola, además, la tipicidad de las faltas que, señalan las <span class="hl-red">Sentencias T – 565 de 2013; T - 478 de 2015; la sentencia T – 240 DE 2018 y Sentencia T – 106 de 2019</span>.</p>
+          </div>
+
+          <p>Se debe clarificar y aclarar que, para el presente manual de nuestra Institución, a voces del derecho sancionador, el debido proceso, el principio de legalidad, la taxatividad y tipicidad de las faltas, y el derecho a la defensa del educando, y en estricto acato a los <span class="hl-green">artículos 87 y 96 de la ley 115 de 1994</span>; <span class="hl-red">las faltas leves, graves y muy graves, siguen siendo parte de nuestro Manual de Convivencia escolar</span>, hasta que emerja taxativa y precisa una norma legislada, o sentencia de efecto erga omnes, que nos ordene o ratifique lo contrario; y para nuestro manual de convivencia, coexisten las faltas con las situaciones. Dado que <span class="hl-green">las faltas son disciplinarias y las situaciones son conductuales o de conducta</span>.</p>
+
+          <p>Lo anterior, como quiera que dentro de las obligaciones que los educandos se encuentra que, deben acatar, obedecer y cumplir, con todos sus compromisos y deberes que, disciplinariamente, los someten y que, deben cumplir en estricto apego a las normas, y que constituyen el consenso de la comunidad educativa; para fijar de manera taxativa y en legalidad: los deberes y los compromisos de los educandos, deberes y compromisos, obligaciones y sujeciones, cuya vulneración, desconocimiento y omisión, determinan la materialización y existencia de los conceptos de las faltas al interior taxativo del manual de convivencia, existen normas y compromisos, que los educandos deben cumplir, a voces del <span class="hl-green">artículo 87 de ley 115 de 1994</span>; y que al NO ser acatadas y respetadas, según la gravedad de la falta; nos facultan incluso para materializar, <span class="hl-red">la exclusión del educando. Art 96 de ley 115 de 1994</span>. Siguiendo en apego al debido proceso, <span class="hl-red">Sentencia T – 240 de 2018</span>. En materia de que, emerge bizarro, inconstitucional, ilegal y absurdo, declarar al derecho a la educación, como si acaso, ostentara, la calidad de derecho absoluto. Cuando se ha decantado de marras, que es un <span class="hl-green">derecho condicionado o supeditado al deber</span>; que emerge existente como derecho, si se sujeta al cumplimiento de deberes y compromisos, a menos que el acudiente o autoridad pertinente, suministre una norma legislada o constitucional, que indique que el derecho a la educación, es un derecho: <span class="hl-red">absoluto</span>.</p>
+
+          <p><span class="hl-green">Mientras ello no ocurra,</span> para el presente Manual de Convivencia, nos regiremos por los <span class="hl-green">artículos 87 y 96 de la ley 115 de 1994</span>. Deberes y obligaciones taxativas, que debe cumplir el educando, al tenor de la misma jurisprudencia, así:</p>
+
+          <p class="estimulo-title-red">SENTENCIA DE CORTE CONSTITUCIONAL T – 565 DE 2013.</p>
+
+          <div class="quote-block">
+            <p>Los manuales de convivencia deben ser respetuosos de los principios de legalidad y tipicidad de las faltas y las sanciones. En consecuencia, los estudiantes solo deben ser investigados y sancionados por faltas que hayan sido previstas con anterioridad a la comisión de la conducta y, de ser ello procedente, la sanción imponible también debió haber estado provista en el ordenamiento de la Institución educativa. Estos principios implican, de suyo, la obligatoriedad que el manual de convivencia sea puesto a disposición para el conocimiento de los estamentos que conforman la comunidad educativa. El ejercicio de la potestad disciplinaria debe basarse en los principios de contradicción y defensa, así como de presunción de inocencia.</p>
+            <p>El estudiante tiene derecho a que le sea comunicado el pliego de cargos relativo a las faltas que se le imputan, con el fin que pueda formular los descargos correspondientes, así como presentar las pruebas que considere pertinentes. Del mismo modo, las autoridades de Nuestra Institución educativa oficial tienen el deber de demostrar suficientemente la comisión de la conducta, a partir del material probatorio, como condición necesaria para la imposición de la sanción. Finalmente, el estudiante sancionado debe contar con recursos para la revisión de las decisiones adoptadas.</p>
+            <p>La Sala advierte que la jurisprudencia constitucional es unívoca en afirmar que el ejercicio de la potestad disciplinaria por parte de las autoridades de los establecimientos educativos debe: (i) cumplir con los estándares mínimos del derecho sancionador; y (ii) actuar de forma armónica y coordinada con los propósitos formativos del servicio público educativo, por lo que no puede desligarse de un objetivo pedagógico definido.</p>
+          </div>
+
+          <p class="estimulo-title-red">CORTE CONSTITUCIONAL, SENTENCIA DE TUTELA: T- 240 DEL 26 DE JUNIO DE 2018.</p>
+
+          <p class="subtitle-green">4. Los manuales de convivencia y el derecho al debido proceso en los procedimientos disciplinarios adelantados por las instituciones educativas. Reiteración de jurisprudencia.</p>
+
+          <div class="quote-block">
+            <p>4.1. El derecho a la educación contempla la garantía de que el debido proceso debe ser guardado en los trámites disciplinarios en instituciones educativas. Desde el inicio de su jurisprudencia y a lo largo de la misma, la Corte Constitucional ha reconocido el carácter fundamental del derecho a la educación, su estrecha relación con el debido proceso a propósito de los trámites que se adelanten en dicho contexto –en especial, si se trata de procesos sancionatorios– y la posibilidad de que la protección del goce efectivo del mismo pueda lograrse mediante la acción de tutela. Entre los elementos esenciales del derecho al debido proceso, aplicables en materia educativa, se encuentran, entre otros, el derecho a la defensa, el derecho a un proceso público y el derecho a la independencia e imparcialidad de quien toma la decisión.</p>
+            <p>4.2. En reiteradas oportunidades, la Corte Constitucional ha señalado que los manuales de convivencia de los establecimientos de educación tienen tres dimensiones. Así, en la <span class="hl-green">Sentencia T-859 de 2002</span> la Sala Séptima de Revisión sostuvo que, primero, estos documentos ostentan las características propias de un contrato de adhesión; segundo, representan las reglas mínimas de convivencia escolar y, tercero, son la expresión formal de los valores, ideas y deseos de la comunidad educativa conformada por las directivas de nuestra institución, sus empleados, los estudiantes y sus padres de familia. También, esta condición está reconocida expresamente por la ley general de educación en su <span class="hl-green">artículo 87</span>. Sin embargo, la misma norma señala que para que dichos manuales sean oponibles y exigibles, los mismos deben ser conocidos y aceptados expresamente por los padres de familia y los estudiantes.</p>
+          </div>
+
+          <p class="subtitle-green">Corolario de lo anterior,</p>
+
+          <p class="estimulo-title-red">TUTELA CORTE CONSTITUCIONAL T – 478 DE 2015.</p>
+
+          <div class="quote-block">
+            <p>Los procedimientos disciplinarios de las instituciones educativas, deben garantizar, el derecho a la defensa del estudiante, a quien se le impute, la comisión de una determinada falta, razón por la cual, los manuales de convivencia escolar, deben contener como mínimo: (i) la determinación de las faltas disciplinarias y de las sanciones respectivas; y (ii) el procedimiento a seguir, previo a la imposición de cualquier sanción. Con respecto a lo primero, es decir, a la determinación de las faltas, y de las sanciones, este tribunal, (Corte Constitucional), ha establecido que la garantía del debido proceso, exige que los manuales de convivencia escolar, describan con precisión razonable, los elementos generales de la falta, distingan claramente su calificación. (esto es, si se trata de una falta grave o leve) y determinen también con claridad la sanción que se desprende de la misma.</p>
+          </div>
+
+          <p class="estimulo-title-red">CORTE CONSTITUCIONAL, SENTENCIA T-713 DE 2010</p>
+
+          <div class="quote-block">
+            <p>El derecho a ser sancionada que tiene toda persona menor de edad, como parte del proceso de la formación, es un derecho constitucional fundamental. Afrontar esa restricción constituye una medida adecuada que propende por un fin legítimo que es educar a la estudiante; permitirle formarse integralmente, para que, en un futuro, la sociedad no le impida acceder a cargos de dirección pública, ya no en el contexto educativo, sino profesional y político. Impedirle la consecuencia sancionatoria a esa persona, sería pues, impedirle entender y comprender las dimensiones de sus actos y propiciar que, en el futuro, se insiste, sea una persona excluida de la posibilidad de acceder a más altas dignidades. Toda sanción legítima y razonable en el contexto educativo, debe posibilitar el crecimiento y desarrollo como persona de todo individuo. <span class="hl-green">M.P. Dra. MARÍA VICTORIA CALLE CORREA. Bogotá, D.C., ocho (08) de septiembre de dos mil diez (2010).</span></p>
+          </div>
+
+          <p class="estimulo-title-red">CORTE CONSTITUCIONAL, SENTENCIA T-076 DE 2023</p>
+
+          <p><span class="hl-green">Página 23.</span> En el marco de estas consideraciones, la Corte ha advertido que,</p>
+
+          <div class="quote-block">
+            <p>"El derecho a ser sancionada que tiene toda persona menor de edad, como parte del proceso de formación, es un derecho constitucional fundamental. Afrontar esa restricción constituye una medida adecuada que propende por un fin legítimo que es educar a la estudiante; permitirle formarse integralmente […]. Impedirle la consecuencia sancionatoria a esa persona, sería pues, impedirle entender y comprender las dimensiones de sus actos […]. Toda sanción legítima y razonable en el contexto educativo, debe posibilitar el crecimiento y desarrollo como persona de todo individuo." <span class="hl-green">Sentencia T-713 de 2010. M.P. María Victoria Calle Correa.</span></p>
+          </div>
+
+          <p>Nuestro manual de convivencia escolar, <span class="hl-red">NO acepta y NO tiene de recibo</span>, sugerencias, recomendaciones o inducciones al error, que manifiesten que <span class="hl-red">las faltas, han desaparecido del texto taxativo del manual de convivencia</span>. Ver <span class="hl-green">artículos 182, 183 y 184 del Código Penal Colombiano</span>. De manera especial, en consenso educativo, y de nuestra comunidad escolar, se fijan los siguientes deberes, compromisos, obligaciones y sujeciones a los educandos, armoniosos con el <span class="hl-green">artículo 87 de ley 115 de 1994</span>, absolutamente, vigente:</p>
+
+          <ol class="derechos-list">
+            <li>Cumplir oportunamente en la entrega de trabajos, presentación de tareas, actividades de refuerzo y suficiencia, en las fechas programadas, salvo en inasistencia justificada.</li>
+            <li>Contar con sus propios libros, útiles y demás elementos necesarios para el buen desempeño escolar.</li>
+            <li>Participar en las clases de forma activa.</li>
+            <li>Escuchar con atención las explicaciones del profesor y participaciones de los compañeros o compañeras con respeto.</li>
+            <li>Asistir puntualmente a clase y demás actividades programadas por la institución.</li>
+            <li>Preparar adecuadamente las evaluaciones según los criterios a evaluar en cada área.</li>
+            <li>Tomar apuntes y llevar los cuadernos en forma clara y organizada.</li>
+            <li>Cuidar el material didáctico suministrado por la institución, o facilitado por el docente y/o compañeros.</li>
+            <li>Respetar, las notas y observaciones que se consignan en sus cuadernos de trabajo, talleres, plantillas de Calificaciones, evaluaciones o cualquier otro documento que pertenezca al personal docente y al archivo de nuestra institución.</li>
+            <li>No sabotear, suplantar a compañeros o compañeras, ni ser sorprendidos en fraude de trabajos y evaluaciones.</li>
+            <li>Participar activamente en las diferentes actividades académicas y proyectos pedagógicos programados en las diferentes áreas del conocimiento.</li>
+          </ol>
+        </div>
+
+        <div class="deberes-tab-content" id="dtab-convivencia">
+          <p class="sec-main-title">DEBERES DE CONVIVENCIA DEL O LA ESTUDIANTE</p>
+
+          <p>El o La estudiante tienen como obligación principal y compromiso conocer y acatar, los artículos de la <span class="hl-green">ley de infancia y adolescencia, 1098 de 2006</span>, <span class="hl-green">Decreto 860º de 2010</span>, <span class="hl-green">Ley 1146º de 2007</span> y especialmente lo consagrado en <span class="hl-green">La Ley 1620º de 2013 y su Decreto Reglamentario 1965º de 2013</span>, además de lo que exige el nuevo <span class="hl-green">Código Nacional de Policía</span>, en sus artículos: Art. 7º; 8º; 10º; 19º; 26º; 27º; 33º; 34º; 35º; 36º; 37º; 38º; 39º; 40º, 43º; 73º; 84º; 92º; 140º; 146º; 155º; 159º; 162º; 174º; 175º; 180º; 181º. Y la <span class="hl-green">ley 2000 del 14 de noviembre de 2019, ley 2025 de 2020, y decreto 1075 de 2015</span>.</p>
+
+          <p>Normas, que regulan su proceder, dentro de la sana convivencia en comunidad, y máxime cuando su desempeño en el ámbito escolar, lo comparte con <span class="hl-green">la primera infancia</span> de Nuestra Institución educativa oficial; que puede llegar a ser vulnerada, estimulada, inducida o coercitada a imitar, las conductas de los adolescentes más grandes que ellos; de igual forma, el o la estudiante, tienen el compromiso de acatar y obedecer, los pronunciamientos referentes a los fragmentos de las sentencias de la corte y los fallos de tutela, comprendiendo que su <span class="hl-green">libre desarrollo de la personalidad está limitado o condicionado</span> a que <span class="hl-red">no vulnere, agreda o afecte a los demás educandos, menores de 14 años de edad y en especial a la primera infancia</span>.</p>
+
+          <p>Toda vez que de ninguna manera <span class="hl-red">sus derechos son absolutos</span>; y mucho menos puede pretender un educando particular, que es el único educando, dentro del plantel educativo, que se constituye como depositario de derechos, sino que, por el contrario, los demás educandos y las demás personas, también son depositarios y beneficiarios de los mismos derechos, como exige el <span class="hl-green">artículo 13 de la constitución</span> cuando indica que, frente a la ley, <span class="hl-green">todos somos iguales</span>.</p>
+
+          <p>De manera, que ningún estudiante o educando de nuestra INSTITUCION OFICIAL Y PÚBLICA, ostenta <span class="hl-red">derechos absolutos o primacía o supra derechos sobre los demás</span>, el manual de convivencia es el mismo, para todos.</p>
+
+          <p>Respeto que, se exige y se invoca, especialmente, frente a <span class="hl-green">la primera infancia</span>, prevaleciendo siempre los derechos de la comunidad sobre los derechos de un particular como lo consagra el <span class="hl-green">artículo 01º de la Constitución Nacional</span>, en todos los casos. También atendiendo a los fragmentos de las sentencias de la Corte Constitucional que se pronuncian al respecto así:</p>
+
+          <div class="quote-block">
+            <p>"La educación como derecho fundamental conlleva deberes del estudiante, uno de los cuales es someterse y cumplir el reglamento o las normas de comportamiento establecidas por el plantel educativo a que está vinculado. Su inobservancia permite a las autoridades escolares tomar las decisiones que correspondan, siempre que se observe y respete el debido proceso del estudiante, para corregir situaciones que estén por fuera de la Constitución, de la ley y del ordenamiento interno del ente educativo (…) El deber de los estudiantes radica, desde el punto de vista disciplinario, en respetar el reglamento y las buenas costumbres, y en el caso particular se destaca la obligación de mantener las normas de presentación establecidas por el Colegio, así como los horarios de entrada, de clases, de recreo y de salida, y el debido comportamiento y respeto por sus profesores y compañeros. El hecho de que el menor haya tenido un aceptable rendimiento académico no lo exime del cumplimiento de sus deberes de alumno. <span class="hl-green">Corte Constitucional, Sentencia T-569 de 1994. Subraya y negrilla fuera del texto.</span></p>
+          </div>
+
+          <p class="estimulo-title-red">CORTE CONSTITUCIONAL, TUTELA T – 101 DE 2016.</p>
+
+          <div class="quote-block">
+            <p>Al respecto, en la <span class="hl-green">sentencia SU-642 de 1998</span>, MP. Eduardo Cifuentes Muñoz, se dijo que "Para la Sala, no existe duda alguna de que todo colombiano, sin distingo alguno de edad, es titular del derecho fundamental al libre desarrollo de la personalidad, el cual, como lo ha manifestado la Corte, constituye emanación directa y principal del principio de dignidad humana. Sin embargo, el hecho de que el libre desarrollo de la personalidad sea uno de los derechos personalísimos más importantes del individuo, no implica que su alcance y efectividad no puedan ser ponderados frente a otros bienes y derechos constitucionales o que existan ámbitos en los cuales este derecho fundamental ostente una eficacia más reducida que en otros." Y en <span class="hl-green">sentencia C-481 de 1998</span>, M.P. Alejandro Martínez Caballero, la Sala Plena indicó que "del reconocimiento del derecho al libre desarrollo de la personalidad, se desprende un verdadero derecho a la identidad personal, que, en estrecha relación con la autonomía, identifica a la persona como un ser que se auto determina, se auto posee, se autogobierna, es decir que es dueña de sí, de sus actos y de su entorno".</p>
+          </div>
+
+          <p class="estimulo-title-red">SENTENCIA T – 435 DE 2002. DERECHO AL LIBRE DESARROLLO DE LA PERSONALIDAD- NO ES ABSOLUTO.</p>
+
+          <div class="quote-block">
+            <p>El derecho al libre desarrollo de la personalidad <span class="hl-red">no es absoluto</span>, pues debe armonizarse con el normal funcionamiento de las instituciones y con el ejercicio pacífico de las libertades. Ciertamente, esta Corporación ha sostenido que la escogencia de la opción de vida no puede ser entendida como un mecanismo para eludir las obligaciones sociales o de solidaridad colectiva, pues esto constituiría un abuso de los derechos propios. Se trata más bien de una potestad que permite al individuo desarrollar las alternativas propias de su identidad, la cual debe ser respetada y tolerada por la sociedad. La Educación, sólo es posible cuando se da la convivencia y si la disciplina afecta gravemente a ésta última, ha de prevalecer el interés general y se puede respetando el debido proceso, separar a la persona del establecimiento Educativo.</p>
+          </div>
+
+          <div class="quote-block">
+            <p>Además, la permanencia de la persona en el sistema educativo está condicionada por su concurso activo en la labor formativa; la falta de rendimiento intelectual también puede llegar a tener suficiente entidad como para que la persona sea retirada del establecimiento donde debía aprender y no lo logra por su propia causa. <span class="hl-green">Corte Constitucional, Sentencia T- 316 de 1994.</span></p>
+          </div>
         </div>
       </section>
 
-      <!-- Sección 14: Historia Institucional (NUEVO) -->
+      <!-- Sección 14: Deberes Lenistas -->
       <section class="section-panel" id="cap-14">
         <div class="section-header">
           <span class="section-num">14</span>
-          <h2 class="section-title">Historia Institucional</h2>
+          <h2 class="section-title">DEBERES Y COMPROMISOS DEL ESTUDIANTE LENISTA</h2>
+        </div>
+
+        <div class="deberes-tabs-bar">
+          <button class="deberes-tab-btn active" data-tab="dlenis-deberes">Deberes del Estudiante</button>
+          <button class="deberes-tab-btn tab-blue" data-tab="dlenis-servicio">Servicio Social</button>
+        </div>
+
+        <div class="deberes-tab-content active" id="dlenis-deberes">
+          <p class="sec-main-title">DEBERES O COMPROMISOS DEL ESTUDIANTE LENISTA</p>
+
+        <ol class="derechos-list">
+          <li>
+            <p>El o La estudiante Lenista, tienen como compromiso, conocer, respetar y acatar, el presente <span class="hl-red">MANUAL DE CONVIVENCIA ESCOLAR</span>, para cumplir con todas las obligaciones Inherentes a su calidad de alumno(a) activo(a) de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>; mostrando a cabalidad las conductas propias de un y una adolescente maduro(a), respetuoso(a), responsable y digno(a). Siempre resaltando su calidad de estudiante integral y cumpliendo sus deberes tanto cívicos como sociales dentro de nuestra Institución educativa oficial.</p>
+            <p>Siempre sobresaliendo por su ejemplar comportamiento y sus conductas intachables y propias de un educando con inmejorable desempeño, comportamientos y acciones dignificantes, respetuosas y de acuerdo a su edad psicológica y física. Para brindar también cumplimiento a los <span class="hl-green">artículos 15, 18, 42 numeral 3, articulo 43 numerales 2 y 3, Articulo 44 numerales 4, 6, 7, 10 de la Ley de Infancia y adolescencia 1098 de 2006</span>.</p>
+          </li>
+
+          <li class="derecho-num-manual">
+            <p>El, o La estudiante tienen como compromiso ser conscientes, y asumir la condición de primeros(as) responsables de su propia autoformación, y de su dignidad, de su autodisciplina y su ejemplar comportamiento y actitud, brindando muestras propias de una identidad madura y coherente, única e irrepetible, en todo su accionar y desempeño tanto en lo personal como en lo curricular.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante tiene como compromiso cuidar el buen nombre de nuestra institución. Considerando como propio su Colegio y por lo mismo ser responsables del aseo, la buena presentación en su uniforme de diario, llevándolo con decoro y dignidad, igualmente, propender por el cuidado y el buen uso de los elementos de nuestra Institución educativa oficial, para ello, comprender que mientras porten el uniforme que los distingue como alumnos y alumnas de nuestra institución dentro o fuera de la misma, su comportamiento debe ser digno, ejemplar y de acuerdo a la educación recibida, tanto en Nuestra Institución educativa oficial, como en su hogar, tomando como referente que un individuo es el reflejo del núcleo familiar y de la formación que le brindan sus padres, puesto que nuestro COLEGIO OFICIAL los educa como seres integrales, pero en su casa y a la sombra de sus padres y acudientes, aprenden a ser íntegros e integras.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante tienen como compromiso respetar, las opiniones o puntos de vista de los demás y permitir su libre expresión, teniendo en cuenta el respeto y las buenas costumbres y por sobre todo la dignidad de sus demás compañeros(as) como la suya propia, conscientes que su propio proceder y dignidad son el resultado de la filosofía institucional de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>; y el ejemplo tomado de sus padres en el seno del hogar, también brindando estricto cumplimiento al <span class="hl-green">artículo 18º y artículo 44º numeral 4 de la Ley de Infancia y adolescencia 1098º de 2006</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante tiene como compromiso tratar con respeto y cordialidad a los profesores, compañeros, administrativos y demás personal de servicios varios de nuestra Institución educativa oficial, sin usar términos y palabras soeces del actual léxico juvenil, palabras peyorativas, despectivas o apodos, o ser malintencionados o vulgares con sus compañeros, profesores o demás personal de nuestra institución. Los niños mostrando su dignidad y gallardía, así como las niñas demostrando dignidad y decoro en su lenguaje. Brindando estricto cumplimiento al <span class="hl-green">Artículo 18, Articulo 42 numeral 3, articulo 43 numerales 2 y 3, y articulo 44 numerales 5 y 6 de La Ley 1098 de 2006 o Ley de Infancia y Adolescencia</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante tiene como compromiso fomentar actividades de ornato, embellecimiento y aseo de nuestra institución.; incluso a manera de proyectos transversales lúdico – pedagógicos, a voces del <span class="hl-green">artículo 20 de ley 1620 de 2013</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso guardar compostura, respeto y civismo en los actos públicos y demás actividades comunitarias, así como las diferentes actividades dentro de nuestra institución y mucho más, en las extracurriculares en las cuales representan a nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>, en cualquier actividad, cívica o social, brindando muestras inequívocas de la educación y de los principios adquiridos en la institución y de su disciplina, moral y educación integral. De la misma manera, brindando estricto cumplimiento al <span class="hl-green">artículo 15º de la ley 1098º de 2006, de infancia y adolescencia</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante, tienen como compromiso informar de carácter inmediato las situaciones anómalas, daños y actos que atenten contra el bienestar de la comunidad y las personas dentro de nuestra institución y cometidas por otros alumnos de la misma o fuera de ella. Brindando estricto cumplimiento al <span class="hl-green">artículo 18 de ley 1098 de 2006, de infancia y adolescencia</span>. Y al <span class="hl-green">artículo 25 del Código Penal de 2000 —Ley 599—</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante, tienen como compromiso esperar al <span class="hl-red">DOCENTE</span> dentro del aula de clase.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso, observar buen comportamiento dentro y fuera de nuestra institución, ajustándose a las buenas costumbres, la moral y usos del buen vivir de una persona con carácter, identidad propia, dignidad y buen testimonio de vida como especial y prioritario ejemplo para los y las estudiantes de grados inferiores, que los ven como modelos a seguir e imitar.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso presentar oportunamente al Coordinador y al director de Curso, los permisos, incapacidades y las justificaciones de las ausencias y retardos. El o la alumno(a) podrán justificar su inasistencia a las actividades curriculares dentro de <span class="hl-green">24 horas hábiles</span> siguientes a la ausencia; de no hacerlo, irremediablemente perderán, los logros realizados en esas fechas.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante tienen como compromiso representar dignamente a la Institución en eventos culturales, sociales y deportivos, sin protagonizar escándalos, faltas contra la moral o contra la dignidad de las demás personas. Mostrando así su decoro y educación con alto contenido en valores, disciplina, tolerancia y respeto. incluso, aplica a los espacios virtuales, no presenciales y cibernéticos.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso presentarse a la Institución, con el uniforme completo, usando el uniforme respectivo de acuerdo con las actividades programadas, sin descuidar la presentación personal exigida, sin llegar a convertir el uniforme del colegio en una moda o una imitación estética de cualquier grupo urbano, subcultura o tribu urbana o imitación de modas pasajeras y superficiales. El o La estudiante, tienen como compromiso especial e irrenunciable, obedecer en lo estético, estrictamente al <span class="hl-red">MODELO DEL UNIFORME, SUMINISTRADO EL DÍA DE LA MATRÍCULA</span>, vestir digna y decorosamente, pues el uniforme de nuestro colegio como un símbolo institucional, dentro de la autonomía institucional, ha sido definido como un elemento que <span class="hl-red">NO está condicionado o supeditado a modas o iconos de imitación irracional</span>. Puede imitar y copiar el educando, cualquier moda que desee, siempre y cuando <span class="hl-red">NO sea portando el uniforme</span> que lo distingue como un miembro de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso asistir diaria y oportunamente a las clases y a las actividades de comunidad que programe la institución y presentar oportunamente las evaluaciones correspondientes.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso, propender por la conservación y renovación de los recursos naturales existentes en la región, máxime si están incluidos en proyectos transversales de nuestra Institución educativa oficial.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante tiene como compromiso decir solamente la verdad en los descargos, aplicaciones, faltas, etc. Ante los comités y/o personas donde tuviere que presentarlos, firmarlos y hacerlos firmar de sus padres y acudientes, para lograr justicia y equidad en los fallos, sanciones y valoraciones, cumpliendo así a cabalidad con el debido proceso que reposa en el <span class="hl-green">Artículo 26º de la Ley de Infancia 1098º de 2006 y en el artículo 29º Superior</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso asistir a las clases extras, acordadas que por algún motivo hayan dejado de dictarse, máxime si las clases son valiosas o fundamentales para el éxito del área.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen el compromiso de asistir y participar activamente en las actividades de nivelación y apoyo al mejoramiento de los aprendizajes, siguiendo las orientaciones establecidas por los docentes de aula y la comisión de evaluación y promoción.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso presentar oportunamente los documentos exigidos por la Institución Educativa, para los diferentes procesos de ingreso, matricula, grados, salidas, citaciones, etc.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso reclamar de manera oportuna, según calendario, los planes y horarios de recuperación o de nivelación curricular.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso que, en caso de pertenecer a cualquier credo, debe respetar el credo o inclinación religiosa o espiritual de sus pares y compañeros, así como que respeten el suyo.</p>
+          </li>
+
+          <li>
+            <p>El o la Estudiante, tiene el compromiso de no utilizar el teléfono celular durante las horas de clase en presencia del docente, salvo cuando este autorice su uso con fines estrictamente pedagógicos o por una causa justificada. En caso de incumplimiento, el dispositivo podrá ser retenido temporalmente por el docente o coordinador(a) de la institución, con carácter pedagógico y devolutivo, previa autorización del padre, madre o acudiente, y por un período máximo equivalente a una jornada escolar. La devolución del equipo se efectuará en el mismo estado en que fue recibido, una vez finalizado el tiempo establecido o conforme a los acuerdos definidos. En todo momento, el procedimiento deberá observar los principios del debido proceso, el respeto a los derechos del estudiante y la jurisprudencia vigente en materia educativa.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante, tienen como compromiso <span class="hl-red">No participar, mantener, sostener, realizar, ni promover actitudes, comportamientos ni escenas obscenas, eróticas, o sexuales degradantes, explicitas e irrespetuosas</span>, dentro de las instalaciones de nuestra institución, ni por fuera de la misma, cuando estén portando el uniforme del colegio. Mostrando con ello, su calidad y dignidad humana y sus valores morales y respeto por su cuerpo y por sí mismo. Igualmente velando por la integridad moral en su ejemplo hacia la primera infancia de nuestra institución. El alumno o alumna, mayor de catorce (14º) años de edad, que incurran en el presunto delito de actos sexuales, inmediatamente, se sujeta a la activación de la ruta de atención escolar, y a las exigencias de los <span class="hl-green">artículos 11, 12, y 15 de ley 1146 de 2007 y artículos 18 literal 4 y 19 de la ley 1620 de 2013</span>. Además, internamente, a juicio del consejo directivo, amerita las sanciones coherentes con <span class="hl-red">situaciones Tipo III</span>; de inmediato queda a discreción del consejo directivo, su accionar y su compromiso con nuestra institución, siguiendo el debido proceso y en cumplimiento al <span class="hl-green">Artículo 44º numeral 4 de la Ley de Infancia 1098 de 2006</span>, activando la ruta de atención escolar, e inexcusablemente, su desarrollo sexual, su orientación sexual, serán respetados y sus procesos de madurez y pubertad NO serán vulnerados, sin embargo, la mesura, el respeto, la dignidad y sobre todo la comprensión del hecho indiscutible del respeto por la intimidad para las acciones y comportamientos de índole sexual y erótico – sexual en pareja, son la base de cualquier relación afectuosa sustentada en el respeto y la responsabilidad. Con ello, en ponderación Constitucional, se busca proteger y salvaguardar en nuestra institución la correcta apreciación sexual y erótica de la pareja frente a la primera infancia, como lo solicita el <span class="hl-green">artículo 20º numeral 4 de la ley 1098º de 2006 de infancia y adolescencia</span>, el interés superior de la Primera Infancia y brindarle estricto acato a la <span class="hl-green">ley 1146º de 2007 y a los artículos 25º; 208; 209 del código penal del 2000</span>, especialmente. Así como el debido respeto y la limitación parcial que contiene el libre desarrollo de la personalidad, bien entendido frente al hecho, que el libre desarrollo de la Personalidad está condicionado a que <span class="hl-red">NO vulnere los derechos de terceros</span>, que para el caso en cita son menores de 14 años.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso observar siempre un comportamiento digno y correcto hacia los vecinos, en la calle, en los medios de transporte y en todos los lugares públicos, que por su cotidianidad deban visitar cuando porte nuestro uniforme del colegio y sin portarlo, como norma de urbanidad y educación que distinguen al educando, al alumno y la alumna de nuestra institución. Los hechos, acciones y situaciones protagonizados por El o La Estudiante, fuera de las instalaciones de nuestra institución pero que se constituyan contrarios a la filosofía, la educación y la identidad recibida en nuestra Institución educativa oficial y portando el uniforme de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>, serán evaluados en consejo directivo para definir, la gravedad de la falta o la <span class="hl-red">situación tipo I; II, o III</span>; y las sanciones a que haya lugar conforme al debido proceso.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso contribuir al aseo, conservación, mejoramiento y embellecimiento de la planta física y bienes materiales de nuestra institución, preservando y cuidando el medio ambiente escolar y natural.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso hacer un adecuado uso de: Biblioteca, fotocopiadora, sala de informática, laboratorios, tienda escolar y servicios sanitarios.</p>
+          </li>
+
+          <li>
+            <p>El o La estudiante, tienen como compromiso tener claridad y comprender que <span class="hl-red">no les estará permitido, de ninguna manera, estimular, inducir o constreñir a sus compañeros(as) en torno a faltas o infracciones de ley</span>. Es decir, participar, promover, inducir, coercitar o ser cómplices, ocultar o dirigir a sus compañeros(as) en torno a faltas o infracciones de ley. Llámese infracciones de ley, fumar, consumir bebidas alcohólicas, portar, traficar, brindar, o consumir sustancias alienantes, psicotrópicas y/o estupefacientes; (<span class="hl-green">artículo 381 del código penal</span>) participar en acciones de pandillaje, violencia, asalto, barras bravas que acudan a la violencia o a la delincuencia, el matoneo y acoso escolar en todas sus derivaciones, sustracción o robo, y otros que la institución educativa mediante el consejo directivo determine en acato a la <span class="hl-green">ley 1098º de 2006, de infancia y adolescencia y el Decreto 860 de 2010, así como el Código Penal del 2000, código de la policía</span>, y demás normas aplicables a los menores de edad, y que se consideren como (delito) e infracciones de ley. Es decir: a los alumnos y las alumnas de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>, <span class="hl-red">NO les estará permitido de ninguna manera, el consumo de cigarrillo, tampoco vapeadores, o cigarrillo electrónico, alcohol, ni el porte, consumo, expendio, micro tráfico, venta o afines para casos de sustancias alienantes</span>, es decir: (alucinógenas, estupefacientes y/o psicotrópicas, psiquiátricas, sintéticas NO formuladas o farmacéuticas NO recetadas), dentro de nuestra institución o fuera de ella, portando el uniforme; tampoco les estará permitido, participar de delitos de cualquier índole, escándalos, hechos de violencia, asonadas o pandillas o situaciones punibles; tales conductas serán consideradas como <span class="hl-red">presunción de Situación Tipo III</span>, y el alumno o la alumna, que después de la aplicación del debido proceso y seguido el conducto regular, sea hallado(a) culpable de estos hechos, comportamientos, acciones y actitudes, tipificables como <span class="hl-red">situaciones TIPO III</span>, sujeto al debido proceso, será remitido a la comisaria de familia o a la policía de infancia y adolescencia, quienes en obediencia al <span class="hl-green">artículo 19º de la ley de infancia y adolescencia 1098º de 2006, y al artículo 25º del código penal del 2000</span>, remitirán al alumno o alumna a un centro de resocialización y rehabilitación o en su defecto tomarán las medidas del caso, para brindarle prevalecía y cumplimiento al restablecimiento de sus derechos como lo consigna la <span class="hl-green">ley de infancia y adolescencia 1098 de 2006, en su artículo 19º</span>.</p>
+            <p>Del mismo modo, el alumno o alumna que haya sido hallado(a) como culpable de haber cometido estas infracciones de ley, quedará sujeto(a) a lo que estimen las normas legales vigentes, y lo que defina, la jurisprudencia en dichos casos, es decir si es menor de 14 años de edad, responderán jurídica y legalmente en la parte civil o penal, sus padres o acudientes, como primeros garantes del proceder de sus hijos, como apoderados y como representantes legales y como terceros civilmente responsables, <span class="hl-green">artículo 2348 del código civil</span>. Para el caso de sustancias drogas o adicciones, responderán frente a las instancias de ley, por presunción de porte, tenencia, consumo y por expendio, en los casos donde pueda comprobarse que el alumno o alumna, es culpable de haber inducido a otro(os) alumno(os) al consumo; en todos los casos, responderán jurídico-legalmente sus padres o acudientes; si el alumno es menor de 14 años. <span class="hl-green">Artículo 381 del código penal</span>. Si, por el contrario, el alumno o alumna infractor(a), es mayor de 14 años, (Eso traduce, que es completamente judicializable a través de restablecimiento de derechos) responderá como lo amerita su falta frente al sistema jurídico penal y legal por su infracción de ley (maltrato infantil, corrupción de menores, e inducción al consumo de drogas en menor de edad; <span class="hl-green">artículos 376, 378, 381 del Código penal Colombiano</span>), <span class="hl-green">artículo 139 de ley 1098 de 2006</span>.</p>
+            <p>Sin perjuicio, de la autonomía y discreción de los entes jurídico-legales y policivos, para llamar a cuentas a sus padres o acudientes como corresponsables y garantes, según el <span class="hl-green">decreto 860º de 2010 y artículo 2348 del código civil</span>.</p>
+            <p>En todos los casos sin excepción, los alumnos o alumnas hallados(as) como casos positivos y confirmados como consumidores de sustancias alienantes, mediante la prueba clínica pertinente y después de realizar el conducto regular obedeciendo al debido proceso. Estos alumnos o alumnas, indefectiblemente por orden de la comisaria de familia y/o la policía de infancia o los jueces de infancia y adolescencia, deben ser remitidos a programas ambulatorios o de internado según sea el caso obedeciendo inexcusable e inaplazablemente al <span class="hl-green">Artículo 19º de la ley 1098 de 2006, de Infancia y Adolescencia</span>. Aplica para los vapeadores o cigarrillo electrónico, <span class="hl-red">NO estará permitido</span>.</p>
+            <p class="estimulo-title-red">NOTA:</p>
+            <p>Mientras se les sigue el conducto regular, y el respectivo debido proceso por "presunción en consumo" pueden continuar con sus labores educativas y asistir a clases, respetando su presunción de la inocencia; sin embargo, una vez declarado positivo el caso, o probada su culpabilidad, el alumno o alumna será <span class="hl-red">inmediatamente retirado(a) de nuestra institución</span>, de tal forma que se protege a la comunidad sobre el particular y además se le garantiza al alumno o alumna consumidor(a) o adicto(a), su derecho a la resocialización y rehabilitación como lo consagra el <span class="hl-green">artículo 19º de la ley de infancia y adolescencia 1098 de 2006 y el artículo 44º numerales 4 y 7 de la misma ley de infancia y adolescencia</span>; tomando como referente que, en ponderación Constitucional prevalece el Derecho a la Salud, a la Resocialización y Rehabilitación, en conexidad con la salud, por sobre el Derecho a la Educación.</p>
+            <p class="estimulo-title-red">Parágrafo 1:</p>
+            <p>Los padres de familia, acudientes o representantes legales de los alumnos o alumnas hallados(as) como positivos en consumo de sustancias, y que no acaten la norma de remisión de su hijo o hija o hijos a un centro especializado para su tratamiento de resocialización y rehabilitación en su obligación de patria potestad.</p>
+            <p class="estimulo-title-red">Parágrafo 2:</p>
+            <p>Los padres de familia o acudientes, que no acaten el llamado para realizar y proseguir en la colaboración del desarrollo del debido proceso en aras de la protección y bienestar de sus hijos(as) y el restablecimiento de sus derechos al tenor del <span class="hl-green">artículo 44 superior y el artículo 11º de ley 1098 de 2006</span>, y tomando como referente que "cualquier persona" puede invocar la protección y el restablecimiento de los derechos de los menores de 18 años y también, respecto al derecho a la presunción de inocencia que tiene el alumno y la alumna y el derecho a indagar, que tiene la institución educativa, tales ejercicios y acciones como la solicitud de la prueba de sangre o el espectro en los centros clínicos especializados y aceptados por los peritajes de secretaria de salud, tales actuaciones omisivas y cómplices de negarse por parte de los padres de familia o acudientes, a realizar el examen toxicológico al educando para restablecer sus derechos, de manera inmediata quedará a discreción del Consejo Directivo por el presunto proceder de omisión, abandono y trato negligente, de que trata el <span class="hl-green">artículo 18 de ley 1098 de 2006</span>, y de omisión respecto de lo que ordena el <span class="hl-green">artículo 19 de ley 1098 de 2006</span>, de tal manera que tales alumnos, <span class="hl-red">NO podrán de ninguna manera continuar asistiendo a la institución a recibir sus clases normales académicas</span>, hasta tanto no cumplan con el debido proceso solicitado, en tales casos la institución <span class="hl-red">NO está obligada a recibirlos</span>, hasta que la Comisaria de Familia o el Defensor de Familia, conforme a sus funciones, actúen para restablecimiento de los derechos del educando y en todo caso, en armonía con lo que las instancias de la corte constitucional señalan.</p>
+            <p class="estimulo-title-red">Nota:</p>
+            <p>estas acciones de sanción, se cumplen acatando las normas legales vigentes antes enumeradas, clarificadas y conceptuadas mediante consenso en previa reunión del Consejo Directivo y han sido aprobadas, se socializan, en ASAMBLEA DE PADRES, de tal forma que son inamovibles e irrenunciables, toda vez que la normativa de ley, no se cumple o acata por consenso, sino que es de obligatorio e inaplazable cumplimiento.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso comprender que <span class="hl-red">de ninguna manera, está permitido la tenencia y porte de armas de fuego, armas blancas u objetos contundentes o explosivos</span> en posesión del educando, de hallarse culpable de tales conductas, el alumno o alumna, será de inmediato privado de permanecer en la institución educativa, después de agotado el debido proceso correspondiente, y el conducto regular, en todos los casos estas actuaciones, son consideradas, como <span class="hl-red">situación TIPO III</span>, su consecuencia es la pérdida del cupo y su retiro inmediato de nuestra institución educativa oficial y pública, además de la respectiva denuncia frente a los hechos, con dirección a los entes policivos que corresponden por competencia, a voces del <span class="hl-green">artículo 18 numeral 4 de la ley 1620 de 2013</span>.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso asistir diariamente y con puntualidad al colegio, a todas las clases y actividades académicas, programadas según el horario escolar asignado; de encontrarse, al educando, fuera del salón sin una constancia o permiso escrito del docente, evadiendo así sus clases, de inmediato se citará a los padres o acudientes.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso cumplir, oportunamente con las obligaciones escolares (clases, tareas, trabajos de investigación, talleres, lecturas, evaluaciones, servicio social, etc.) cuidando el orden y la Calidad de dichas obligaciones. Si los (las) estudiantes, no cumplen con sus deberes curriculares, nuestra Institución educativa oficial, se regirá por las normas emanadas de la corte constitucional en ese respecto.</p>
+            <p class="estimulo-title-red">CORTE CONSTITUCIONAL, SENTENCIA T – 478 DE 2015.</p>
+            <div class="quote-block">
+              <p>3.2. A ese respecto, vale indicar que, en reiterada jurisprudencia, esta Corporación ha sostenido que la educación: "tiene la doble naturaleza de derecho deber que implica, tanto para' el educando como para la institución educativa, el cumplimiento de las obligaciones correlativas a las que se han comprometido como parte del proceso educativo. En particular, la Corte ha considerado que los estudiantes, desde el momento de su ingreso al establecimiento, tienen el deber de cumplir con las exigencias impuestas por las normas internas del respectivo centro, y, en particular, por lo dispuesto en el reglamento interno. De esta manera, la jurisprudencia ha considerado que los educandos no pueden invocar la protección de su derecho a la educación para justificar el incumplimiento de las exigencias académicas y administrativas."</p>
+            </div>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso asistir al colegio con una presentación digna – a juicio de nuestra Institución educativa oficial, adecuada para las obligaciones estéticas y formativas y que no llame la atención ni sea desobligante, mostrando su compromiso de autoestima y dignidad propia, de respeto por su cuerpo y por su propia dignidad y decoro, los padres colaborarán en ese aspecto de manera inexcusable.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso hacer buen uso de patios, pasillos, salones y baños (Incluyendo el <span class="hl-red">NO escribir grafitis ni mensajes obscenos o vulgares de ninguna clase en puertas y/o paredes</span>; de comprobarse su participación en esa infracción, los padres o acudientes inmediatamente, aportarán el dinero necesario para la pintura y demás materiales pertinentes para subsanar el daño).</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso utilizar correctamente los recursos sanitarios disponibles (agua) y demás elementos que ofrece, la institución en aras de la buena salud y bienestar.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso disfrutar, de las zonas de recreación en actitud de respeto hacia los demás, sin agresiones y usando un lenguaje decente y decoroso conforme a su educación y moral.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso rendir un total respeto a los miembros de la comunidad con problemas o discapacidades de cualquier índole, como muestra de su humildad y disciplina, sencillez y tolerancia y como muestra evidente de su interés por una sana convivencia hacia sus semejantes y como estricto acato al <span class="hl-green">artículo 44 literal 5 de la ley 1098 de 2006</span>.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso abstenerse de recibir o comprar alimentos y/o artículos ofrecidos por los vendedores ambulantes y/o de sitios comerciales aledaños desconocidos, ello con el fin de protegerles de cualquier intoxicación o acción lesiva. De presentarse alguna intoxicación causada por el incumplimiento a éste numeral, nuestra INSTITUCION OFICIAL, se exonera y exime de cualquier responsabilidad.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso comportarse adecuadamente siguiendo los lineamientos de este manual de convivencia, en todo lugar en el cual estén bajo la tutela de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>; o en representación del mismo: eventos, o festividades, salidas pedagógicas, convivencias, competencias deportivas, actividades artísticas, salidas dentro y fuera del país, etc.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso enaltecer, los valores culturales, nacionales, institucionales, los símbolos patrios y del colegio, sobre todo la filosofía institucional de valores, la moral y la dignidad.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso, entonar los himnos en los actos comunitarios con la postura correcta demostrando respeto por los símbolos patrios.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso respetar, defender y cuidar el nombre, prestigio y bienes del colegio, procurando expresarse acerca de él con cariño y lealtad, demostrando amor propio y pertenencia con nuestra institución.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso cumplir con los requisitos de evaluación y promoción establecidos por la ley en el <span class="hl-green">decreto 1290º de 2009</span> y el Proyecto Educativo institucional dentro de la planificación y objetivos de nuestra Institución educativa oficial. Nunca acudirá al fraude.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso representar dignamente a la Institución en cualquier evento para el que sean elegidos o seleccionados.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso en caso de inasistencia sin excusa al colegio, presentarse con su acudiente o padre de familia, quien justificará su ausencia en un plazo <span class="hl-green">24 horas hábiles</span>, el día que se incorpora a la institución, del mismo modo, en todos los casos nuestra Institución educativa oficial, se exonera y se exime de cualquier actividad o hecho en el que haya participado o realizado el educando por fuera de nuestra institución durante dicha ausencia.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso en caso de falla justificada, el de solicitar, presentar y sustentar las actividades correspondientes para ser evaluados.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso presentarse a primera hora o en hora de descanso, al coordinador de convivencia, con la respectiva autorización escrita y firmada por los padres de familia o acudientes, para informar o acreditar, situaciones especiales como: salidas del colegio, permiso para asistir a actividades Extra clases, permiso para citas médicas y etc.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso solicitar y presentar autorización escrita para que estén fuera del aula de clase.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso, respetar la palabra y opinión de sus compañeros, profesores y superiores, y demás personas de nuestra institución, sin comentarios de burla, desprecio o discriminación.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante, tienen como compromiso cuidar sus pertenencias y hacer buen uso de los recursos del colegio.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso abstenerse de portar revistas, dibujos, videos, juegos o cualquier tipo de material pornográfico o utilizar el servicio de Internet del colegio para entrar a páginas no permitidas. Tales actuaciones, son <span class="hl-red">situaciones Tipo III</span>.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante tienen como compromiso, <span class="hl-red">No interrumpir las clases o el estudio de sus demás compañeros</span>, con desordenes, gritos o silbidos en cualquier lugar del colegio.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso respetar y cuidar el buen nombre de maestros, directivas y demás funcionarios del colegio a través de un trato respetuoso, y utilizando un lenguaje correcto y libre de calumnias e injurias contra ellos. Recordando que, en algunos hechos y casos, son delitos, la injuria y la calumnia, la discriminación y el hostigamiento, y en algunos casos, también el Matoneo o acoso escolar, o Bullying o ciberbullying. Además, recordando, que son actuaciones, que, para nada reflejan la filosofía, ni la visión, mucho menos la misión de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>; mucho menos refleja un digno testimonio de educación integral, tampoco es el testimonio fiel de un proceder recto. De incurrir en hechos de matoneo o amenaza, acoso escolar o afines, u otros actos que incluyan amenaza, injuria, calumnia, lesiones personales, hostigamientos, discriminación, amenaza u otras infracciones de ley; se iniciará, el debido proceso siempre bajo el cargo de presunción, pero resaltando que el matoneo y los delitos descritos, se tipifican para el presente manual de convivencia, como <span class="hl-red">situaciones Tipo III</span>.</p>
+            <p>En algunos casos, ameritan incluso hasta la cancelación de la Matricula, de acuerdo a la gravedad de la conducta irregular desplegada. Se aclara taxativo que, los estudiantes que, incurran en <span class="hl-red">ACOSO ESCOLAR, MATONEO O BULLYING Y CIBERBULLYING</span>, en contra de sus pares y después de agotados, el conducto regular y el debido proceso en extenso y respetando su derecho a la defensa y a la presunción de la inocencia, y acorde a sus derechos y libertades (<span class="hl-green">artículo 15 de ley 1098 de 2006</span>) y que, agotadas las instancias, hayan sido hallados culpables de acoso escolar, Bullying, ciberbullying, matoneo, hostigamiento, discriminación, actos sexuales, abusos sexuales, o amenazas e intimidación o conexos, derivados, ligados o afines al matoneo o acoso escolar, sin excusa, sin dilación, sin evasivas, acudirán a indemnizar a la víctima o a las víctimas, entre <span class="hl-red">01 y 100 salarios mínimos mensuales vigentes</span>, dado que, nuestro colegio, en su filosofía, misión, visión, y objetivos, emerge como <span class="hl-red">CERO TOLERANTE</span>, ante hechos de matoneo, acoso escolar y Bullying o ciberbullying, lo anterior, además, aprobado en Consejo Directivo, y aprobado en dos (2) asambleas de padres de familia, y con sustento jurídico en los <span class="hl-green">artículos 10, 14, 17, 18, 39, 44 numeral 4 y 5 de ley 1098 de 2006; y artículos 139 y 142 de ley 1098 de 2006, además de los artículos 2346, 2347 y 2348 del código civil</span>, vigente. Será el comité de padres de familia en sus diez (10) miembros seleccionados, quienes estimen y determinen sin dilación, el rubro, la cantidad de salarios mínimos a indemnizar por parte de los padres y acudientes de los de los agresores y acosadores o matoneadores.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso hacer buen uso de los medios de comunicación del colegio y utilizar el portal interactivo de manera exclusiva con fines académicos, empleando un lenguaje apropiado sin apodos ni groserías o mensajes vulgares o desobligantes hacia ningún miembro de la comunidad educativa.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso colaborar activamente con el orden y el aseo de las instalaciones del colegio haciendo buen uso de las canecas destinadas para la basura.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso respetar los bienes ajenos, tanto de los que pertenecen al colegio, como los que pertenecen a otros(as) alumnos(as), profesores y otros empleados de nuestra institución. Por el contrario, de ser sorprendido en una sustracción en flagrancia, se remitirá el caso como presunción de robo, con la respectiva cadena de custodia y debido proceso, en conducto regular, tanto del elemento sustraído como del alumno o la alumna sorprendida en flagrancia a las autoridades pertinentes, especialmente a la policía de infancia y adolescencia, brindando acato al <span class="hl-green">Código de la Infancia y la Adolescencia, Código penal y Decreto 860º del 2010</span>.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso entregar a los padres de familia las circulares y citaciones enviadas por el colegio. Nunca ocultarlas u olvidar entregarlas.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen el compromiso de tratar con respeto a los demás, colaborando así en la construcción de un clima de convivencia que permita que todas las personas de la comunidad educativa se sientan valoradas de acuerdo a su dignidad intrínseca, de la misma manera demostrando con ello su compromiso con la filosofía de respeto, convivencia y tolerancia de nuestra institución.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso respetar de palabra y de hecho la formación espiritual y los valores institucionales de nuestra institución OFICIAL: <span class="hl-green">I.E. ANTONIO LENIS, MUNICIPIO DE SINCELEJO, DEPARTAMENTO DE SUCRE</span>, acompañando con una actitud respetuosa y decorosa, manteniendo un adecuado comportamiento en las celebraciones y actividades programadas y demás actividades de convivencia espiritual o religiosa, salvo que se aplique que, el alumno o alumna NO asiste y debe ir a la biblioteca a realizar el trabajo escrito sobre su respectivo credo religioso.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso desde el primer día de clases tener los elementos, útiles escolares y traerlos durante todo el año de acuerdo al horario para su buen desempeño. Salvo acuerdo con los padres y acudientes.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, El (la) estudiante tiene el compromiso de presentar por escrito a la coordinación las excusas debidamente justificadas por inasistencias a clases, cuando estas se deban a incapacidad médica, calamidad doméstica o familiar, o por malestar de salud manifestado durante la jornada escolar en un término de <span class="hl-green">24 horas (hábiles)</span>. Además, una vez se reincorpore a la institución, el estudiante contará con un plazo máximo de tres días para ponerse al día en las actividades académicas no realizadas durante su ausencia. Transcurrido dicho tiempo sin justificación válida, no podrá presentar las estrategias evaluativas pendientes correspondientes al periodo afectado.</p>
+          </li>
+
+          <li>
+            <p>El o la estudiante, tienen como compromiso asistir puntualmente a clases durante la jornada escolar en el horario que asigne la coordinación encargada. Cualquier estudiante que acumule <span class="hl-red">el 20% o más de inasistencias reprobaran las asignaturas o áreas del plan de estudio</span> ofrecido por la institución, independientemente de los resultados de los desempeños que acumule al finalizar el año escolar. Sin recurso de poder exigir el derecho a la educación o invocarlo, toda vez que la Jurisprudencia de la corte constitucional aduce:</p>
+            <p class="estimulo-title-red">CORTE CONSTITUCIONAL, SENTENCIA DE TUTELA, T- 478 DE 2015.</p>
+            <div class="quote-block">
+              <p>3.2. A ese respecto, vale indicar que, en reiterada jurisprudencia, esta Corporación ha sostenido que la educación: "tiene la doble naturaleza de derecho deber que implica, tanto para' el educando como para la institución educativa, el cumplimiento de las obligaciones correlativas a las que se han comprometido como parte del proceso educativo. En particular, la Corte ha considerado que los estudiantes, desde el momento de su ingreso al establecimiento, tienen el deber de cumplir con las exigencias impuestas por las normas internas del respectivo centro, y, en particular, por lo dispuesto en el reglamento interno. De esta manera, la jurisprudencia ha considerado que los educandos no pueden invocar la protección de su derecho a la educación para justificar el incumplimiento de las exigencias académicas y administrativas."</p>
+            </div>
+            <div class="quote-block">
+              <p>"La Corte Constitucional ha reiterado a lo largo de la jurisprudencia, en el sentido de considerar que quien se matrícula en un Centro Educativo, con el objeto de ejercer el derecho Constitucional fundamental que lo ampara, contrae por ese mismo hecho obligaciones que debe cumplir, de tal manera que <span class="hl-red">NO puede invocar el mencionado derecho para excusar las infracciones en que incurra</span>. <span class="hl-green">Corte Constitucional, Sentencia T- 235 de 1997. Negrilla fuera de texto.</span></p>
+            </div>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso presentar por escrito excusa a la coordinación por inasistencia a clase debido a incapacidad médica o por calamidad domestica debidamente justificada.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso permanecer en el salón durante las sesiones de clases y asumir una actitud de interés constante, orientado a complementarla, establecer diálogos, comparar, reflexionar, brindar juicios sanos y críticas constructivas basadas en el conocimiento, la zona de desarrollo próximo y el contexto.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso mantener una excelente presentación, aseo e higiene personal, portando cada prenda del uniforme en su lugar y dándole el uso para el cual fue diseñada de acuerdo al clima y a la tarea para la cual la prenda de vestir fue diseñada.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso reparar, los daños que cause a la planta física, el mobiliario o al material didáctico.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso conservar paredes, puertas, jardín, pasillos y demás áreas comunes, así como el parque y canchas deportivas, así como la zona de recreación y otros en perfecto estado.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso conocer y cumplir con las funciones que le sean asignadas como Monitor y/o líder de grupo, al comité al que pertenezca.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante, tienen como compromiso <span class="hl-red">No cometer ningún tipo de fraude</span>, (entendiéndose como fraude, engaño, maniobra inescrupulosa, suplantación o encubrimiento) tanto en actividades académicas como disciplinarias. El fraude puede incluso llegar a constituir, una <span class="hl-red">situación Tipo III</span>.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso, <span class="hl-red">No falsificar firmas</span> en documentos, permisos, citaciones, comunicados de padres de familia, circulares, etc.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso, <span class="hl-red">No traer a la Institución iPod, Ipad, mp3, mp4, cámaras fotográficas, juegos de video, artículos eléctricos o electrónicos, patinetas, etc.</span> (En caso de pérdida de los mismos, la institución se exonera y exime de cualquier responsabilidad). Ver acápite respecto de la <span class="hl-green">ley 2170 de 2021</span>.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso, aceptar que solo podrá traer elementos deportivos o artísticos como producto de una actividad pedagógica previa autorización del docente del área, el cuidado de estos será responsabilidad del estudiante o La Estudiante que lo ingresa.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso cumplir con Calidad y puntualmente con tareas, trabajos, horarios, actividades individuales y colectivas programadas por el colegio.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso respetar el trabajo, la concentración y la participación de los demás compañeros, en las actividades propuestas en clase y utilizar un volumen de voz adecuado.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso conocer y cumplir el reglamento interno de biblioteca, laboratorios, aula de sistemas, tienda escolar, aula múltiple y aulas normales.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso portar diariamente la agenda escolar, carné y documento de la EPS, dando buen uso y manteniéndolos en perfecto estado. En caso de pérdida deben solicitar duplicado en la secretaría académica sufragando el costo estipulado.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso respetar los espacios y tiempos establecidos para el consumo de alimentos.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso abstenerse de ingresar a la sala de profesores, salvo que sea invitado y autorizado o en compañía del docente correspondiente.</p>
+          </li>
+
+          <li>
+            <p>El o La Estudiante, tienen como compromiso ser solidarios ante las calamidades, dificultades o accidentes que pueda presentar algún otro miembro de la comunidad, brindar inmediato aviso a los profesores o administrativos.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso ser un ejemplo en cualquier otra acción que a buen criterio de los docentes y/o directivos, se considera que es valiosa o que representa el espíritu y la identidad de un alumno o alumna de nuestra institución, a través de su propia vida y proceder.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso el alejarse y no participar de cualquier otra actividad que se presuma que atenta o transgreda las normas establecidas y la sana convivencia, la moral y las buenas costumbres de la comunidad educativa, teniendo siempre como referente un proceder articulado con la dignidad humana, las normas y las leyes.</p>
+          </li>
+
+          <li>
+            <p>El estudiante o La Estudiante, tienen como compromiso siempre estar en la constante búsqueda de una vida y proceder ejemplar y de excelente e inmejorable ejemplo en todos los aspectos de su cotidiano, teniendo como referente que los alumnos, los adolescentes y mayores, son el ejemplo de carácter a imitar por parte de los y las estudiantes más pequeños y la gente del común que les rodea, con la premisa de que su comportamiento se rige de aquello que aprenden en sus hogares, aquello que se inculca con valores y principios, linderos y obligaciones y que imitan de sus padres como referente de una educación integra e integral. Que se explica de manera precisa, clara y conducente, que la violación, desatención y la desobediencia a las anteriores, obligaciones, compromisos, deberes y sujeciones, dará lugar a las <span class="hl-red">sanciones en materia de faltas leves, graves y muy graves</span>, que serán evaluadas en criterio de proporcionalidad, por el primer respondiente y en asesoría y acompañamiento del concepto del comité de convivencia y con la decisión final y el aval de notificación del consejo directivo. Incluso se podrán catalogar e imputar en calidad de <span class="hl-red">situaciones Tipo III</span>, así sean protagonizadas, por menores de 14 años de edad, que <span class="hl-red">NO son judicializables</span>. Sin embargo, para esos casos EXCEPCIONALES, responderán penal y civilmente, sus padres a voces de los <span class="hl-green">artículos 10; 14; 18; 19, 20 numeral 1, numeral 4; 39 Y 142 de ley 1098 de 2006; y a voces de los artículos 2346, 2347 y 2348 del código civil</span>.</p>
+          </li>
+        </ol>
+        </div>
+
+        <div class="deberes-tab-content tab-content-blue" id="dlenis-servicio">
+          <p class="sec-main-title sec-main-title--blue">SERVICIO SOCIAL</p>
+
+          <p>El servicio social pretende que el educando se integre a la comunidad, contribuyendo a su mejoramiento social, cultural y económico, colaborando en los proyectos y trabajos que lleva a cabo y desarrollando en él, el valor de solidaridad y el conocimiento frente a su entorno social (<span class="hl-green">artículo 39 Decreto 1860 de 1994</span>). En consonancia con lo expuesto en el <span class="hl-green">artículo 97 de la Ley 115 de 1994</span> y su <span class="hl-green">Decreto Reglamentario 1860 de 1994 y Resolución 4210 de 1996</span>, que persigue la formación integral del educando, por ello, emerge lo que está enmarcado y definido en el <span class="hl-green">Proyecto Educativo Institucional (PEI)</span> y es ejecutado por Nuestra Institución educativa oficial, en forma conjunta y sistemática con entidades gubernamentales y no gubernamentales, especializadas en la atención a las familias y comunidades.</p>
+
+          <p>El MEN, mediante la <span class="hl-green">Resolución 4210 de 1996</span>, estableció las reglas generales para la organización y el funcionamiento del servicio social estudiantil obligatorio, disponiendo en su artículo 3º, los objetivos principales del servicio social:</p>
+
+          <p class="subtitle-green">OBJETIVOS DEL SERVICIO SOCIAL</p>
+
+          <ol class="derechos-list">
+            <li>Sensibilizar al educando frente a las necesidades, intereses, problemas y potencialidades de la comunidad, para que adquiera y desarrolle compromisos y actitudes en relación con su mejoramiento.</li>
+            <li>Contribuir al desarrollo de la solidaridad, tolerancia, cooperación, respeto a los demás, la responsabilidad y el compromiso con su entorno social.</li>
+            <li>Promover acciones educativas orientadas a la construcción de un espíritu de servicio para el mejoramiento permanente de la comunidad y a la prevención integral de problemas socialmente relevantes.</li>
+            <li>Promover la aplicación de conocimientos y habilidades logrados en áreas obligatorias y optativas definidas en el plan de estudios que favorezcan el desarrollo social y cultural de las comunidades.</li>
+            <li>Fomentar, la práctica del trabajo y del aprovechamiento del tiempo libre, como derechos que permiten la dignificación de la persona y el mejoramiento de su nivel de vida.</li>
+          </ol>
+
+          <p class="estimulo-title-red">Parágrafo:</p>
+
+          <p>Los educandos, deberán prestar su Servicio Social en el desarrollo de los diferentes proyectos concertados para tal fin, dentro de nuestra Institución educativa oficial, y en los demás proyectos transversales, que se determinen mediante convenios con las diferentes autoridades o entes públicos, previo acuerdo con Nuestra Institución educativa oficial.</p>
+
+          <div class="commit-block">
+            <p class="estimulo-title-red">Nota:</p>
+            <p>Si el educando falta a sus deberes de trabajo social, mediante engaño o inducción mintiendo y, señalando que se encuentra en dichas actividades cuando en verdad se evade y se encuentra en otras actuaciones diferentes, el colegio <span class="hl-red">NO tendrá responsabilidad alguna, civil, penal, disciplinaria o contractual</span>. El educando se ha puesto en riesgo a sí mismo, y ha mentido. Será tipificada como <span class="hl-red">falta grave o muy grave</span> según criterio de la coordinación de convivencia.</p>
+          </div>
+
+          <p class="estimulo-title-red">Parágrafo 1.</p>
+
+          <p>El educando desde grado noveno (9), puede desarrollar su servicio social, realizando sus <span class="hl-green">80 horas</span>.</p>
+
+          <p class="estimulo-title-red">Parágrafo 2.</p>
+
+          <p>La institución educativa Antonio Lenis ofrece a varios frentes donde prestar este servicio social. Internamente en el comité de disciplina estudiantil, comité ambiental, Biblioteca, de la orientación escolar en la elaboración de material de prevención del abuso sexual infantil (<span class="hl-green">artículo 5 parágrafo de ley 2025 de 2020</span>), elaborando material para prevención del consumo de drogas, material para prevenir el embarazo adolescente, material para prevenir el acoso y matoneo escolar, material para prevenir el suicidio y la depresión; material para el tema de orientación sexual. Entiéndase, material: pdfs, power point, presentaciones animadas, videos, filminutos, canciones, poemas, videografías, cuñas radiales, comerciales, u otro material visual, audiovisual o similar. Que destine y para el cual, requiera las <span class="hl-green">80 horas de servicio social</span>, para su elaboración. A través de un proyecto transversal lúdico – pedagógico de aplicación al aula. Externamente con entidades que hacen convenios con la Institución.</p>
+
+          <p class="estimulo-title-red">Parágrafo 3.</p>
+
+          <p>La institución presenta alianzas estratégicas con entidades de la región para que los estudiantes puedan prestar su servicio social.</p>
+        </div>
+      </section>
+
+      <!-- Sección 15: Faltas (Rojo) -->
+      <section class="section-panel" id="cap-15">
+        <div class="section-header section-header--red">
+          <span class="section-num">15</span>
+          <h2 class="section-title" style="color: var(--red);">Faltas</h2>
         </div>
         <div style="padding: 20px; color: #666; text-align: center; font-size: 15px;">
           <p>Contenido en construcción</p>
@@ -983,6 +1798,11 @@
       </section>
       
     </main>
+
+    <!-- Botón flotante volver al inicio -->
+    <button class="home-fab" id="homeFab" title="Volver al inicio">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </button>
 
   </div>
 
