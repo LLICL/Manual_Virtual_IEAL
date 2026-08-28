@@ -171,6 +171,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  // Faltas tabs functionality (cap-15)
+  document.querySelectorAll('.faltas-tabs-bar').forEach(function(bar) {
+    const btns = bar.querySelectorAll('.faltas-tab-btn');
+    const contents = bar.parentElement.querySelectorAll('.faltas-tab-content');
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const tabId = this.getAttribute('data-tab');
+
+        btns.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  });
 });
 
 function openModal(type) {

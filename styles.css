@@ -1449,6 +1449,10 @@ body {
   color: #0b5bb5;
 }
 
+.sec-main-title--red {
+  color: var(--red);
+}
+
 .hl-green {
   color: var(--green);
   font-weight: 700;
@@ -1586,5 +1590,86 @@ body {
 .deberes-tab-content.active {
   display: block;
   animation: fadeIn 0.3s ease;
+}
+
+.faltas-tabs-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  padding: 8px 8px 0;
+  border-radius: 10px 10px 0 0;
+}
+.faltas-tab-btn {
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+.faltas-tab-btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+.faltas-tab-btn.active {
+  background: white;
+  color: #333;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.faltas-tab-btn.faltas-leve:hover {
+  background: #e8f5ee;
+  color: #0a6b3c;
+}
+.faltas-tab-btn.faltas-leve.active {
+  background: white;
+  color: #0a6b3c;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.faltas-tab-btn.faltas-grave:hover {
+  background: #fdf3d7;
+  color: #b8870b;
+}
+.faltas-tab-btn.faltas-grave.active {
+  background: white;
+  color: #b8870b;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.faltas-tab-btn.faltas-gravis:hover {
+  background: #fdecec;
+  color: #c42b2b;
+}
+.faltas-tab-btn.faltas-gravis.active {
+  background: white;
+  color: #c42b2b;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.faltas-tab-content {
+  display: none;
+  background: white;
+  padding: 24px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow);
+}
+.faltas-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+.faltas-tab-content.faltas-content-concepto {
+  border-top: 3px solid #333;
+}
+.faltas-tab-content.faltas-content-leve {
+  border-top: 3px solid #0a6b3c;
+}
+.faltas-tab-content.faltas-content-grave {
+  border-top: 3px solid #b8870b;
+}
+.faltas-tab-content.faltas-content-gravis {
+  border-top: 3px solid #c42b2b;
 }
 
