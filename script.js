@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Cambiar sección con tabs
-  function showSection(sectionId) {
+  function showSection(sectionId, skipScroll) {
     // Ocultar todas las secciones
     sectionPanels.forEach(panel => {
       panel.classList.remove('active');
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Scroll a la sección activa (descontando header fijo 72px)
-    if (targetSection) {
+    if (targetSection && !skipScroll) {
       var headerH = 72;
       var rect = targetSection.getBoundingClientRect();
       var top = rect.top + window.pageYOffset - headerH;
@@ -189,6 +189,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  // Procedimientos de Concertación (cap-16): categorías en bloques, sin pestañas
 });
 
 function openModal(type) {
@@ -269,48 +271,223 @@ document.addEventListener('DOMContentLoaded', function() {
   var resultsContainer = document.getElementById('homeSearchResults');
   if (!searchInput || !resultsContainer) return;
 
-  var sections = document.querySelectorAll('.section-panel');
-  var sectionData = [];
+  // Normaliza texto: quita tildes y minúsculas, para búsqueda sin acentos
+  function normalize(str) {
+    return (str || '').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
 
-  sections.forEach(function(sec) {
+  // Pestañas internas que puede contener una sección
+  var TAB_CONTENT_SEL = '.profile-tab-content, .process-tab-content, .derechos-tab-content, ' +
+    '.deberes-tab-content, .faltas-tab-content';
+  var TAB_BTN_SEL = '.profile-tab-btn, .process-tab-btn, .derechos-tab-btn, ' +
+    '.deberes-tab-btn, .faltas-tab-btn';
+  var TAB_BAR_SEL = '.profile-tabs-bar, .process-tabs-bar, .derechos-tabs-bar, ' +
+    '.deberes-tabs-bar, .faltas-tabs-bar';
+
+  // Etiqueta de la pestaña contenedora de un bloque
+  function getTabLabel(block) {
+    var tabContent = block.closest(TAB_CONTENT_SEL);
+    if (!tabContent) return '';
+    var btn = tabContent.parentElement.querySelector('[data-tab="' + tabContent.id + '"]');
+    return btn ? btn.textContent.trim() : '';
+  }
+
+  // Activa la pestaña interna (si existe) que contiene un bloque
+  function activateTab(block) {
+    var tabContent = block.closest(TAB_CONTENT_SEL);
+    if (!tabContent) return;
+    var panel = tabContent.closest('.section-panel');
+    var btn = panel ? panel.querySelector('[data-tab="' + tabContent.id + '"]') : null;
+    if (btn) {
+      var bar = btn.closest(TAB_BAR_SEL);
+      if (bar) bar.querySelectorAll(TAB_BTN_SEL).forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+    }
+    var parent = tabContent.parentElement;
+    parent.querySelectorAll(TAB_CONTENT_SEL).forEach(function(c) { c.classList.remove('active'); });
+    tabContent.classList.add('active');
+  }
+
+  // Limpia resaltados previos, restaurando los nodos de texto
+  function clearHighlights() {
+    document.querySelectorAll('mark.search-highlight').forEach(function(mark) {
+      var parent = mark.parentNode;
+      parent.replaceChild(document.createTextNode(mark.textContent), mark);
+      parent.normalize();
+    });
+  }
+
+  // Resalta todas las apariciones (sin acentos) de `query` dentro de section
+  function highlightIn(section, query) {
+    var normalizedQuery = normalize(query);
+    if (!normalizedQuery) return;
+
+    var walker = document.createTreeWalker(section, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+
+    var collected = [];
+    while (walker.nextNode()) {
+      var node = walker.currentNode;
+      // No volver a entrar en un mark ya creado
+      if (node.parentNode && node.parentNode.classList && node.parentNode.classList.contains('search-highlight')) {
+        continue;
+      }
+      var data = buildIndexMap(node.nodeValue);
+      var pos = 0;
+      while (true) {
+        var found = data.text.indexOf(normalizedQuery, pos);
+        if (found === -1) break;
+        var startOrig = data.map[found];
+        var endOrig = found + normalizedQuery.length - 1 < data.map.length ?
+          data.map[found + normalizedQuery.length - 1] + 1 : node.nodeValue.length;
+        if (startOrig < endOrig) {
+          collected.push({ node: node, start: startOrig, end: endOrig });
+        }
+        pos = found + normalizedQuery.length;
+      }
+    }
+
+    // Agrupa los matches por nodo (Map por identidad) para construir el reemplazo con todas las marcas a la vez
+    var byNode = new Map();
+    collected.forEach(function(match) {
+      var arr = byNode.get(match.node);
+      if (!arr) { arr = []; byNode.set(match.node, arr); }
+      arr.push(match);
+    });
+
+    byNode.forEach(function(ranges, node) {
+      var text = node.nodeValue;
+      ranges.sort(function(a, b) { return a.start - b.start; });
+
+      // Fusiona rangos solapados/adyacentes
+      var merged = [];
+      ranges.forEach(function(m) {
+        var last = merged[merged.length - 1];
+        if (last && m.start <= last.end) {
+          last.end = Math.max(last.end, m.end);
+        } else {
+          merged.push({ start: m.start, end: m.end });
+        }
+      });
+
+      var fragment = document.createDocumentFragment();
+      var cursor = 0;
+      merged.forEach(function(m) {
+        if (m.start > cursor) fragment.appendChild(document.createTextNode(text.substring(cursor, m.start)));
+        var mark = document.createElement('mark');
+        mark.className = 'search-highlight';
+        mark.textContent = text.substring(m.start, m.end);
+        fragment.appendChild(mark);
+        cursor = m.end;
+      });
+      if (cursor < text.length) fragment.appendChild(document.createTextNode(text.substring(cursor)));
+
+      if (node.parentNode) {
+        node.parentNode.replaceChild(fragment, node);
+        node.parentNode.normalize();
+      }
+    });
+  }
+
+  // Mapea posición normalizada -> posición original del texto
+  function buildIndexMap(str) {
+    var normalized = '';
+    var map = [];
+    for (var i = 0; i < str.length; i++) {
+      var n = str[i].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      if (n.length === 0) {
+        map.push(null);
+      } else {
+        normalized += n.toLowerCase();
+        map.push(i);
+      }
+    }
+    return { text: normalized, map: map };
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  // Fragmento alrededor de la primera aparición (sin acentos)
+  function snippetAround(text, query) {
+    var normText = normalize(text);
+    var normQuery = normalize(query);
+    var idx = normText.indexOf(normQuery);
+    if (idx === -1) idx = 0;
+    var start = Math.max(0, idx - 50);
+    var end = Math.min(text.length, idx + query.length + 50);
+    return (start > 0 ? '...' : '') + text.substring(start, end) + (end < text.length ? '...' : '');
+  }
+
+  // Construye el índice de búsqueda: un resultado potencial por bloque de texto
+  var blockData = [];
+  document.querySelectorAll('.section-panel').forEach(function(sec) {
     if (sec.id === 'cap-home') return;
     var titleEl = sec.querySelector('.section-title');
     var sectionName = titleEl ? titleEl.textContent.trim() : sec.id;
-    var text = sec.textContent.replace(/\s+/g, ' ').trim();
-    sectionData.push({ id: sec.id, name: sectionName, text: text });
+
+    // Bloques de hoja: elementos de texto que no contienen otros bloques
+    sec.querySelectorAll('p, li, blockquote, td, th').forEach(function(block) {
+      if (block.closest('select, option, button')) return;
+      if (block.querySelector('p, li, blockquote, table, td, th, button')) return;
+      var text = block.textContent.replace(/\s+/g, ' ').trim();
+      if (!text) return;
+      blockData.push({ block: block, sectionId: sec.id, sectionName: sectionName, text: text });
+    });
   });
 
   searchInput.addEventListener('input', function() {
-    var query = this.value.trim().toLowerCase();
+    var query = this.value.trim();
     if (query.length < 3) {
       resultsContainer.style.display = 'none';
       resultsContainer.innerHTML = '';
       return;
     }
+    var normalizedQuery = normalize(query);
 
-    var results = [];
-    sectionData.forEach(function(sec) {
-      var idx = sec.text.toLowerCase().indexOf(query);
-      if (idx !== -1) {
-        var start = Math.max(0, idx - 40);
-        var end = Math.min(sec.text.length, idx + query.length + 40);
-        var snippet = (start > 0 ? '...' : '') + sec.text.substring(start, end) + (end < sec.text.length ? '...' : '');
-        snippet = snippet.replace(new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<strong>$1</strong>');
-        results.push({ id: sec.id, name: sec.name, snippet: snippet });
+    // Recolecta todas las apariciones
+    var matches = [];
+    blockData.forEach(function(d) {
+      if (normalize(d.text).indexOf(normalizedQuery) !== -1) {
+        matches.push(d);
       }
     });
 
-    if (results.length === 0) {
-      resultsContainer.innerHTML = '<div class="home-search-no-results">No se encontraron resultados para "' + query + '"</div>';
+    // Agrupa: máximo 6 por sección y 40 en total, en orden DOM
+    var perSection = {};
+    var finalResults = [];
+    matches.forEach(function(d) {
+      if (finalResults.length >= 40) return;
+      var count = perSection[d.sectionId] || 0;
+      if (count >= 6) return;
+      perSection[d.sectionId] = count + 1;
+      finalResults.push(d);
+    });
+
+    if (finalResults.length === 0) {
+      resultsContainer.innerHTML = '<div class="home-search-no-results">No se encontraron resultados para "' +
+        escapeHtml(query) + '"</div>';
     } else {
       var html = '';
-      results.forEach(function(r) {
-        html += '<a class="home-search-result-item" data-nav="' + r.id + '" href="#' + r.id + '">';
-        html += '<span class="home-search-result-section">' + r.name + '</span>';
-        html += r.snippet;
+      finalResults.forEach(function(r) {
+        var label = r.sectionName;
+        var tabLabel = getTabLabel(r.block);
+        if (tabLabel) label += ' · ' + tabLabel;
+        html += '<a class="home-search-result-item" href="#" data-section="' + r.sectionId + '">';
+        html += '<span class="home-search-result-section">' + escapeHtml(label) + '</span>';
+        html += escapeHtml(snippetAround(r.text, query));
         html += '</a>';
       });
       resultsContainer.innerHTML = html;
+      // Guarda la referencia al bloque de cada resultado en el propio elemento
+      var anchors = resultsContainer.querySelectorAll('.home-search-result-item');
+      finalResults.forEach(function(r, i) {
+        if (anchors[i]) anchors[i]._blockRef = r.block;
+      });
     }
     resultsContainer.style.display = 'block';
   });
@@ -319,8 +496,27 @@ document.addEventListener('DOMContentLoaded', function() {
     var item = e.target.closest('.home-search-result-item');
     if (!item) return;
     e.preventDefault();
-    var sectionId = item.getAttribute('data-nav');
-    showSection(sectionId);
+    var sectionId = item.getAttribute('data-section');
+    var block = item._blockRef;
+    var query = searchInput.value.trim();
+
+    // Navega a la sección sin scroll (lo haremos al resaltado)
+    showSection(sectionId, true);
+
+    // Activa la pestaña interna correcta
+    if (block) activateTab(block);
+
+    // Resalta y hace scroll al primer match
+    clearHighlights();
+    var targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      highlightIn(targetSection, query);
+      var firstMark = targetSection.querySelector('mark.search-highlight');
+      if (firstMark) {
+        firstMark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
     searchInput.value = '';
     resultsContainer.style.display = 'none';
     resultsContainer.innerHTML = '';

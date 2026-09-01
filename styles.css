@@ -1176,6 +1176,14 @@ body {
   color: var(--gray-dark);
 }
 
+/* Resaltado de coincidencias de búsqueda */
+mark.search-highlight {
+  background: #ffe066;
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
 /* Accesos rápidos */
 .home-grid-label {
   font-size: 11px;
@@ -1672,4 +1680,9 @@ body {
 .faltas-tab-content.faltas-content-gravis {
   border-top: 3px solid #c42b2b;
 }
+
+/* (Reglas de cap-16 como secciones 17-22: se reutilizan .section-panel y .section-header) */
+
+
+
 
