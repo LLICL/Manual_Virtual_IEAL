@@ -1420,6 +1420,10 @@ mark.search-highlight {
   font-size: 11px;
 }
 
+.derechos-list.derechos-cont {
+  counter-reset: derecho 8;
+}
+
 .derechos-list-letters {
   list-style: none;
   padding-left: 0;
