@@ -190,7 +190,59 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Procedimientos de Concertación (cap-16): categorías en bloques, sin pestañas
+  // Etapas del Procedimiento Disciplinario (cap-16 Solución de Conflictos)
+  document.querySelectorAll('.etapas-tabs-bar').forEach(function(bar) {
+    const btns = bar.querySelectorAll('.etapas-tab-btn');
+    const contents = bar.parentElement.querySelectorAll('.etapas-tab-content');
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const tabId = this.getAttribute('data-tab');
+
+        btns.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  });
+
+  // Etapas principales de cap-16 (Etapas del Procedimiento / Etapas del Debido Proceso)
+  document.querySelectorAll('.proc-tabs-bar').forEach(function(bar) {
+    const btns = bar.querySelectorAll('.proc-tab-btn');
+    const contents = bar.parentElement.querySelectorAll('.proc-tab-content');
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const tabId = this.getAttribute('data-tab');
+
+        btns.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  });
+
+  // Protocolos de Atención por Tipo (cap-17)
+  document.querySelectorAll('.tipo-tabs-bar').forEach(function(bar) {
+    const btns = bar.querySelectorAll('.tipo-tab-btn');
+    const contents = bar.parentElement.querySelectorAll('.tipo-tab-content');
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const tabId = this.getAttribute('data-tab');
+
+        btns.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        this.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  });
 });
 
 function openModal(type) {
@@ -278,11 +330,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Pestañas internas que puede contener una sección
   var TAB_CONTENT_SEL = '.profile-tab-content, .process-tab-content, .derechos-tab-content, ' +
-    '.deberes-tab-content, .faltas-tab-content';
+    '.deberes-tab-content, .faltas-tab-content, .etapas-tab-content, .proc-tab-content';
   var TAB_BTN_SEL = '.profile-tab-btn, .process-tab-btn, .derechos-tab-btn, ' +
-    '.deberes-tab-btn, .faltas-tab-btn';
+    '.deberes-tab-btn, .faltas-tab-btn, .etapas-tab-btn, .proc-tab-btn, .tipo-tab-btn';
   var TAB_BAR_SEL = '.profile-tabs-bar, .process-tabs-bar, .derechos-tabs-bar, ' +
-    '.deberes-tabs-bar, .faltas-tabs-bar';
+    '.deberes-tabs-bar, .faltas-tabs-bar, .etapas-tabs-bar, .proc-tabs-bar, .tipo-tabs-bar';
 
   // Etiqueta de la pestaña contenedora de un bloque
   function getTabLabel(block) {

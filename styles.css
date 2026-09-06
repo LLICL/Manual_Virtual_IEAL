@@ -1683,6 +1683,206 @@ mark.search-highlight {
 
 /* (Reglas de cap-16 como secciones 17-22: se reutilizan .section-panel y .section-header) */
 
+/* Pestañas Etapas del Procedimiento Disciplinario (cap-16 Solución de Conflictos) */
+.etapas-tabs-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  padding: 8px 8px 0;
+  border-radius: 10px 10px 0 0;
+}
+.etapas-tab-btn {
+  padding: 12px 18px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+.etapas-tab-btn:hover {
+  background: #e8f5ee;
+  color: #0a6b3c;
+}
+.etapas-tab-btn.active {
+  background: white;
+  color: #0a6b3c;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.etapas-tab-content {
+  display: none;
+  background: white;
+  padding: 24px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--green);
+}
+.etapas-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Pestañas principales de cap-16 Solución de Conflictos */
+.proc-tabs-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  background: #0a6b3c;
+  padding: 6px 6px 0;
+  border-radius: 10px 10px 0 0;
+}
+.proc-tab-btn {
+  padding: 14px 22px;
+  border: none;
+  background: transparent;
+  color: #e8f5ee;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+.proc-tab-btn:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.proc-tab-btn.active {
+  background: white;
+  color: #0a6b3c;
+}
+.proc-tab-content {
+  display: none;
+  background: white;
+  padding: 26px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow);
+  border: 1px solid #e3e3e3;
+  border-top: none;
+}
+.proc-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+.proc-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Pestañas de Protocolos de Atención por Tipo (cap-17) */
+.tipo-tabs-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  background: #0a6b3c;
+  padding: 6px 6px 0;
+  border-radius: 10px 10px 0 0;
+}
+.tipo-tab-btn {
+  padding: 14px 22px;
+  border: none;
+  background: transparent;
+  color: #e8f5ee;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+.tipo-tab-btn:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.tipo-tab-btn.active {
+  background: white;
+  color: #0a6b3c;
+}
+.tipo-tab-content {
+  display: none;
+  background: white;
+  padding: 26px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow);
+  border: 1px solid #e3e3e3;
+  border-top: none;
+}
+.tipo-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+.tipo-card-head {
+  padding: 16px 22px;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 17px;
+}
+.tipo-card-head.tipo1 { background: linear-gradient(135deg, #0a6b3c, #27ae60); }
+.tipo-card-head.tipo2 { background: linear-gradient(135deg, #b7791f, #e6a23c); }
+.tipo-card-head.tipo3 { background: linear-gradient(135deg, #b02a2a, #e74c3c); }
+.tipo-sanciones {
+  margin-top: 26px;
+  padding: 18px 20px;
+  border-left: 4px solid var(--green);
+  background: #f2faf5;
+  border-radius: 0 8px 8px 0;
+}
+.tipo-sanciones h4 {
+  margin: 0 0 10px;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+.tipo-note {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-left: 4px solid #b7791f;
+  background: #fdf8ee;
+  border-radius: 0 8px 8px 0;
+}
+.tipo-para {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-left: 4px solid #4a6fa5;
+  background: #f2f5fb;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+.tipo-legal-ref {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-left: 4px solid #6b4fa5;
+  background: #f7f4fc;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Mini pestañas compactas (cap-19 Prevención del Abuso Sexual) */
+.tipo-tabs-bar.mini .tipo-tab-btn {
+  padding: 9px 14px;
+  font-size: 13px;
+}
+.tipo-tabs-bar.mini {
+  background: #0a6b3c;
+}
+.tipo-tab-content.mini {
+  padding: 20px;
+}
+
+
+
 
 
 
