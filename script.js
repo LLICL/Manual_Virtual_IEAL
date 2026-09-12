@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded', function() {
     resultsContainer.innerHTML = '';
   });
 
-  document.querySelectorAll('.home-card[data-nav]').forEach(function(card) {
+  document.querySelectorAll('.home-card[data-nav], .home-directory-btn[data-nav]').forEach(function(card) {
     card.addEventListener('click', function(e) {
       e.preventDefault();
       var sectionId = this.getAttribute('data-nav');
