@@ -84,6 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
       var top = rect.top + window.pageYOffset - headerH;
       window.scrollTo({ top: top, behavior: 'smooth' });
     }
+
+    // Reiniciar la búsqueda al navegar a otra sección
+    if (sectionId !== 'cap-home') {
+      var homeSearch = document.getElementById('homeSearchInput');
+      var results = document.getElementById('homeSearchResults');
+      if (homeSearch) homeSearch.value = '';
+      if (results) {
+        results.style.display = 'none';
+        results.innerHTML = '';
+      }
+    }
   }
   
   // Event listeners para tabs
