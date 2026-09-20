@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+ieal-react/node_modules/
+
+# Experimento React (queda local, fuera de Git)
+ieal-react/
+
+# Capacitor webDir generado (fuente = raiz: index.html, script.js, styles.css)
+www/
+
+# Binarios Android (van por GitHub Release, no por commit)
+*.apk
+*.aab
+
+# Build outputs Android
+android/build/
+android/.gradle/
+android/app/build/
+android/local.properties
+android/captures/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+*.iml
