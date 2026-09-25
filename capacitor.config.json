@@ -1,5 +1,5 @@
 {
   "appId": "co.edu.antoniolenis.manual",
   "appName": "Manual de Convivencia IE Antonio Lenis",
-  "webDir": "www"
+  "webDir": "dist"
 }

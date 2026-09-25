@@ -26,3 +26,22 @@ Thumbs.db
 .idea/tasks.xml
 .idea/gradle.xml
 *.iml
+
+# React / Vite
+dist/
+dist-ssr/
+.vite/
+
+# Logs y entorno
+*.log
+.env
+.env.*
+
+# Herramientas locales (no se suben)
+.claude/
+.opencode/
+coverage/
+
+# Copia de la versión estática usada solo por los scripts de migración
+# (regenerar con: git show main:index.html > scripts/.orig/index.html)
+scripts/.orig/

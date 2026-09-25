@@ -69,6 +69,28 @@ body {
   color: var(--text);
 }
 
+.aviso-header-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(245, 245, 245, 0.6);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.aviso-header-btn:hover {
+  background: rgba(224, 224, 224, 0.8);
+}
+
+.aviso-header-btn svg {
+  color: #999;
+}
+
 .header-content {
   flex: 1;
   display: flex;
@@ -227,7 +249,6 @@ body {
   align-items: flex-end;
   padding: 40px 10px 14px;
   min-height: 10px;
-  background: url('images/banner_ieal.jpeg') center/cover no-repeat;
   position: relative;
 }
 
@@ -333,8 +354,9 @@ body {
 }
 
 .nav-num {
-  width: 28px;
+  min-width: 32px;
   height: 28px;
+  padding: 0 6px;
   background: var(--gray-light);
   border-radius: 6px;
   display: flex;
@@ -342,8 +364,19 @@ body {
   justify-content: center;
   font-size: 12px;
   font-weight: 600;
+  white-space: nowrap;
   flex-shrink: 0;
   transition: all 0.2s;
+}
+
+.nav-item--red .nav-num {
+  background: #fdecea;
+  color: var(--red);
+}
+
+.nav-item--red.active .nav-num {
+  background: var(--red);
+  color: var(--white);
 }
 
 .nav-label {
@@ -1120,6 +1153,125 @@ body {
   margin-top: 10px;
   font-size: 11px;
   color: var(--gray-dark);
+}
+
+/* ── AVISO REORGANIZACIÓN (burbuja flotante inicio) ── */
+.aviso-burbuja {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 90;
+  max-width: 380px;
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
+  background: var(--white);
+  border: 1.5px solid #c8e0d1;
+  border-left: 5px solid var(--green);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: 16px 16px 14px;
+  animation: aviso-subir 0.25s ease-out;
+}
+
+@keyframes aviso-subir {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.aviso-burbuja__cerrar {
+  position: sticky;
+  float: right;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background: var(--gray-light);
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.aviso-burbuja__cerrar:hover {
+  background: var(--gray);
+  color: var(--text);
+}
+
+.aviso-burbuja__titulo {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  margin: 0 36px 8px 0;
+}
+
+.aviso-burbuja__texto {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  display: grid;
+  gap: 8px;
+}
+
+.aviso-burbuja__acciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.aviso-burbuja__btn {
+  border: none;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.aviso-burbuja__btn:hover {
+  background: var(--green-light);
+}
+
+.aviso-burbuja__link {
+  border: none;
+  background: none;
+  color: var(--gray-dark);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.aviso-burbuja__articulo {
+  display: inline-block;
+  background: #e8f5ee;
+  border: 1px solid #a5d6a7;
+  color: var(--green);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 1px 10px;
+  margin: 0 2px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.aviso-burbuja__articulo:hover {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .aviso-burbuja {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: none;
+    max-height: 55vh;
+  }
 }
 
 /* Barra de búsqueda */
@@ -1936,3 +2088,9 @@ mark.search-highlight {
 
 
 
+
+/* Resaltado de búsqueda (CSS Custom Highlight API, no modifica el DOM de React) */
+::highlight(search-highlight) {
+  background: #ffe066;
+  color: inherit;
+}
