@@ -63,7 +63,25 @@ export default function Cap1() {
           </div>
         </div>
       </div>
-      <div className="cards-grid dane-cards">
+      <div className="card" style={{ background: "white", padding: "18px 20px", borderRadius: "10px", margin: "0 0 20px", boxShadow: "var(--shadow)", borderLeft: "4px solid var(--green)", display: "flex", gap: "14px", alignItems: "center" }}>
+        <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "var(--green-bg)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <div>
+          <h3 style={{ color: "var(--green)", marginBottom: "6px", fontSize: "16px" }}>
+            Población Escolar
+          </h3>
+          <p style={{ fontSize: "15px", lineHeight: "1.5", margin: 0 }}>
+            2.790 estudiantes regulados en 3 sedes y 118 docentes vinculados.
+          </p>
+        </div>
+      </div>
+      <div className="cards-grid dane-cards" style={{ marginTop: "0" }}>
         <div className="card dane-card">
           <h5 className="sede-name">
             Sede Principal

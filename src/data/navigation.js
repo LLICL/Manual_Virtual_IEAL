@@ -11,6 +11,12 @@ const navigation = [
     ]
   },
   {
+    "title": "Bloque 1: Consensuado, operativo y pedagógico",
+    "separator": true,
+    "collapsible": false,
+    "items": []
+  },
+  {
     "title": "Capítulo 1: Identificación, identidad, horizonte institucional y perfiles de los actores",
     "collapsible": true,
     "items": [
@@ -20,50 +26,178 @@ const navigation = [
         "number": "1.1"
       },
       {
-        "id": "cap-2",
-        "label": "Identidad, horizonte y símbolos",
+        "id": "cap-resena",
+        "label": "Reseña histórica",
         "number": "1.2"
+      },
+      {
+        "id": "cap-2",
+        "label": "Símbolos e himno institucional",
+        "number": "1.3"
+      },
+      {
+        "id": "cap-horizonte",
+        "label": "Horizonte e identidad institucional",
+        "number": "1.4",
+        "children": [
+          {
+            "id": "cap-horizonte-principios",
+            "label": "Principios institucionales",
+            "number": "1.4.1"
+          },
+          {
+            "id": "cap-horizonte-valores",
+            "label": "Valores institucionales",
+            "number": "1.4.2"
+          },
+          {
+            "id": "cap-horizonte-etico",
+            "label": "Horizonte ético del cuidado",
+            "number": "1.4.3"
+          }
+        ]
       },
       {
         "id": "cap-3",
         "label": "Perfiles de los actores",
-        "number": "1.3"
+        "number": "1.5",
+        "children": [
+          {
+            "id": "cap-3-estudiante",
+            "label": "Estudiante Lenista",
+            "number": "1.5.1"
+          },
+          {
+            "id": "cap-3-personero",
+            "label": "Personero o personera estudiantil",
+            "number": "1.5.2"
+          },
+          {
+            "id": "cap-3-docente",
+            "label": "Docente Lenista",
+            "number": "1.5.3"
+          },
+          {
+            "id": "cap-3-acudiente",
+            "label": "Padre, madre y/o acudiente",
+            "number": "1.5.4"
+          },
+          {
+            "id": "cap-3-egresado",
+            "label": "Egresado Lenista",
+            "number": "1.5.5"
+          }
+        ]
       }
     ]
   },
   {
-    "title": "Capítulo 2: Procesos de estudiantes",
+    "title": "Capítulo 2: Gobierno escolar y organización institucional",
     "collapsible": true,
     "items": [
       {
+        "id": "cap-organigrama",
+        "label": "Organigrama estructural de la institución",
+        "number": "2.1"
+      },
+      {
+        "id": "cap-gobierno",
+        "label": "Estructura del gobierno escolar",
+        "number": "2.2",
+        "children": [
+          {
+            "id": "cap-gobierno-rector",
+            "label": "El Rector",
+            "number": "2.2.1"
+          },
+          {
+            "id": "cap-gobierno-directivo",
+            "label": "El Consejo Directivo",
+            "number": "2.2.2"
+          },
+          {
+            "id": "cap-gobierno-academico",
+            "label": "El Consejo Académico",
+            "number": "2.2.3"
+          }
+        ]
+      },
+      {
+        "id": "cap-estamentos",
+        "label": "Estamentos e instancias de participación y control",
+        "number": "2.3",
+        "children": [
+          {
+            "id": "cap-estamentos-consejo-estudiantes",
+            "label": "Consejo de Estudiantes y VDI",
+            "number": "2.3.1"
+          },
+          {
+            "id": "cap-estamentos-personero",
+            "label": "Personero(a) Estudiantil",
+            "number": "2.3.2"
+          },
+          {
+            "id": "cap-estamentos-contralor",
+            "label": "Contralor(a) Estudiantil",
+            "number": "2.3.3"
+          },
+          {
+            "id": "cap-estamentos-ces",
+            "label": "Comité Escolar de Convivencia",
+            "number": "2.3.4"
+          },
+          {
+            "id": "cap-estamentos-comisiones",
+            "label": "Comisiones de Evaluación y Promoción",
+            "number": "2.3.5"
+          },
+          {
+            "id": "cap-estamentos-consejo-padres",
+            "label": "Consejo de Padres de Familia",
+            "number": "2.3.6"
+          },
+          {
+            "id": "cap-estamentos-asociacion-padres",
+            "label": "Asociación de Padres de Familia",
+            "number": "2.3.7"
+          },
+          {
+            "id": "cap-estamentos-exalumnos",
+            "label": "Asociación de exalumnos y sector productivo",
+            "number": "2.3.8"
+          }
+        ]
+      },
+      {
         "id": "cap-11",
         "label": "Inscripción, admisión y matrícula",
-        "number": "2.1"
+        "number": "a"
       },
       {
         "id": "cap-4",
         "label": "Reglas de presentación",
-        "number": "2.2"
+        "number": "b"
       },
       {
         "id": "cap-5",
         "label": "Uniformes",
-        "number": "2.3"
+        "number": "c"
       },
       {
         "id": "cap-6",
         "label": "Decomisación de bienes",
-        "number": "2.4"
+        "number": "d"
       },
       {
         "id": "cap-7",
         "label": "Enseres escolares",
-        "number": "2.5"
+        "number": "e"
       },
       {
         "id": "cap-8",
         "label": "Horario y asistencia",
-        "number": "2.6"
+        "number": "f"
       }
     ]
   },

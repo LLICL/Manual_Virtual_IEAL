@@ -2,6 +2,11 @@ import Home from './Home';
 import Cap1 from './Cap1';
 import Cap2 from './Cap2';
 import Cap3 from './Cap3';
+import Cap3Estudiante from './Cap3Estudiante';
+import Cap3Personero from './Cap3Personero';
+import Cap3Docente from './Cap3Docente';
+import Cap3Acudiente from './Cap3Acudiente';
+import Cap3Egresado from './Cap3Egresado';
 import Cap11 from './Cap11';
 import Cap4 from './Cap4';
 import Cap5 from './Cap5';
@@ -54,12 +59,37 @@ import Cap52 from './Cap52';
 import Cap53 from './Cap53';
 import Cap54 from './Cap54';
 import Cap55 from './Cap55';
+import CapResena from './CapResena';
+import CapHorizonte from './CapHorizonte';
+import CapHorizontePrincipios from './CapHorizontePrincipios';
+import CapHorizonteValores from './CapHorizonteValores';
+import CapHorizonteEtico from './CapHorizonteEtico';
+import CapOrganigrama from './CapOrganigrama';
+import CapGobierno from './CapGobierno';
+import CapGobiernoRector from './CapGobiernoRector';
+import CapGobiernoDirectivo from './CapGobiernoDirectivo';
+import CapGobiernoAcademico from './CapGobiernoAcademico';
+import CapEstamentos from './CapEstamentos';
+import CapEstamentosConsejoEstudiantes from './CapEstamentosConsejoEstudiantes';
+import CapEstamentosPersonero from './CapEstamentosPersonero';
+import CapEstamentosContralor from './CapEstamentosContralor';
+import CapEstamentosCes from './CapEstamentosCes';
+import CapEstamentosComisiones from './CapEstamentosComisiones';
+import CapEstamentosConsejoPadres from './CapEstamentosConsejoPadres';
+import CapEstamentosAsociacionPadres from './CapEstamentosAsociacionPadres';
+import CapEstamentosExalumnos from './CapEstamentosExalumnos';
 
 const sections = {
   'cap-home': Home,
   'cap-1': Cap1,
+  'cap-resena': CapResena,
   'cap-2': Cap2,
   'cap-3': Cap3,
+  'cap-3-estudiante': Cap3Estudiante,
+  'cap-3-personero': Cap3Personero,
+  'cap-3-docente': Cap3Docente,
+  'cap-3-acudiente': Cap3Acudiente,
+  'cap-3-egresado': Cap3Egresado,
   'cap-11': Cap11,
   'cap-4': Cap4,
   'cap-5': Cap5,
@@ -112,6 +142,25 @@ const sections = {
   'cap-53': Cap53,
   'cap-54': Cap54,
   'cap-55': Cap55,
+  'cap-resena': CapResena,
+  'cap-horizonte': CapHorizonte,
+  'cap-horizonte-principios': CapHorizontePrincipios,
+  'cap-horizonte-valores': CapHorizonteValores,
+  'cap-horizonte-etico': CapHorizonteEtico,
+  'cap-organigrama': CapOrganigrama,
+  'cap-gobierno': CapGobierno,
+  'cap-gobierno-rector': CapGobiernoRector,
+  'cap-gobierno-directivo': CapGobiernoDirectivo,
+  'cap-gobierno-academico': CapGobiernoAcademico,
+  'cap-estamentos': CapEstamentos,
+  'cap-estamentos-consejo-estudiantes': CapEstamentosConsejoEstudiantes,
+  'cap-estamentos-personero': CapEstamentosPersonero,
+  'cap-estamentos-contralor': CapEstamentosContralor,
+  'cap-estamentos-ces': CapEstamentosCes,
+  'cap-estamentos-comisiones': CapEstamentosComisiones,
+  'cap-estamentos-consejo-padres': CapEstamentosConsejoPadres,
+  'cap-estamentos-asociacion-padres': CapEstamentosAsociacionPadres,
+  'cap-estamentos-exalumnos': CapEstamentosExalumnos,
 };
 
 export default sections;

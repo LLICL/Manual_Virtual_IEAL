@@ -2,12 +2,76 @@ import { useState } from 'react';
 import navigation from '../data/navigation';
 import { useNavigation } from '../NavigationContext';
 
+const conHijos = (item) => Boolean(item.children?.length);
+const dentroDe = (item, current) => item.id === current || Boolean(item.children?.some((c) => c.id === current));
+
+// Item con `children`: el caret abre/cierra y el texto navega y despliega.
+function NavItem({ data, current, go, toggle, alterna, abrir, sub }) {
+  const hijos = data.children ?? [];
+  const porDefecto = Boolean(hijos.some((c) => c.id === current));
+  const isOpen = (toggle[data.id] ?? porDefecto) && hijos.length > 0;
+  const cambiar = () => alterna(data.id, porDefecto);
+
+  return (
+    <>
+      <a
+        href={`#${data.id}`}
+        className={`nav-item${sub ? ' nav-item--sub' : ''}${data.className ? ` ${data.className}` : ''}${
+          current === data.id ? ' active' : ''
+        }`}
+        data-section={data.id}
+        title={data.number ? `${data.number} · ${data.label}` : data.label}
+        onClick={(e) => {
+          e.preventDefault();
+          go(data.id);
+          if (hijos.length) abrir(data.id);
+        }}
+      >
+        {hijos.length > 0 && (
+          <span
+            className="nav-caret"
+            role="button"
+            tabIndex={-1}
+            aria-label={isOpen ? 'Contraer' : 'Desplegar'}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              cambiar();
+            }}
+          >
+            {isOpen ? '▼' : '▶'}
+          </span>
+        )}
+        {data.number && <span className="nav-num">{data.number}</span>}
+        <span className="nav-label">{data.label}</span>
+      </a>
+
+      {isOpen &&
+        hijos.map((hijo) => (
+          <NavItem
+            key={hijo.id}
+            data={hijo}
+            current={current}
+            go={go}
+            toggle={toggle}
+            alterna={alterna}
+            abrir={abrir}
+            sub
+          />
+        ))}
+    </>
+  );
+}
+
 export default function Sidebar({ open }) {
   const { current, go } = useNavigation();
-  // Los grupos colapsables empiezan cerrados.
-  const [expanded, setExpanded] = useState({});
+  // Estado manual de apertura; lo que el usuario no tocó se deduce de la sección actual.
+  const [toggle, setToggle] = useState({});
 
-  const toggle = (title) => setExpanded((prev) => ({ ...prev, [title]: !prev[title] }));
+  const alterna = (key, porDefecto) =>
+    setToggle((prev) => ({ ...prev, [key]: !(prev[key] ?? porDefecto) }));
+
+  const abrir = (key) => setToggle((prev) => ({ ...prev, [key]: true }));
 
   return (
     <aside className={`sidebar${open ? ' open' : ''}`} id="sidebar">
@@ -17,11 +81,22 @@ export default function Sidebar({ open }) {
 
       <nav className="sidebar-nav">
         {navigation.map((group) => {
-          const isOpen = !group.collapsible || expanded[group.title];
+          if (group.separator) {
+            return (
+              <div className="nav-bloque" key={group.title}>
+                {group.title}
+              </div>
+            );
+          }
+          const porDefecto = group.items.some((i) => dentroDe(i, current));
+          const isOpen = !group.collapsible || (toggle[group.title] ?? porDefecto);
           return (
             <div className="nav-section" key={group.title}>
               {group.collapsible ? (
-                <span className="nav-section-title toggle-title" onClick={() => toggle(group.title)}>
+                <span
+                  className="nav-section-title toggle-title"
+                  onClick={() => alterna(group.title, porDefecto)}
+                >
                   <span className="toggle-icon">{isOpen ? '▼' : '▶'}</span>
                   {group.title}
                 </span>
@@ -30,23 +105,16 @@ export default function Sidebar({ open }) {
               )}
 
               {isOpen &&
-                group.items.map((item) => (
-                  <a
-                    key={item.id}
-                    href={`#${item.id}`}
-                    className={`nav-item${item.className ? ` ${item.className}` : ''}${
-                      current === item.id ? ' active' : ''
-                    }`}
-                    data-section={item.id}
-                    title={item.number ? `${item.number} · ${item.label}` : item.label}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      go(item.id);
-                    }}
-                  >
-                    {item.number && <span className="nav-num">{item.number}</span>}
-                    <span className="nav-label">{item.label}</span>
-                  </a>
+                group.items.map((i) => (
+                  <NavItem
+                    key={i.id}
+                    data={i}
+                    current={current}
+                    go={go}
+                    toggle={toggle}
+                    alterna={alterna}
+                    abrir={abrir}
+                  />
                 ))}
             </div>
           );
