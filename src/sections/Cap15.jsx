@@ -4,11 +4,11 @@ export default function Cap15() {
   return (
     <>
       <Tabs ids={["dconcepto","dlev","dgra","dgravis"]} initial="dconcepto">
-        <div className="section-header section-header--red">
+        <div className="section-header">
           <span className="section-num">
             15
           </span>
-          <h2 className="section-title" style={{ color: "var(--red)" }}>
+          <h2 className="section-title">
             Faltas
           </h2>
         </div>
@@ -30,7 +30,7 @@ export default function Cap15() {
           </TabButton>
         </div>
         <TabPanel className="faltas-tab-content faltas-content-concepto" id="dconcepto">
-          <p className="sec-main-title sec-main-title--red">
+          <p className="sec-main-title">
             CONCEPTO DE FALTA
           </p>
           <p>
@@ -71,7 +71,7 @@ export default function Cap15() {
           </div>
         </TabPanel>
         <TabPanel className="faltas-tab-content faltas-content-leve" id="dlev">
-          <p className="sec-main-title sec-main-title--red">
+          <p className="sec-main-title">
             DE LAS FALTAS LEVES.
           </p>
           <p>
@@ -277,7 +277,7 @@ export default function Cap15() {
           </div>
         </TabPanel>
         <TabPanel className="faltas-tab-content faltas-content-grave" id="dgra">
-          <p className="sec-main-title sec-main-title--red">
+          <p className="sec-main-title">
             DE LAS FALTAS GRAVES.
           </p>
           <p>
@@ -642,7 +642,7 @@ export default function Cap15() {
           </div>
         </TabPanel>
         <TabPanel className="faltas-tab-content faltas-content-gravis" id="dgravis">
-          <p className="sec-main-title sec-main-title--red">
+          <p className="sec-main-title">
             DE LAS FALTAS GRAVÍSIMAS O MUY GRAVES.
           </p>
           <p>

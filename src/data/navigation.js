@@ -168,73 +168,163 @@ const navigation = [
             "number": "2.3.8"
           }
         ]
-      },
-      {
-        "id": "cap-11",
-        "label": "Inscripción, admisión y matrícula",
-        "number": "a"
-      },
-      {
-        "id": "cap-4",
-        "label": "Reglas de presentación",
-        "number": "b"
-      },
-      {
-        "id": "cap-5",
-        "label": "Uniformes",
-        "number": "c"
-      },
-      {
-        "id": "cap-6",
-        "label": "Decomisación de bienes",
-        "number": "d"
-      },
-      {
-        "id": "cap-7",
-        "label": "Enseres escolares",
-        "number": "e"
-      },
-      {
-        "id": "cap-8",
-        "label": "Horario y asistencia",
-        "number": "f"
       }
     ]
   },
   {
-    "title": "Capítulo 3: Derechos y deberes de los educandos",
+    "title": "Capítulo 3: De los Estudiantes",
     "collapsible": true,
     "items": [
       {
-        "id": "cap-9",
-        "label": "Derechos de los educandos",
+        "id": "cap-11",
+        "label": "Inscripción, admisión y matrícula",
         "number": "3.1"
       },
       {
+        "id": "cap-4",
+        "label": "Reglas de higiene, presentación personal y uniforme institucional",
+        "number": "3.2",
+        "collapsible": true,
+        "children": [
+          {
+            "id": "cap-4-higiene",
+            "label": "Pautas de higiene y riesgo epidemiológico",
+            "number": "3.2.1"
+          },
+          {
+            "id": "cap-4-presentacion",
+            "label": "Marco de autonomía y presentación personal",
+            "number": "3.2.2"
+          },
+          {
+            "id": "cap-5",
+            "label": "Uniforme oficial único y obligatorio",
+            "number": "3.2.3"
+          }
+        ]
+      },
+      {
+        "id": "cap-8",
+        "label": "Jornadas escolares",
+        "number": "3.3",
+        "children": [
+          {
+            "id": "cap-8-horarios",
+            "label": "Intensidad horaria y horarios oficiales",
+            "number": "3.3.1"
+          },
+          {
+            "id": "cap-8-retardos",
+            "label": "Retardos",
+            "number": "3.3.2"
+          },
+          {
+            "id": "cap-8-inasistencias",
+            "label": "Manejo de inasistencias, justificaciones y trámites",
+            "number": "3.3.3"
+          },
+          {
+            "id": "cap-8-permisos",
+            "label": "Solicitud y trámite de permisos de salida de estudiantes",
+            "number": "3.3.4"
+          }
+        ]
+      },
+      {
+        "id": "cap-9",
+        "label": "Derechos y sistema de estímulos de los estudiantes",
+        "number": "3.4",
+        "children": [
+          {
+            "id": "cap-9-derechos",
+            "label": "Derechos de los estudiantes Lenistas",
+            "number": "3.4.1"
+          },
+          {
+            "id": "cap-9-estimulos",
+            "label": "Sistema de estímulos y reconocimientos institucionales",
+            "number": "3.4.2"
+          }
+        ]
+      },
+      {
         "id": "cap-10",
-        "label": "Derechos jurídicos",
-        "number": "3.2"
+        "label": "Deberes y compromisos del estudiante Lenista",
+        "number": "3.5",
+        "children": [
+          {
+            "id": "cap-10-academicos",
+            "label": "Compromisos académicos",
+            "number": "3.5.1"
+          },
+          {
+            "id": "cap-10-convivencia",
+            "label": "Compromisos convivenciales y de relaciones interpersonales",
+            "number": "3.5.2"
+          },
+          {
+            "id": "cap-10-bienes",
+            "label": "Compromisos sobre cuidado de bienes, instalaciones y entorno",
+            "number": "3.5.3"
+          },
+          {
+            "id": "cap-10-institucional",
+            "label": "Compromisos institucionales, de autocuidado y cumplimiento legal",
+            "number": "3.5.4"
+          }
+        ]
+      },
+      {
+        "id": "cap-reg",
+        "label": "Regulaciones especiales institucionales",
+        "number": "3.6",
+        "children": [
+          {
+            "id": "cap-reg-celulares",
+            "label": "De los celulares",
+            "number": "3.6.1"
+          },
+          {
+            "id": "cap-reg-vapeadores",
+            "label": "De vapeadores",
+            "number": "3.6.2"
+          },
+          {
+            "id": "cap-reg-intangibilidad",
+            "label": "Del principio de intangibilidad e indemnidad sexual de la infancia",
+            "number": "3.6.3"
+          },
+          {
+            "id": "cap-reg-acoso",
+            "label": "Del acoso escolar",
+            "number": "3.6.4"
+          },
+          {
+            "id": "cap-reg-servicio-social",
+            "label": "Servicio social estudiantil obligatorio",
+            "number": "3.6.5"
+          },
+          {
+            "id": "cap-reg-decomiso",
+            "label": "Decomiso de bienes ajenos o prohibidos y reposición de daños",
+            "number": "3.6.6"
+          },
+          {
+            "id": "cap-reg-alianza",
+            "label": "Alianza Familia-Escuela",
+            "number": "3.6.7"
+          }
+        ]
       },
       {
         "id": "cap-12",
         "label": "Orientación sexual e identidad",
-        "number": "3.3"
-      },
-      {
-        "id": "cap-13",
-        "label": "Deberes académicos y de convivencia",
-        "number": "3.4"
-      },
-      {
-        "id": "cap-14",
-        "label": "Deberes del estudiante Lenista",
-        "number": "3.5"
+        "number": "c"
       },
       {
         "id": "cap-15",
         "label": "Faltas: leves, graves y gravísimas",
-        "number": "3.6",
-        "className": "nav-item--red"
+        "number": "f"
       }
     ]
   },
@@ -245,42 +335,42 @@ const navigation = [
       {
         "id": "cap-16",
         "label": "Solución de conflictos",
-        "number": "4.1"
+        "number": "a"
       },
       {
         "id": "cap-17",
         "label": "Protocolo de atención",
-        "number": "4.2"
+        "number": "b"
       },
       {
         "id": "cap-18",
         "label": "Uso de dispositivos móviles",
-        "number": "4.3"
+        "number": "c"
       },
       {
         "id": "cap-19",
         "label": "Prevención del abuso sexual",
-        "number": "4.4"
+        "number": "d"
       },
       {
         "id": "cap-20",
         "label": "Protocolo de sustancias prohibidas",
-        "number": "4.5"
+        "number": "e"
       },
       {
         "id": "cap-21",
         "label": "Comité de convivencia",
-        "number": "4.6"
+        "number": "f"
       },
       {
         "id": "cap-22",
         "label": "Rutas de atención",
-        "number": "4.7"
+        "number": "g"
       },
       {
         "id": "cap-23",
         "label": "Infracciones administrativas",
-        "number": "4.8"
+        "number": "h"
       }
     ]
   },
@@ -291,37 +381,37 @@ const navigation = [
       {
         "id": "cap-24",
         "label": "Derechos de docentes",
-        "number": "5.1"
+        "number": "a"
       },
       {
         "id": "cap-25",
         "label": "Deberes de docentes",
-        "number": "5.2"
+        "number": "b"
       },
       {
         "id": "cap-26",
         "label": "Deberes del director de grupo",
-        "number": "5.3"
+        "number": "c"
       },
       {
         "id": "cap-27",
         "label": "El rector",
-        "number": "5.4"
+        "number": "d"
       },
       {
         "id": "cap-28",
         "label": "Coordinador académico",
-        "number": "5.5"
+        "number": "e"
       },
       {
         "id": "cap-29",
         "label": "Coordinador de área",
-        "number": "5.6"
+        "number": "f"
       },
       {
         "id": "cap-30",
         "label": "Orientador escolar",
-        "number": "5.7"
+        "number": "g"
       }
     ]
   },
@@ -332,37 +422,37 @@ const navigation = [
       {
         "id": "cap-31",
         "label": "Perfil de padres y acudientes",
-        "number": "6.1"
+        "number": "a"
       },
       {
         "id": "cap-32",
         "label": "Derechos de los padres",
-        "number": "6.2"
+        "number": "b"
       },
       {
         "id": "cap-33",
         "label": "Deberes de los padres",
-        "number": "6.3"
+        "number": "c"
       },
       {
         "id": "cap-34",
         "label": "Escuela de padres",
-        "number": "6.4"
+        "number": "d"
       },
       {
         "id": "cap-35",
         "label": "Talleres a padres de familia",
-        "number": "6.5"
+        "number": "e"
       },
       {
         "id": "cap-36",
         "label": "Manejo de inasistencias",
-        "number": "6.6"
+        "number": "f"
       },
       {
         "id": "cap-37",
         "label": "Procedimientos PQRS",
-        "number": "6.7"
+        "number": "g"
       }
     ]
   },
@@ -373,7 +463,7 @@ const navigation = [
       {
         "id": "cap-38",
         "label": "Personal administrativo",
-        "number": "7.1"
+        "number": "a"
       }
     ]
   },
@@ -384,42 +474,42 @@ const navigation = [
       {
         "id": "cap-39",
         "label": "Información general / gobierno escolar",
-        "number": "8.1"
+        "number": "a"
       },
       {
         "id": "cap-40",
         "label": "Consejo académico",
-        "number": "8.2"
+        "number": "b"
       },
       {
         "id": "cap-41",
         "label": "Consejo de estudiantes",
-        "number": "8.3"
+        "number": "c"
       },
       {
         "id": "cap-42",
         "label": "Consejo de padres de familia",
-        "number": "8.4"
+        "number": "d"
       },
       {
         "id": "cap-43",
         "label": "Comisión de evaluación y promoción",
-        "number": "8.5"
+        "number": "e"
       },
       {
         "id": "cap-44",
         "label": "Personero estudiantil",
-        "number": "8.6"
+        "number": "f"
       },
       {
         "id": "cap-45",
         "label": "Asociación de exalumnos",
-        "number": "8.7"
+        "number": "g"
       },
       {
         "id": "cap-46",
         "label": "Contralor estudiantil",
-        "number": "8.8"
+        "number": "h"
       }
     ]
   },
@@ -430,47 +520,47 @@ const navigation = [
       {
         "id": "cap-47",
         "label": "Servicios para educandos",
-        "number": "9.1"
+        "number": "a"
       },
       {
         "id": "cap-48",
         "label": "Normas de conducta",
-        "number": "9.2"
+        "number": "b"
       },
       {
         "id": "cap-49",
         "label": "Sistema de evaluación institucional - SIEE",
-        "number": "9.3"
+        "number": "c"
       },
       {
         "id": "cap-50",
         "label": "Criterios de evaluación y promoción",
-        "number": "9.4"
+        "number": "d"
       },
       {
         "id": "cap-51",
         "label": "Acciones de seguimiento",
-        "number": "9.5"
+        "number": "e"
       },
       {
         "id": "cap-52",
         "label": "Estrategias de apoyo",
-        "number": "9.6"
+        "number": "f"
       },
       {
         "id": "cap-53",
         "label": "Acciones para procesos educativos",
-        "number": "9.7"
+        "number": "g"
       },
       {
         "id": "cap-54",
         "label": "Definiciones de rutas de atención",
-        "number": "9.8"
+        "number": "h"
       },
       {
         "id": "cap-55",
         "label": "Directorio telefónico",
-        "number": "9.9"
+        "number": "i"
       }
     ]
   }

@@ -9,15 +9,31 @@ import Cap3Acudiente from './Cap3Acudiente';
 import Cap3Egresado from './Cap3Egresado';
 import Cap11 from './Cap11';
 import Cap4 from './Cap4';
+import Cap4Higiene from './Cap4Higiene';
+import Cap4Presentacion from './Cap4Presentacion';
 import Cap5 from './Cap5';
-import Cap6 from './Cap6';
-import Cap7 from './Cap7';
 import Cap8 from './Cap8';
+import Cap8Horarios from './Cap8Horarios';
+import Cap8Retardos from './Cap8Retardos';
+import Cap8Inasistencias from './Cap8Inasistencias';
+import Cap8Permisos from './Cap8Permisos';
 import Cap9 from './Cap9';
+import Cap9Derechos from './Cap9Derechos';
+import Cap9Estimulos from './Cap9Estimulos';
 import Cap10 from './Cap10';
+import Cap10Academicos from './Cap10Academicos';
+import Cap10Convivencia from './Cap10Convivencia';
+import Cap10Bienes from './Cap10Bienes';
+import Cap10Institucional from './Cap10Institucional';
+import CapReg from './CapReg';
+import CapRegCelulares from './CapRegCelulares';
+import CapRegVapeadores from './CapRegVapeadores';
+import CapRegIntangibilidad from './CapRegIntangibilidad';
+import CapRegAcoso from './CapRegAcoso';
+import CapRegServicioSocial from './CapRegServicioSocial';
+import CapRegDecomiso from './CapRegDecomiso';
+import CapRegAlianza from './CapRegAlianza';
 import Cap12 from './Cap12';
-import Cap13 from './Cap13';
-import Cap14 from './Cap14';
 import Cap15 from './Cap15';
 import Cap16 from './Cap16';
 import Cap17 from './Cap17';
@@ -92,15 +108,31 @@ const sections = {
   'cap-3-egresado': Cap3Egresado,
   'cap-11': Cap11,
   'cap-4': Cap4,
+  'cap-4-higiene': Cap4Higiene,
+  'cap-4-presentacion': Cap4Presentacion,
   'cap-5': Cap5,
-  'cap-6': Cap6,
-  'cap-7': Cap7,
   'cap-8': Cap8,
+  'cap-8-horarios': Cap8Horarios,
+  'cap-8-retardos': Cap8Retardos,
+  'cap-8-inasistencias': Cap8Inasistencias,
+  'cap-8-permisos': Cap8Permisos,
   'cap-9': Cap9,
+  'cap-9-derechos': Cap9Derechos,
+  'cap-9-estimulos': Cap9Estimulos,
   'cap-10': Cap10,
+  'cap-10-academicos': Cap10Academicos,
+  'cap-10-convivencia': Cap10Convivencia,
+  'cap-10-bienes': Cap10Bienes,
+  'cap-10-institucional': Cap10Institucional,
+  'cap-reg': CapReg,
+  'cap-reg-celulares': CapRegCelulares,
+  'cap-reg-vapeadores': CapRegVapeadores,
+  'cap-reg-intangibilidad': CapRegIntangibilidad,
+  'cap-reg-acoso': CapRegAcoso,
+  'cap-reg-servicio-social': CapRegServicioSocial,
+  'cap-reg-decomiso': CapRegDecomiso,
+  'cap-reg-alianza': CapRegAlianza,
   'cap-12': Cap12,
-  'cap-13': Cap13,
-  'cap-14': Cap14,
   'cap-15': Cap15,
   'cap-16': Cap16,
   'cap-17': Cap17,

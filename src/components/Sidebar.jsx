@@ -4,12 +4,15 @@ import { useNavigation } from '../NavigationContext';
 
 const conHijos = (item) => Boolean(item.children?.length);
 const dentroDe = (item, current) => item.id === current || Boolean(item.children?.some((c) => c.id === current));
+// Un item `collapsible` es solo un grupo: su fila despliega, nunca navega.
+const esGrupo = (item) => Boolean(item.collapsible && item.children?.length);
 
 // Item con `children`: el caret abre/cierra y el texto navega y despliega.
 function NavItem({ data, current, go, toggle, alterna, abrir, sub }) {
   const hijos = data.children ?? [];
   const porDefecto = Boolean(hijos.some((c) => c.id === current));
   const isOpen = (toggle[data.id] ?? porDefecto) && hijos.length > 0;
+  const soloDesplega = esGrupo(data);
   const cambiar = () => alterna(data.id, porDefecto);
 
   return (
@@ -23,6 +26,10 @@ function NavItem({ data, current, go, toggle, alterna, abrir, sub }) {
         title={data.number ? `${data.number} · ${data.label}` : data.label}
         onClick={(e) => {
           e.preventDefault();
+          if (soloDesplega) {
+            cambiar();
+            return;
+          }
           go(data.id);
           if (hijos.length) abrir(data.id);
         }}
