@@ -33,23 +33,72 @@ import CapRegAcoso from './CapRegAcoso';
 import CapRegServicioSocial from './CapRegServicioSocial';
 import CapRegDecomiso from './CapRegDecomiso';
 import CapRegAlianza from './CapRegAlianza';
-import Cap12 from './Cap12';
-import Cap15 from './Cap15';
-import Cap16 from './Cap16';
-import Cap17 from './Cap17';
-import Cap18 from './Cap18';
-import Cap19 from './Cap19';
-import Cap20 from './Cap20';
-import Cap21 from './Cap21';
-import Cap22 from './Cap22';
-import Cap23 from './Cap23';
-import Cap24 from './Cap24';
-import Cap25 from './Cap25';
-import Cap26 from './Cap26';
-import Cap27 from './Cap27';
-import Cap28 from './Cap28';
-import Cap29 from './Cap29';
-import Cap30 from './Cap30';
+import CapRutaComponentes from './CapRutaComponentes';
+import CapRutaComponentesRuta from './CapRutaComponentesRuta';
+import CapRutaSemana from './CapRutaSemana';
+import CapRutaCentros from './CapRutaCentros';
+import CapRutaSituaciones from './CapRutaSituaciones';
+import CapRutaSituacionesTipos from './CapRutaSituacionesTipos';
+import CapRutaSituacionesTipo1 from './CapRutaSituacionesTipo1';
+import CapRutaSituacionesTipo2 from './CapRutaSituacionesTipo2';
+import CapRutaSituacionesTipo3 from './CapRutaSituacionesTipo3';
+import CapRutaFaltas from './CapRutaFaltas';
+import CapRutaFaltasLeves from './CapRutaFaltasLeves';
+import CapRutaFaltasGraves from './CapRutaFaltasGraves';
+import CapRutaFaltasGravisimas from './CapRutaFaltasGravisimas';
+import CapRutaDebidoProceso from './CapRutaDebidoProceso';
+import CapRutaDebidoEtapas from './CapRutaDebidoEtapas';
+import CapRutaDebidoSanciones from './CapRutaDebidoSanciones';
+import CapRutaDebidoDosificacion from './CapRutaDebidoDosificacion';
+import CapRutaDebidoGarantias from './CapRutaDebidoGarantias';
+import CapRutaDebidoPrevalencia from './CapRutaDebidoPrevalencia';
+import CapRutaDebidoResponsabilidad from './CapRutaDebidoResponsabilidad';
+import CapRutaConducto from './CapRutaConducto';
+import CapRutaConductoConvivencial from './CapRutaConductoConvivencial';
+import CapRutaConductoAcademico from './CapRutaConductoAcademico';
+import CapRutaConductoPQRS from './CapRutaConductoPQRS';
+import CapRutaConductoInjerencias from './CapRutaConductoInjerencias';
+import CapRutaConductoExcepcion from './CapRutaConductoExcepcion';
+import CapRutaConductoProtocoloDocente from './CapRutaConductoProtocoloDocente';
+import CapRutaConductoEvidencia from './CapRutaConductoEvidencia';
+import CapRutaClausulaRemision from './CapRutaClausulaRemision';
+import CapRutaProtocolos from './CapRutaProtocolos';
+import CapRutaProtocolosSPA from './CapRutaProtocolosSPA';
+import CapRutaProtocolosDorado from './CapRutaProtocolosDorado';
+import CapRutaProtocolosVBG from './CapRutaProtocolosVBG';
+import CapRutaProtocolosCiber from './CapRutaProtocolosCiber';
+import CapRutaProtocolosCiberAcoso from './CapRutaProtocolosCiberAcoso';
+import CapRutaProtocolosCiberEvidencia from './CapRutaProtocolosCiberEvidencia';
+import CapRutaProtocolosCiberSalud from './CapRutaProtocolosCiberSalud';
+import CapRutaProtocolosASI from './CapRutaProtocolosASI';
+import CapRutaProtocolosGestantes from './CapRutaProtocolosGestantes';
+import CapRutaProtocolosPAP from './CapRutaProtocolosPAP';
+import CapRutaProtocolosPAPDefinicion from './CapRutaProtocolosPAPDefinicion';
+import CapRutaProtocolosPAPPasos from './CapRutaProtocolosPAPPasos';
+import CapRutaProtocolosPAPCalma from './CapRutaProtocolosPAPCalma';
+import CapRutaProtocolosPAPNiveles from './CapRutaProtocolosPAPNiveles';
+import CapRutaProtocolosPAPGuia from './CapRutaProtocolosPAPGuia';
+import CapConvivencia from './CapConvivencia';
+import Cap5Clasificacion from './Cap5Clasificacion';
+import Cap5Derechos from './Cap5Derechos';
+import Cap5Deberes from './Cap5Deberes';
+import Cap5DeberesProteccion from './Cap5DeberesProteccion';
+import Cap5DeberesAcademicos from './Cap5DeberesAcademicos';
+import Cap5DeberesEtica from './Cap5DeberesEtica';
+import Cap5Prohibiciones from './Cap5Prohibiciones';
+import Cap5DirectorGrupo from './Cap5DirectorGrupo';
+import Cap5FuncionesDirectivos from './Cap5FuncionesDirectivos';
+import Cap5FuncionesRector from './Cap5FuncionesRector';
+import Cap5CoordinacionAcademica from './Cap5CoordinacionAcademica';
+import Cap5CoordinacionConvivencia from './Cap5CoordinacionConvivencia';
+import Cap5CoordinacionesSedes from './Cap5CoordinacionesSedes';
+import Cap5JefesDepartamento from './Cap5JefesDepartamento';
+import Cap5Orientador from './Cap5Orientador';
+import Cap5Administrativo from './Cap5Administrativo';
+import Cap5AdministrativoDerechos from './Cap5AdministrativoDerechos';
+import Cap5AdministrativoDeberes from './Cap5AdministrativoDeberes';
+import Cap5AdministrativoFaltas from './Cap5AdministrativoFaltas';
+import Cap5AdministrativoSanciones from './Cap5AdministrativoSanciones';
 import Cap31 from './Cap31';
 import Cap32 from './Cap32';
 import Cap33 from './Cap33';
@@ -132,23 +181,72 @@ const sections = {
   'cap-reg-servicio-social': CapRegServicioSocial,
   'cap-reg-decomiso': CapRegDecomiso,
   'cap-reg-alianza': CapRegAlianza,
-  'cap-12': Cap12,
-  'cap-15': Cap15,
-  'cap-16': Cap16,
-  'cap-17': Cap17,
-  'cap-18': Cap18,
-  'cap-19': Cap19,
-  'cap-20': Cap20,
-  'cap-21': Cap21,
-  'cap-22': Cap22,
-  'cap-23': Cap23,
-  'cap-24': Cap24,
-  'cap-25': Cap25,
-  'cap-26': Cap26,
-  'cap-27': Cap27,
-  'cap-28': Cap28,
-  'cap-29': Cap29,
-  'cap-30': Cap30,
+  'cap-ruta-componentes': CapRutaComponentes,
+  'cap-ruta-componentes-ruta': CapRutaComponentesRuta,
+  'cap-ruta-semana': CapRutaSemana,
+  'cap-ruta-centros': CapRutaCentros,
+  'cap-ruta-situaciones': CapRutaSituaciones,
+  'cap-ruta-situaciones-tipos': CapRutaSituacionesTipos,
+  'cap-ruta-situaciones-tipo1': CapRutaSituacionesTipo1,
+  'cap-ruta-situaciones-tipo2': CapRutaSituacionesTipo2,
+  'cap-ruta-situaciones-tipo3': CapRutaSituacionesTipo3,
+  'cap-ruta-faltas': CapRutaFaltas,
+  'cap-ruta-faltas-leves': CapRutaFaltasLeves,
+  'cap-ruta-faltas-graves': CapRutaFaltasGraves,
+  'cap-ruta-faltas-gravisimas': CapRutaFaltasGravisimas,
+  'cap-ruta-debido-proceso': CapRutaDebidoProceso,
+  'cap-ruta-debido-etapas': CapRutaDebidoEtapas,
+  'cap-ruta-debido-sanciones': CapRutaDebidoSanciones,
+  'cap-ruta-debido-dosificacion': CapRutaDebidoDosificacion,
+  'cap-ruta-debido-garantias': CapRutaDebidoGarantias,
+  'cap-ruta-debido-prevalencia': CapRutaDebidoPrevalencia,
+  'cap-ruta-debido-responsabilidad': CapRutaDebidoResponsabilidad,
+  'cap-ruta-conducto': CapRutaConducto,
+  'cap-ruta-conducto-convivencial': CapRutaConductoConvivencial,
+  'cap-ruta-conducto-academico': CapRutaConductoAcademico,
+  'cap-ruta-conducto-pqrs': CapRutaConductoPQRS,
+  'cap-ruta-conducto-injerencias': CapRutaConductoInjerencias,
+  'cap-ruta-conducto-excepcion': CapRutaConductoExcepcion,
+  'cap-ruta-conducto-protocolo-docente': CapRutaConductoProtocoloDocente,
+  'cap-ruta-conducto-evidencia': CapRutaConductoEvidencia,
+  'cap-ruta-clausula-remision': CapRutaClausulaRemision,
+  'cap-ruta-protocolos': CapRutaProtocolos,
+  'cap-ruta-protocolos-spa': CapRutaProtocolosSPA,
+  'cap-ruta-protocolos-dorado': CapRutaProtocolosDorado,
+  'cap-ruta-protocolos-vbg': CapRutaProtocolosVBG,
+  'cap-ruta-protocolos-ciber': CapRutaProtocolosCiber,
+  'cap-ruta-protocolos-ciber-acoso': CapRutaProtocolosCiberAcoso,
+  'cap-ruta-protocolos-ciber-evidencia': CapRutaProtocolosCiberEvidencia,
+  'cap-ruta-protocolos-ciber-salud': CapRutaProtocolosCiberSalud,
+  'cap-ruta-protocolos-asi': CapRutaProtocolosASI,
+  'cap-ruta-protocolos-gestantes': CapRutaProtocolosGestantes,
+  'cap-ruta-protocolos-pap': CapRutaProtocolosPAP,
+  'cap-ruta-protocolos-pap-definicion': CapRutaProtocolosPAPDefinicion,
+  'cap-ruta-protocolos-pap-pasos': CapRutaProtocolosPAPPasos,
+  'cap-ruta-protocolos-pap-calma': CapRutaProtocolosPAPCalma,
+  'cap-ruta-protocolos-pap-niveles': CapRutaProtocolosPAPNiveles,
+  'cap-ruta-protocolos-pap-guia': CapRutaProtocolosPAPGuia,
+  'cap-convivencia': CapConvivencia,
+  'cap-5-1': Cap5Clasificacion,
+  'cap-5-2': Cap5Derechos,
+  'cap-5-3': Cap5Deberes,
+  'cap-5-3-1': Cap5DeberesProteccion,
+  'cap-5-3-2': Cap5DeberesAcademicos,
+  'cap-5-3-3': Cap5DeberesEtica,
+  'cap-5-4': Cap5Prohibiciones,
+  'cap-5-5': Cap5DirectorGrupo,
+  'cap-5-6': Cap5FuncionesDirectivos,
+  'cap-5-6-1': Cap5FuncionesRector,
+  'cap-5-6-2': Cap5CoordinacionAcademica,
+  'cap-5-6-3': Cap5CoordinacionConvivencia,
+  'cap-5-6-4': Cap5CoordinacionesSedes,
+  'cap-5-6-5': Cap5JefesDepartamento,
+  'cap-5-6-6': Cap5Orientador,
+  'cap-5-7': Cap5Administrativo,
+  'cap-5-7-1': Cap5AdministrativoDerechos,
+  'cap-5-7-2': Cap5AdministrativoDeberes,
+  'cap-5-7-3': Cap5AdministrativoFaltas,
+  'cap-5-7-4': Cap5AdministrativoSanciones,
   'cap-31': Cap31,
   'cap-32': Cap32,
   'cap-33': Cap33,

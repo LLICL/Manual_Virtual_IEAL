@@ -315,103 +315,368 @@ const navigation = [
             "number": "3.6.7"
           }
         ]
-      },
-      {
-        "id": "cap-12",
-        "label": "Orientación sexual e identidad",
-        "number": "c"
-      },
-      {
-        "id": "cap-15",
-        "label": "Faltas: leves, graves y gravísimas",
-        "number": "f"
       }
     ]
   },
   {
-    "title": "Capítulo 4: Procedimientos de concertación",
+    "title": "Capítulo 4: Gestión de la convivencia escolar, proceso y rutas",
     "collapsible": true,
+    "id": "cap-convivencia",
     "items": [
       {
-        "id": "cap-16",
-        "label": "Solución de conflictos",
-        "number": "a"
+        "id": "cap-ruta-componentes",
+        "label": "Componentes estructurales de la Ruta de Atención Integral",
+        "number": "4.1",
+        "children": [
+          {
+            "id": "cap-ruta-componentes-ruta",
+            "label": "Componentes de la Ruta de Atención Integral",
+            "number": "4.1.1"
+          },
+          {
+            "id": "cap-ruta-semana",
+            "label": "Semana de la Dignidad",
+            "number": "4.1.2"
+          },
+          {
+            "id": "cap-ruta-centros",
+            "label": "Centros de Interés institucionales",
+            "number": "4.1.3"
+          }
+        ]
       },
       {
-        "id": "cap-17",
-        "label": "Protocolo de atención",
-        "number": "b"
+        "id": "cap-ruta-situaciones",
+        "label": "Clasificación de situaciones, faltas disciplinarias y garantías del debido proceso",
+        "number": "4.2",
+        "children": [
+          {
+            "id": "cap-ruta-situaciones-tipos",
+            "label": "Definición y clasificación de las situaciones",
+            "number": "4.2.1"
+          },
+          {
+            "id": "cap-ruta-situaciones-tipo1",
+            "label": "Protocolo para Situaciones Tipo I",
+            "number": "4.2.2"
+          },
+          {
+            "id": "cap-ruta-situaciones-tipo2",
+            "label": "Protocolo para Situaciones Tipo II",
+            "number": "4.2.3"
+          },
+          {
+            "id": "cap-ruta-situaciones-tipo3",
+            "label": "Protocolo para Situaciones Tipo III",
+            "number": "4.2.4"
+          },
+{
+        "id": "cap-ruta-faltas",
+        "label": "De las faltas: sistema convivencial y formativo",
+        "number": "4.2.5",
+        "children": [
+          {
+            "id": "cap-ruta-faltas-leves",
+            "label": "Faltas leves",
+            "number": "4.2.5.1"
+          },
+          {
+            "id": "cap-ruta-faltas-graves",
+            "label": "Faltas graves",
+            "number": "4.2.5.2"
+          },
+          {
+            "id": "cap-ruta-faltas-gravisimas",
+            "label": "Faltas gravísimas o muy graves",
+            "number": "4.2.5.3"
+          }
+        ]
       },
       {
-        "id": "cap-18",
-        "label": "Uso de dispositivos móviles",
-        "number": "c"
+        "id": "cap-ruta-debido-proceso",
+        "label": "Garantías del debido proceso convivencial y etapas procesales",
+        "number": "4.2.6",
+        "children": [
+          {
+            "id": "cap-ruta-debido-etapas",
+            "label": "Etapas del proceso disciplinario",
+            "number": "4.2.6.1"
+          },
+          {
+            "id": "cap-ruta-debido-sanciones",
+            "label": "Catálogo graduado de sanciones para faltas gravísimas",
+            "number": "4.2.6.2"
+          },
+          {
+            "id": "cap-ruta-debido-dosificacion",
+            "label": "Criterios de dosificación y proporcionalidad",
+            "number": "4.2.6.3"
+          },
+          {
+            "id": "cap-ruta-debido-garantias",
+            "label": "Debido proceso sancionatorio y doble instancia",
+            "number": "4.2.6.4"
+          },
+          {
+            "id": "cap-ruta-debido-prevalencia",
+            "label": "Prevalencia penal y prohibición de retención judicial (Tipo III)",
+            "number": "4.2.6.5"
+          },
+          {
+            "id": "cap-ruta-debido-responsabilidad",
+            "label": "Responsabilidad patrimonial y modelos virtuales",
+            "number": "4.2.6.6"
+          }
+        ]
       },
       {
-        "id": "cap-19",
-        "label": "Prevención del abuso sexual",
-        "number": "d"
-      },
-      {
-        "id": "cap-20",
-        "label": "Protocolo de sustancias prohibidas",
-        "number": "e"
-      },
-      {
-        "id": "cap-21",
-        "label": "Comité de convivencia",
-        "number": "f"
-      },
-      {
-        "id": "cap-22",
-        "label": "Rutas de atención",
-        "number": "g"
-      },
-      {
-        "id": "cap-23",
-        "label": "Infracciones administrativas",
-        "number": "h"
+        "id": "cap-ruta-conducto",
+        "label": "Conducto regular institucional y canales de atención",
+        "number": "4.2.7",
+        "children": [
+          {
+            "id": "cap-ruta-conducto-convivencial",
+            "label": "Conducto regular para la mediación convivencial",
+            "number": "4.2.7.1"
+          },
+          {
+            "id": "cap-ruta-conducto-academico",
+            "label": "Conducto regular para reclamaciones académicas (SIEE)",
+            "number": "4.2.7.2"
+          },
+          {
+            "id": "cap-ruta-conducto-pqrs",
+            "label": "Conducto regular para PQR S(Peticiones, Quejas, Reclamos y Sugerencias)",
+            "number": "4.2.7.3"
+          },
+          {
+            "id": "cap-ruta-conducto-injerencias",
+            "label": "Prohibición de injerencias exógenas y salto del conducto",
+            "number": "4.2.7.4"
+          },
+          {
+            "id": "cap-ruta-conducto-excepcion",
+            "label": "Excepción justificada y protocolo para quejas contra docentes",
+            "number": "4.2.7.5",
+            "children": [
+              {
+                "id": "cap-ruta-conducto-protocolo-docente",
+                "label": "Protocolo de atención, mediación y garantías del docente",
+                "number": "4.2.7.5.1"
+              }
+            ]
+          },
+          {
+            "id": "cap-ruta-conducto-evidencia",
+            "label": "Obligatoriedad de evidencia escrita y registro documental",
+            "number": "4.2.7.6"
+          },
+          {
+            "id": "cap-ruta-clausula-remision",
+            "label": "Cláusula de remisión al Bloque 2",
+            "number": "4.2.7.7"
+          }
+        ]
       }
     ]
   },
-  {
-    "title": "Capítulo 5: Docentes",
+      {
+        "id": "cap-ruta-protocolos",
+        "label": "Protocolos específicos de riesgo",
+        "number": "4.3",
+        "children": [
+          {
+            "id": "cap-ruta-protocolos-spa",
+            "label": "SPA, Vapeadores y Alcohol",
+            "number": "4.3.1"
+          },
+          {
+            "id": "cap-ruta-protocolos-dorado",
+            "label": "Código Dorado: salud mental y conducta suicida",
+            "number": "4.3.2"
+          },
+          {
+            "id": "cap-ruta-protocolos-vbg",
+            "label": "Violencias basadas en género (VBG)",
+            "number": "4.3.3"
+          },
+          {
+            "id": "cap-ruta-protocolos-ciber",
+            "label": "Cibersituaciones, ciberacoso y evidencia digital",
+            "number": "4.3.4",
+            "children": [
+              {
+                "id": "cap-ruta-protocolos-ciber-acoso",
+                "label": "Protocolo de cibersituaciones y ciberacoso",
+                "number": "4.3.4.1"
+              },
+              {
+                "id": "cap-ruta-protocolos-ciber-evidencia",
+                "label": "Aseguramiento de evidencia digital",
+                "number": "4.3.4.2"
+              },
+              {
+                "id": "cap-ruta-protocolos-ciber-salud",
+                "label": "Violencia digital y salud mental",
+                "number": "4.3.4.3"
+              }
+            ]
+          },
+          {
+            "id": "cap-ruta-protocolos-asi",
+            "label": "Abuso Sexual Infantil (ASI)",
+            "number": "4.3.5"
+          },
+          {
+            "id": "cap-ruta-protocolos-gestantes",
+            "label": "Gestantes y lactantes",
+            "number": "4.3.6"
+          },
+          {
+            "id": "cap-ruta-protocolos-pap",
+            "label": "Primeros Auxilios Psicológicos (PAP)",
+            "number": "4.3.7",
+            "children": [
+              {
+                "id": "cap-ruta-protocolos-pap-definicion",
+                "label": "Definición y alcance no clínico de los PAP",
+                "number": "4.3.7.1"
+              },
+              {
+                "id": "cap-ruta-protocolos-pap-pasos",
+                "label": "Pasos: comunicación empática y escucha activa",
+                "number": "4.3.7.2"
+              },
+              {
+                "id": "cap-ruta-protocolos-pap-calma",
+                "label": "Zonas de calma y autorregulación",
+                "number": "4.3.7.3"
+              },
+              {
+                "id": "cap-ruta-protocolos-pap-niveles",
+                "label": "Acompañamiento gradual en tres niveles",
+                "number": "4.3.7.4"
+              },
+              {
+                "id": "cap-ruta-protocolos-pap-guia",
+                "label": "Qué hacer y qué no hacer en crisis + autocuidado docente",
+                "number": "4.3.7.5"
+              }
+            ]
+          }
+]
+      }
+    ]
+  },
+{
+    "title": "Capítulo 5: De los docentes y personal Administrativo",
     "collapsible": true,
     "items": [
       {
-        "id": "cap-24",
-        "label": "Derechos de docentes",
-        "number": "a"
+        "id": "cap-5-1",
+        "label": "Clasificación y perfil del personal docente",
+        "number": "5.1"
       },
       {
-        "id": "cap-25",
-        "label": "Deberes de docentes",
-        "number": "b"
+        "id": "cap-5-2",
+        "label": "Derechos de los docentes Lenistas",
+        "number": "5.2"
       },
       {
-        "id": "cap-26",
-        "label": "Deberes del director de grupo",
-        "number": "c"
+        "id": "cap-5-3",
+        "label": "Deberes y obligaciones de los docentes",
+        "number": "5.3",
+        "children": [
+          {
+            "id": "cap-5-3-1",
+            "label": "Deberes de protección, convivencia y reporte obligatorio",
+            "number": "5.3.1"
+          },
+          {
+            "id": "cap-5-3-2",
+            "label": "Deberes académicos y pedagógicos",
+            "number": "5.3.2"
+          },
+          {
+            "id": "cap-5-3-3",
+            "label": "Deberes de ética, ejemplo e integridad institucional",
+            "number": "5.3.3"
+          }
+        ]
       },
       {
-        "id": "cap-27",
-        "label": "El rector",
-        "number": "d"
+        "id": "cap-5-4",
+        "label": "Prohibiciones explícitas a los docentes",
+        "number": "5.4"
       },
       {
-        "id": "cap-28",
-        "label": "Coordinador académico",
-        "number": "e"
+        "id": "cap-5-5",
+        "label": "Funciones específicas del director(a) de grupo",
+        "number": "5.5"
       },
       {
-        "id": "cap-29",
-        "label": "Coordinador de área",
-        "number": "f"
+        "id": "cap-5-6",
+        "label": "Funciones de los directivos docentes y equipo de apoyo especializado",
+        "number": "5.6",
+        "children": [
+          {
+            "id": "cap-5-6-1",
+            "label": "Funciones de El Rector",
+            "number": "5.6.1"
+          },
+          {
+            "id": "cap-5-6-2",
+            "label": "Funciones de la Coordinación Académica",
+            "number": "5.6.2"
+          },
+          {
+            "id": "cap-5-6-3",
+            "label": "Funciones de la Coordinación de Convivencia",
+            "number": "5.6.3"
+          },
+          {
+            "id": "cap-5-6-4",
+            "label": "Funciones específicas de las Coordinaciones de Sedes de Primaria",
+            "number": "5.6.4"
+          },
+          {
+            "id": "cap-5-6-5",
+            "label": "Funciones de los jefes de Departamento / Coordinadores de Área",
+            "number": "5.6.5"
+          },
+          {
+            "id": "cap-5-6-6",
+            "label": "Funciones del Docente Orientador",
+            "number": "5.6.6"
+          }
+        ]
       },
       {
-        "id": "cap-30",
-        "label": "Orientador escolar",
-        "number": "g"
+        "id": "cap-5-7",
+        "label": "Del personal administrativo y de servicios generales",
+        "number": "5.7",
+        "children": [
+          {
+            "id": "cap-5-7-1",
+            "label": "Derechos del personal administrativo y de servicios",
+            "number": "5.7.1"
+          },
+          {
+            "id": "cap-5-7-2",
+            "label": "Deberes del personal administrativo y de servicios",
+            "number": "5.7.2"
+          },
+          {
+            "id": "cap-5-7-3",
+            "label": "Faltas del personal administrativo y de servicio",
+            "number": "5.7.3"
+          },
+          {
+            "id": "cap-5-7-4",
+            "label": "Sanciones del personal administrativo y de servicio",
+            "number": "5.7.4"
+          }
+        ]
       }
     ]
   },

@@ -3,14 +3,16 @@ import navigation from '../data/navigation';
 import { useNavigation } from '../NavigationContext';
 
 const conHijos = (item) => Boolean(item.children?.length);
-const dentroDe = (item, current) => item.id === current || Boolean(item.children?.some((c) => c.id === current));
+const dentroDe = (item, current) =>
+  item.id === current ||
+  Boolean((item.children ?? []).some((c) => c.id === current || dentroDe(c, current)));
 // Un item `collapsible` es solo un grupo: su fila despliega, nunca navega.
 const esGrupo = (item) => Boolean(item.collapsible && item.children?.length);
 
 // Item con `children`: el caret abre/cierra y el texto navega y despliega.
-function NavItem({ data, current, go, toggle, alterna, abrir, sub }) {
+function NavItem({ data, current, go, toggle, alterna, abrir, nivel = 0 }) {
   const hijos = data.children ?? [];
-  const porDefecto = Boolean(hijos.some((c) => c.id === current));
+  const porDefecto = Boolean(hijos.some((c) => dentroDe(c, current)));
   const isOpen = (toggle[data.id] ?? porDefecto) && hijos.length > 0;
   const soloDesplega = esGrupo(data);
   const cambiar = () => alterna(data.id, porDefecto);
@@ -19,7 +21,9 @@ function NavItem({ data, current, go, toggle, alterna, abrir, sub }) {
     <>
       <a
         href={`#${data.id}`}
-        className={`nav-item${sub ? ' nav-item--sub' : ''}${data.className ? ` ${data.className}` : ''}${
+        className={`nav-item${nivel > 0 ? ' nav-item--sub' : ''}${
+          nivel > 1 ? ` nav-item--nivel-${nivel}` : ''
+        }${data.className ? ` ${data.className}` : ''}${
           current === data.id ? ' active' : ''
         }`}
         data-section={data.id}
@@ -63,7 +67,7 @@ function NavItem({ data, current, go, toggle, alterna, abrir, sub }) {
             toggle={toggle}
             alterna={alterna}
             abrir={abrir}
-            sub
+            nivel={nivel + 1}
           />
         ))}
     </>
@@ -100,13 +104,41 @@ export default function Sidebar({ open }) {
           return (
             <div className="nav-section" key={group.title}>
               {group.collapsible ? (
-                <span
-                  className="nav-section-title toggle-title"
-                  onClick={() => alterna(group.title, porDefecto)}
-                >
-                  <span className="toggle-icon">{isOpen ? '▼' : '▶'}</span>
-                  {group.title}
-                </span>
+                group.id ? (
+                  <a
+                    href={`#${group.id}`}
+                    className={`nav-section-title toggle-title${current === group.id ? ' active' : ''}`}
+                    data-section={group.id}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      go(group.id);
+                      abrir(group.title);
+                    }}
+                  >
+                    <span
+                      className="toggle-icon"
+                      role="button"
+                      tabIndex={-1}
+                      aria-label={isOpen ? 'Contraer' : 'Desplegar'}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        alterna(group.title, porDefecto);
+                      }}
+                    >
+                      {isOpen ? '▼' : '▶'}
+                    </span>
+                    {group.title}
+                  </a>
+                ) : (
+                  <span
+                    className="nav-section-title toggle-title"
+                    onClick={() => alterna(group.title, porDefecto)}
+                  >
+                    <span className="toggle-icon">{isOpen ? '▼' : '▶'}</span>
+                    {group.title}
+                  </span>
+                )
               ) : (
                 <span className="nav-section-title">{group.title}</span>
               )}

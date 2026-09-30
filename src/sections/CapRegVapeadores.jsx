@@ -49,8 +49,7 @@ export default function CapRegVapeadores() {
       <p className="hz-p">
         En caso de sospecha, consumo comprobado, porte o comercialización de sustancias psicoactivas,
         vapeadores o alcohol, se activará de inmediato el protocolo pedagógico e intersectorial
-        detallado en el numeral 4.2.1 del Capítulo IV de este Manual (Ruta de Atención Integral para
-        SPA).
+        detallado en el numeral 4.3.1 del Capítulo IV de este Manual (SPA, Vapeadores y Alcohol).
       </p>
     </>
   );
