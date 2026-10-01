@@ -681,54 +681,197 @@ const navigation = [
     ]
   },
   {
-    "title": "Capítulo 6: Padres de familia",
+    "title": "Capítulo 6: De los padres y acudientes de familia",
+    "id": "cap-6",
     "collapsible": true,
     "items": [
       {
-        "id": "cap-31",
-        "label": "Perfil de padres y acudientes",
-        "number": "a"
+        "id": "cap-6-1",
+        "label": "Derechos de los padres, madres de familia y acudientes",
+        "number": "6.1"
       },
       {
-        "id": "cap-32",
-        "label": "Derechos de los padres",
-        "number": "b"
+        "id": "cap-6-2",
+        "label": "Deberes y obligaciones de los padres, madres de familia y acudientes",
+        "number": "6.2"
       },
       {
-        "id": "cap-33",
-        "label": "Deberes de los padres",
-        "number": "c"
+        "id": "cap-6-3",
+        "label": "Marco de la Alianza Familia-Escuela",
+        "number": "6.3"
       },
       {
-        "id": "cap-34",
-        "label": "Escuela de padres",
-        "number": "d"
+        "id": "cap-6-4",
+        "label": "Programa Institucional de Escuela de Padres y Madres de Familia",
+        "number": "6.4",
+        "children": [
+          {
+            "id": "cap-6-4-1",
+            "label": "Ruta de alternativas restaurativas",
+            "number": "6.4.1"
+          }
+        ]
       },
       {
-        "id": "cap-35",
-        "label": "Talleres a padres de familia",
-        "number": "e"
+        "id": "cap-6-5",
+        "label": "Responsabilidad civil extracontractual e indemnizatoria de los padres",
+        "number": "6.5"
       },
       {
-        "id": "cap-36",
-        "label": "Manejo de inasistencias",
-        "number": "f"
+        "id": "cap-6-6",
+        "label": "Horario de atención a padres de familia",
+        "number": "6.6"
       },
       {
-        "id": "cap-37",
-        "label": "Procedimientos PQRS",
-        "number": "g"
+        "id": "cap-6-7",
+        "label": "Regulaciones de salida, permisos, retardos en recogida y procedimiento PQRS",
+        "number": "6.7"
       }
     ]
   },
   {
-    "title": "Capítulo 7: Personal administrativo",
+    "title": "Capítulo 7: Sistema Institucional de Evaluación de los Estudiantes (SIEE)",
+    "id": "cap-7",
     "collapsible": true,
     "items": [
       {
-        "id": "cap-38",
-        "label": "Personal administrativo",
-        "number": "a"
+        "id": "cap-7-1",
+        "label": "Concepto, características y objetivos de la evaluación",
+        "number": "7.1",
+        "children": [
+          {
+            "id": "cap-7-1-1",
+            "label": "Concepto de evaluación del aprendizaje",
+            "number": "7.1.1"
+          },
+          {
+            "id": "cap-7-1-2",
+            "label": "Características de la evaluación Lenista",
+            "number": "7.1.2"
+          },
+          {
+            "id": "cap-7-1-3",
+            "label": "Objetivos del SIEE",
+            "number": "7.1.3"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-2",
+        "label": "Medios e instrumentos evaluativos",
+        "number": "7.2"
+      },
+      {
+        "id": "cap-7-3",
+        "label": "Criterios de evaluación y ponderaciones porcentuales de áreas",
+        "number": "7.3",
+        "children": [
+          {
+            "id": "cap-7-3-1",
+            "label": "Ponderaciones Porcentuales Específicas en Educación Media (Grados 10° y 11°)",
+            "number": "7.3.1"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-4",
+        "label": "Escala de valoración institucional y equivalencia nacional",
+        "number": "7.4",
+        "children": [
+          {
+            "id": "cap-7-4-1",
+            "label": "Evaluación en educación inicial / preescolar (jardín y transición)",
+            "number": "7.4.1"
+          },
+          {
+            "id": "cap-7-4-2",
+            "label": "Escala numérica oficial (básica primaria, secundaria y media - 1.0 a 5.0)",
+            "number": "7.4.2"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-5",
+        "label": "Criterios de promoción escolar y causales de no promoción",
+        "number": "7.5",
+        "children": [
+          {
+            "id": "cap-7-5-1",
+            "label": "Causales taxativas para la no promoción (reprobación del grado)",
+            "number": "7.5.1"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-6",
+        "label": "Promoción anticipada de grado",
+        "number": "7.6",
+        "children": [
+          {
+            "id": "cap-7-6-1",
+            "label": "Promoción Anticipada por Desempeño excepcional (Estudiantes Regulares)",
+            "number": "7.6.1"
+          },
+          {
+            "id": "cap-7-6-2",
+            "label": "Promoción Anticipada por reprobar el año anterior (Estudiantes con reinicio de grado)",
+            "number": "7.6.2"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-7",
+        "label": "Requisitos para la graduación y proclamación de bachilleres",
+        "number": "7.7"
+      },
+      {
+        "id": "cap-7-8",
+        "label": "Garantías del debido proceso evaluativo y segundo evaluador",
+        "number": "7.8",
+        "children": [
+          {
+            "id": "cap-7-8-1",
+            "label": "Horario institucional de atención a padres y seguimiento académico",
+            "number": "7.8.1"
+          },
+          {
+            "id": "cap-7-8-2",
+            "label": "Designación de segundo evaluador",
+            "number": "7.8.2"
+          },
+          {
+            "id": "cap-7-8-3",
+            "label": "Conducto regular e instancias para reclamaciones evaluativas",
+            "number": "7.8.3"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-9",
+        "label": "Estrategias de apoyo: refuerzos escolares y nivelaciones periódicas",
+        "number": "7.9"
+      },
+      {
+        "id": "cap-7-10",
+        "label": "Educación inclusiva, ajustes razonables (PIAR/DUA) y capacidades excepcionales",
+        "number": "7.10",
+        "children": [
+          {
+            "id": "cap-7-10-1",
+            "label": "Estudiantes con Discapacidad o Barreras para el Aprendizaje",
+            "number": "7.10.1"
+          },
+          {
+            "id": "cap-7-10-2",
+            "label": "Estudiantes con talentos o capacidades excepcionales",
+            "number": "7.10.2"
+          }
+        ]
+      },
+      {
+        "id": "cap-7-11",
+        "label": "Criterios de Flexibilización Curricular, Gradualidad y Evaluación Formativa Socioemocional",
+        "number": "7.11"
       }
     ]
   },
@@ -775,57 +918,6 @@ const navigation = [
         "id": "cap-46",
         "label": "Contralor estudiantil",
         "number": "h"
-      }
-    ]
-  },
-  {
-    "title": "Capítulo 9: Servicios y evaluación institucional",
-    "collapsible": true,
-    "items": [
-      {
-        "id": "cap-47",
-        "label": "Servicios para educandos",
-        "number": "a"
-      },
-      {
-        "id": "cap-48",
-        "label": "Normas de conducta",
-        "number": "b"
-      },
-      {
-        "id": "cap-49",
-        "label": "Sistema de evaluación institucional - SIEE",
-        "number": "c"
-      },
-      {
-        "id": "cap-50",
-        "label": "Criterios de evaluación y promoción",
-        "number": "d"
-      },
-      {
-        "id": "cap-51",
-        "label": "Acciones de seguimiento",
-        "number": "e"
-      },
-      {
-        "id": "cap-52",
-        "label": "Estrategias de apoyo",
-        "number": "f"
-      },
-      {
-        "id": "cap-53",
-        "label": "Acciones para procesos educativos",
-        "number": "g"
-      },
-      {
-        "id": "cap-54",
-        "label": "Definiciones de rutas de atención",
-        "number": "h"
-      },
-      {
-        "id": "cap-55",
-        "label": "Directorio telefónico",
-        "number": "i"
       }
     ]
   }

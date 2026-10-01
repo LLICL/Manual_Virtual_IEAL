@@ -805,6 +805,15 @@ body {
   border: 1px solid #d3dfd8;
 }
 
+.hz-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.hz-table-wrap .infraction-table {
+  min-width: 520px;
+}
+
 .infraction-table th {
   background: var(--green);
   color: var(--white);

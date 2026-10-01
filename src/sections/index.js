@@ -99,14 +99,41 @@ import Cap5AdministrativoDerechos from './Cap5AdministrativoDerechos';
 import Cap5AdministrativoDeberes from './Cap5AdministrativoDeberes';
 import Cap5AdministrativoFaltas from './Cap5AdministrativoFaltas';
 import Cap5AdministrativoSanciones from './Cap5AdministrativoSanciones';
-import Cap31 from './Cap31';
-import Cap32 from './Cap32';
-import Cap33 from './Cap33';
-import Cap34 from './Cap34';
-import Cap35 from './Cap35';
-import Cap36 from './Cap36';
-import Cap37 from './Cap37';
-import Cap38 from './Cap38';
+import Cap6Marco from './Cap6Marco';
+import Cap6Derechos from './Cap6Derechos';
+import Cap6Deberes from './Cap6Deberes';
+import Cap6AlianzaFamiliaEscuela from './Cap6AlianzaFamiliaEscuela';
+import Cap6EscuelaPadres from './Cap6EscuelaPadres';
+import Cap6RutaRestaurativa from './Cap6RutaRestaurativa';
+import Cap6ResponsabilidadCivil from './Cap6ResponsabilidadCivil';
+import Cap6HorarioAtencion from './Cap6HorarioAtencion';
+import Cap6SalidasPermisosPQRS from './Cap6SalidasPermisosPQRS';
+import Cap7SIEEIntro from './Cap7SIEEIntro';
+import Cap7Concepto from './Cap7Concepto';
+import Cap7ConceptoAprendizaje from './Cap7ConceptoAprendizaje';
+import Cap7Caracteristicas from './Cap7Caracteristicas';
+import Cap7Objetivos from './Cap7Objetivos';
+import Cap7MediosInstrumentos from './Cap7MediosInstrumentos';
+import Cap7Criterios from './Cap7Criterios';
+import Cap7PonderacionesMedia from './Cap7PonderacionesMedia';
+import Cap7Preescolar from './Cap7Preescolar';
+import Cap7Escala from './Cap7Escala';
+import Cap7EscalaNumerica from './Cap7EscalaNumerica';
+import Cap7Promocion from './Cap7Promocion';
+import Cap7NoPromocion from './Cap7NoPromocion';
+import Cap7PromocionAnticipada from './Cap7PromocionAnticipada';
+import Cap7PromocionExcepcional from './Cap7PromocionExcepcional';
+import Cap7PromocionReinicio from './Cap7PromocionReinicio';
+import Cap7Graduacion from './Cap7Graduacion';
+import Cap7Garantias from './Cap7Garantias';
+import Cap7HorarioSeguimiento from './Cap7HorarioSeguimiento';
+import Cap7SegundoEvaluador from './Cap7SegundoEvaluador';
+import Cap7ConductoReclamaciones from './Cap7ConductoReclamaciones';
+import Cap7Apoyo from './Cap7Apoyo';
+import Cap7Inclusiva from './Cap7Inclusiva';
+import Cap7Discapacidad from './Cap7Discapacidad';
+import Cap7Talentos from './Cap7Talentos';
+import Cap7Flexibilizacion from './Cap7Flexibilizacion';
 import Cap39 from './Cap39';
 import Cap40 from './Cap40';
 import Cap41 from './Cap41';
@@ -115,15 +142,6 @@ import Cap43 from './Cap43';
 import Cap44 from './Cap44';
 import Cap45 from './Cap45';
 import Cap46 from './Cap46';
-import Cap47 from './Cap47';
-import Cap48 from './Cap48';
-import Cap49 from './Cap49';
-import Cap50 from './Cap50';
-import Cap51 from './Cap51';
-import Cap52 from './Cap52';
-import Cap53 from './Cap53';
-import Cap54 from './Cap54';
-import Cap55 from './Cap55';
 import CapResena from './CapResena';
 import CapHorizonte from './CapHorizonte';
 import CapHorizontePrincipios from './CapHorizontePrincipios';
@@ -247,14 +265,41 @@ const sections = {
   'cap-5-7-2': Cap5AdministrativoDeberes,
   'cap-5-7-3': Cap5AdministrativoFaltas,
   'cap-5-7-4': Cap5AdministrativoSanciones,
-  'cap-31': Cap31,
-  'cap-32': Cap32,
-  'cap-33': Cap33,
-  'cap-34': Cap34,
-  'cap-35': Cap35,
-  'cap-36': Cap36,
-  'cap-37': Cap37,
-  'cap-38': Cap38,
+  'cap-6': Cap6Marco,
+  'cap-6-1': Cap6Derechos,
+  'cap-6-2': Cap6Deberes,
+  'cap-6-3': Cap6AlianzaFamiliaEscuela,
+  'cap-6-4': Cap6EscuelaPadres,
+  'cap-6-4-1': Cap6RutaRestaurativa,
+  'cap-6-5': Cap6ResponsabilidadCivil,
+  'cap-6-6': Cap6HorarioAtencion,
+  'cap-6-7': Cap6SalidasPermisosPQRS,
+  'cap-7': Cap7SIEEIntro,
+  'cap-7-1': Cap7Concepto,
+  'cap-7-1-1': Cap7ConceptoAprendizaje,
+  'cap-7-1-2': Cap7Caracteristicas,
+  'cap-7-1-3': Cap7Objetivos,
+  'cap-7-2': Cap7MediosInstrumentos,
+  'cap-7-3': Cap7Criterios,
+  'cap-7-3-1': Cap7PonderacionesMedia,
+  'cap-7-4': Cap7Escala,
+  'cap-7-4-1': Cap7Preescolar,
+  'cap-7-4-2': Cap7EscalaNumerica,
+  'cap-7-5': Cap7Promocion,
+  'cap-7-5-1': Cap7NoPromocion,
+  'cap-7-6': Cap7PromocionAnticipada,
+  'cap-7-6-1': Cap7PromocionExcepcional,
+  'cap-7-6-2': Cap7PromocionReinicio,
+  'cap-7-7': Cap7Graduacion,
+  'cap-7-8': Cap7Garantias,
+  'cap-7-8-1': Cap7HorarioSeguimiento,
+  'cap-7-8-2': Cap7SegundoEvaluador,
+  'cap-7-8-3': Cap7ConductoReclamaciones,
+  'cap-7-9': Cap7Apoyo,
+  'cap-7-10': Cap7Inclusiva,
+  'cap-7-10-1': Cap7Discapacidad,
+  'cap-7-10-2': Cap7Talentos,
+  'cap-7-11': Cap7Flexibilizacion,
   'cap-39': Cap39,
   'cap-40': Cap40,
   'cap-41': Cap41,
@@ -263,15 +308,6 @@ const sections = {
   'cap-44': Cap44,
   'cap-45': Cap45,
   'cap-46': Cap46,
-  'cap-47': Cap47,
-  'cap-48': Cap48,
-  'cap-49': Cap49,
-  'cap-50': Cap50,
-  'cap-51': Cap51,
-  'cap-52': Cap52,
-  'cap-53': Cap53,
-  'cap-54': Cap54,
-  'cap-55': Cap55,
   'cap-resena': CapResena,
   'cap-horizonte': CapHorizonte,
   'cap-horizonte-principios': CapHorizontePrincipios,
