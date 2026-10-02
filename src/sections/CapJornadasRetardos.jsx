@@ -1,4 +1,4 @@
-export default function Cap8Retardos() {
+export default function CapJornadasRetardos() {
   return (
     <>
       <div className="section-header">

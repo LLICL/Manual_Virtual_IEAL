@@ -17,7 +17,7 @@ const JORNADAS = [
   },
 ];
 
-export default function Cap8Horarios() {
+export default function CapJornadasHorarios() {
   return (
     <>
       <div className="section-header">

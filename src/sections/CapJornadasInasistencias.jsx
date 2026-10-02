@@ -33,7 +33,7 @@ const PROCEDIMIENTOS = [
   },
 ];
 
-export default function Cap8Inasistencias() {
+export default function CapJornadasInasistencias() {
   return (
     <>
       <div className="section-header">

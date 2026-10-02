@@ -33,7 +33,7 @@ const PAUTAS = [
   },
 ];
 
-export default function Cap8Permisos() {
+export default function CapJornadasPermisos() {
   return (
     <>
       <div className="section-header">

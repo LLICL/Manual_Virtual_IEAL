@@ -204,27 +204,27 @@ const navigation = [
         ]
       },
       {
-        "id": "cap-8",
+        "id": "cap-jornadas",
         "label": "Jornadas escolares",
         "number": "3.3",
         "children": [
           {
-            "id": "cap-8-horarios",
+            "id": "cap-jornadas-horarios",
             "label": "Intensidad horaria y horarios oficiales",
             "number": "3.3.1"
           },
           {
-            "id": "cap-8-retardos",
+            "id": "cap-jornadas-retardos",
             "label": "Retardos",
             "number": "3.3.2"
           },
           {
-            "id": "cap-8-inasistencias",
+            "id": "cap-jornadas-inasistencias",
             "label": "Manejo de inasistencias, justificaciones y trámites",
             "number": "3.3.3"
           },
           {
-            "id": "cap-8-permisos",
+            "id": "cap-jornadas-permisos",
             "label": "Solicitud y trámite de permisos de salida de estudiantes",
             "number": "3.3.4"
           }
@@ -876,48 +876,61 @@ const navigation = [
     ]
   },
   {
-    "title": "Capítulo 8: Gobierno escolar y voceros",
+    "id": "cap-8",
+    "title": "Capítulo 8: Servicios Institucionales y Normas de uso",
     "collapsible": true,
     "items": [
       {
-        "id": "cap-39",
-        "label": "Información general / gobierno escolar",
-        "number": "a"
+        "id": "cap-8-1",
+        "label": "Servicio de orientación escolar",
+        "number": "8.1"
       },
       {
-        "id": "cap-40",
-        "label": "Consejo académico",
-        "number": "b"
+        "id": "cap-8-2",
+        "label": "Servicios de biblioteca escolar y material bibliográfico",
+        "number": "8.2"
       },
       {
-        "id": "cap-41",
-        "label": "Consejo de estudiantes",
-        "number": "c"
+        "id": "cap-8-3",
+        "label": "Salas de tecnología, informática y medios audiovisuales",
+        "number": "8.3"
       },
       {
-        "id": "cap-42",
-        "label": "Consejo de padres de familia",
-        "number": "d"
+        "id": "cap-8-4",
+        "label": "Laboratorios de ciencias naturales (física, química, biología)",
+        "number": "8.4"
       },
       {
-        "id": "cap-43",
-        "label": "Comisión de evaluación y promoción",
-        "number": "e"
+        "id": "cap-8-5",
+        "label": "Tienda escolar y comedor escolar (Programa de Alimentación Escolar - PAE)",
+        "number": "8.5"
       },
       {
-        "id": "cap-44",
-        "label": "Personero estudiantil",
-        "number": "f"
+        "id": "cap-8-6",
+        "label": "Medios de comunicación institucional y canales digitales",
+        "number": "8.6"
       },
       {
-        "id": "cap-45",
-        "label": "Asociación de exalumnos",
-        "number": "g"
+        "id": "cap-8-7",
+        "label": "Normas generales de comportamiento en aulas, sanitarios y espacios comunes",
+        "number": "8.7"
       },
       {
-        "id": "cap-46",
-        "label": "Contralor estudiantil",
-        "number": "h"
+        "id": "cap-8-8",
+        "label": "Regulaciones de seguridad en salidas pedagógicas, actividades extracurriculares y eventos cívicos",
+        "number": "8.8"
+      },
+      {
+        "id": "cap-8-9",
+        "label": "Responsabilidad patrimonial sobre bienes personales y reposición de daños",
+        "number": "8.9",
+        "children": [
+          {
+            "id": "cap-8-9-1",
+            "label": "Prohibición taxativa de difusión, exhibición y reserva de imágenes de cámaras de videovigilancia (CCTV)",
+            "number": "8.9.1"
+          }
+        ]
       }
     ]
   }

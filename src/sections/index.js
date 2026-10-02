@@ -12,11 +12,11 @@ import Cap4 from './Cap4';
 import Cap4Higiene from './Cap4Higiene';
 import Cap4Presentacion from './Cap4Presentacion';
 import Cap5 from './Cap5';
-import Cap8 from './Cap8';
-import Cap8Horarios from './Cap8Horarios';
-import Cap8Retardos from './Cap8Retardos';
-import Cap8Inasistencias from './Cap8Inasistencias';
-import Cap8Permisos from './Cap8Permisos';
+import CapJornadas from './CapJornadas';
+import CapJornadasHorarios from './CapJornadasHorarios';
+import CapJornadasRetardos from './CapJornadasRetardos';
+import CapJornadasInasistencias from './CapJornadasInasistencias';
+import CapJornadasPermisos from './CapJornadasPermisos';
 import Cap9 from './Cap9';
 import Cap9Derechos from './Cap9Derechos';
 import Cap9Estimulos from './Cap9Estimulos';
@@ -134,14 +134,18 @@ import Cap7Inclusiva from './Cap7Inclusiva';
 import Cap7Discapacidad from './Cap7Discapacidad';
 import Cap7Talentos from './Cap7Talentos';
 import Cap7Flexibilizacion from './Cap7Flexibilizacion';
-import Cap39 from './Cap39';
-import Cap40 from './Cap40';
-import Cap41 from './Cap41';
-import Cap42 from './Cap42';
-import Cap43 from './Cap43';
-import Cap44 from './Cap44';
-import Cap45 from './Cap45';
-import Cap46 from './Cap46';
+import Cap8Servicios from './Cap8Servicios';
+import Cap8Orientacion from './Cap8Orientacion';
+import Cap8Biblioteca from './Cap8Biblioteca';
+import Cap8SalasTecnologia from './Cap8SalasTecnologia';
+import Cap8Laboratorios from './Cap8Laboratorios';
+import Cap8TiendaComedor from './Cap8TiendaComedor';
+import Cap8Comunicacion from './Cap8Comunicacion';
+import Cap8NormasComunes from './Cap8NormasComunes';
+import Cap8SalidasSeguridad from './Cap8SalidasSeguridad';
+import Cap8Patrimonial from './Cap8Patrimonial';
+import Cap8Cctv from './Cap8Cctv';
+
 import CapResena from './CapResena';
 import CapHorizonte from './CapHorizonte';
 import CapHorizontePrincipios from './CapHorizontePrincipios';
@@ -178,11 +182,11 @@ const sections = {
   'cap-4-higiene': Cap4Higiene,
   'cap-4-presentacion': Cap4Presentacion,
   'cap-5': Cap5,
-  'cap-8': Cap8,
-  'cap-8-horarios': Cap8Horarios,
-  'cap-8-retardos': Cap8Retardos,
-  'cap-8-inasistencias': Cap8Inasistencias,
-  'cap-8-permisos': Cap8Permisos,
+  'cap-jornadas': CapJornadas,
+  'cap-jornadas-horarios': CapJornadasHorarios,
+  'cap-jornadas-retardos': CapJornadasRetardos,
+  'cap-jornadas-inasistencias': CapJornadasInasistencias,
+  'cap-jornadas-permisos': CapJornadasPermisos,
   'cap-9': Cap9,
   'cap-9-derechos': Cap9Derechos,
   'cap-9-estimulos': Cap9Estimulos,
@@ -300,15 +304,17 @@ const sections = {
   'cap-7-10-1': Cap7Discapacidad,
   'cap-7-10-2': Cap7Talentos,
   'cap-7-11': Cap7Flexibilizacion,
-  'cap-39': Cap39,
-  'cap-40': Cap40,
-  'cap-41': Cap41,
-  'cap-42': Cap42,
-  'cap-43': Cap43,
-  'cap-44': Cap44,
-  'cap-45': Cap45,
-  'cap-46': Cap46,
-  'cap-resena': CapResena,
+  'cap-8': Cap8Servicios,
+  'cap-8-1': Cap8Orientacion,
+  'cap-8-2': Cap8Biblioteca,
+  'cap-8-3': Cap8SalasTecnologia,
+  'cap-8-4': Cap8Laboratorios,
+  'cap-8-5': Cap8TiendaComedor,
+  'cap-8-6': Cap8Comunicacion,
+  'cap-8-7': Cap8NormasComunes,
+  'cap-8-8': Cap8SalidasSeguridad,
+  'cap-8-9': Cap8Patrimonial,
+  'cap-8-9-1': Cap8Cctv,
   'cap-horizonte': CapHorizonte,
   'cap-horizonte-principios': CapHorizontePrincipios,
   'cap-horizonte-valores': CapHorizonteValores,

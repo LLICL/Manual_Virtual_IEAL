@@ -3,7 +3,7 @@ const NORMAS = [
   'Permanecer en todas las clases y participar, presentándose oportunamente, en todos los actos de la comunidad; salvo que el educando haya sido excusado, citado o remitido a otras dependencias. En cualquier caso, contar con el permiso escrito de la respectiva coordinación o área a la que se remita.',
 ];
 
-export default function Cap8() {
+export default function CapJornadas() {
   return (
     <>
       <div className="section-header">
