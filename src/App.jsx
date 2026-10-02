@@ -4,8 +4,11 @@ import { NavigationContext } from './NavigationContext';
 import sections from './sections';
 import { clearHighlights, highlightIn } from './search/highlight';
 
-const HEADER_HEIGHT = 72; // header fijo
 const MOBILE_MAX_WIDTH = 768;
+// El header es fijo: su altura vive en --header-h (styles.css) para que el scroll
+// no se desalinee si cambia.
+const headerHeight = () =>
+  parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h'), 10) || 72;
 
 export default function App() {
   const [current, setCurrent] = useState('cap-home');
@@ -34,13 +37,13 @@ export default function App() {
       const el = highlightIn(panel, target.query, target.blockIndex);
       el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else if (scroll) {
-      const top = panel.getBoundingClientRect().top + window.pageYOffset - HEADER_HEIGHT;
+      const top = panel.getBoundingClientRect().top + window.pageYOffset - headerHeight();
       window.scrollTo({ top, behavior: 'smooth' });
     }
   }, [current, target, scroll]);
 
   const nav = useMemo(() => ({ current, target, go }), [current, target, go]);
-  const Section = sections[current];
+  const Section = sections[current] ?? Home;
 
   return (
     <NavigationContext.Provider value={nav}>

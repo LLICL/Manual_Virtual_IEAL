@@ -1,30 +1,29 @@
 import Home from './Home';
-import Cap1 from './Cap1';
-import Cap2 from './Cap2';
-import Cap3 from './Cap3';
-import Cap3Estudiante from './Cap3Estudiante';
-import Cap3Personero from './Cap3Personero';
-import Cap3Docente from './Cap3Docente';
-import Cap3Acudiente from './Cap3Acudiente';
-import Cap3Egresado from './Cap3Egresado';
-import Cap11 from './Cap11';
-import Cap4 from './Cap4';
-import Cap4Higiene from './Cap4Higiene';
-import Cap4Presentacion from './Cap4Presentacion';
-import Cap5 from './Cap5';
+import Cap1Identificacion from './Cap1Identificacion';
+import Cap1SimbolosHimno from './Cap1SimbolosHimno';
+import Cap1Perfiles from './Cap1Perfiles';
+import Cap1PerfilEstudiante from './Cap1PerfilEstudiante';
+import Cap1PerfilPersonero from './Cap1PerfilPersonero';
+import Cap1PerfilDocente from './Cap1PerfilDocente';
+import Cap1PerfilAcudiente from './Cap1PerfilAcudiente';
+import Cap1PerfilEgresado from './Cap1PerfilEgresado';
+import Cap3Inscripcion from './Cap3Inscripcion';
+import Cap3Higiene from './Cap3Higiene';
+import Cap3Presentacion from './Cap3Presentacion';
+import Cap3Uniforme from './Cap3Uniforme';
 import CapJornadas from './CapJornadas';
 import CapJornadasHorarios from './CapJornadasHorarios';
 import CapJornadasRetardos from './CapJornadasRetardos';
 import CapJornadasInasistencias from './CapJornadasInasistencias';
 import CapJornadasPermisos from './CapJornadasPermisos';
-import Cap9 from './Cap9';
-import Cap9Derechos from './Cap9Derechos';
-import Cap9Estimulos from './Cap9Estimulos';
-import Cap10 from './Cap10';
-import Cap10Academicos from './Cap10Academicos';
-import Cap10Convivencia from './Cap10Convivencia';
-import Cap10Bienes from './Cap10Bienes';
-import Cap10Institucional from './Cap10Institucional';
+import Cap3DerechosEstimulos from './Cap3DerechosEstimulos';
+import Cap3Derechos from './Cap3Derechos';
+import Cap3Estimulos from './Cap3Estimulos';
+import Cap3Deberes from './Cap3Deberes';
+import Cap3DeberesAcademicos from './Cap3DeberesAcademicos';
+import Cap3DeberesConvivencia from './Cap3DeberesConvivencia';
+import Cap3DeberesBienes from './Cap3DeberesBienes';
+import Cap3DeberesInstitucional from './Cap3DeberesInstitucional';
 import CapReg from './CapReg';
 import CapRegCelulares from './CapRegCelulares';
 import CapRegVapeadores from './CapRegVapeadores';
@@ -168,33 +167,32 @@ import CapEstamentosExalumnos from './CapEstamentosExalumnos';
 
 const sections = {
   'cap-home': Home,
-  'cap-1': Cap1,
+  'cap-1': Cap1Identificacion,
   'cap-resena': CapResena,
-  'cap-2': Cap2,
-  'cap-3': Cap3,
-  'cap-3-estudiante': Cap3Estudiante,
-  'cap-3-personero': Cap3Personero,
-  'cap-3-docente': Cap3Docente,
-  'cap-3-acudiente': Cap3Acudiente,
-  'cap-3-egresado': Cap3Egresado,
-  'cap-11': Cap11,
-  'cap-4': Cap4,
-  'cap-4-higiene': Cap4Higiene,
-  'cap-4-presentacion': Cap4Presentacion,
-  'cap-5': Cap5,
+  'cap-2': Cap1SimbolosHimno,
+  'cap-3': Cap1Perfiles,
+  'cap-3-estudiante': Cap1PerfilEstudiante,
+  'cap-3-personero': Cap1PerfilPersonero,
+  'cap-3-docente': Cap1PerfilDocente,
+  'cap-3-acudiente': Cap1PerfilAcudiente,
+  'cap-3-egresado': Cap1PerfilEgresado,
+  'cap-11': Cap3Inscripcion,
+  'cap-4-higiene': Cap3Higiene,
+  'cap-4-presentacion': Cap3Presentacion,
+  'cap-5': Cap3Uniforme,
   'cap-jornadas': CapJornadas,
   'cap-jornadas-horarios': CapJornadasHorarios,
   'cap-jornadas-retardos': CapJornadasRetardos,
   'cap-jornadas-inasistencias': CapJornadasInasistencias,
   'cap-jornadas-permisos': CapJornadasPermisos,
-  'cap-9': Cap9,
-  'cap-9-derechos': Cap9Derechos,
-  'cap-9-estimulos': Cap9Estimulos,
-  'cap-10': Cap10,
-  'cap-10-academicos': Cap10Academicos,
-  'cap-10-convivencia': Cap10Convivencia,
-  'cap-10-bienes': Cap10Bienes,
-  'cap-10-institucional': Cap10Institucional,
+  'cap-9': Cap3DerechosEstimulos,
+  'cap-9-derechos': Cap3Derechos,
+  'cap-9-estimulos': Cap3Estimulos,
+  'cap-10': Cap3Deberes,
+  'cap-10-academicos': Cap3DeberesAcademicos,
+  'cap-10-convivencia': Cap3DeberesConvivencia,
+  'cap-10-bienes': Cap3DeberesBienes,
+  'cap-10-institucional': Cap3DeberesInstitucional,
   'cap-reg': CapReg,
   'cap-reg-celulares': CapRegCelulares,
   'cap-reg-vapeadores': CapRegVapeadores,

@@ -66,7 +66,7 @@ export default function Home() {
         <h2 className="home-hero-title">
           Manual de convivencia
         </h2>
-        <a href="archives/RESOLUCION_MANUAL_IEANL_2026.pdf" download className="home-hero-btn">
+        <a href="archives/ACTUALIZACION%20MANUAL%20DE%20CONVIVENCIA_IEAL_2027.pdf" download className="home-hero-btn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
             <polyline points="7 10 12 15 17 10" />
@@ -78,7 +78,7 @@ export default function Home() {
         </a>
         {" "}
         <span className="home-hero-info">
-          PDF · 7.2 MB
+          PDF · 7.5 MB
         </span>
       </div>
       <div className="home-search">
@@ -111,7 +111,7 @@ export default function Home() {
           </span>
         </NavLink>
         {" "}
-        <NavLink to="cap-13" className="home-card">
+        <NavLink to="cap-10-academicos" className="home-card">
           <div className="home-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
@@ -145,7 +145,7 @@ export default function Home() {
           </span>
         </NavLink>
         {" "}
-        <NavLink to="cap-convivencia" className="home-card">
+        <NavLink to="cap-ruta-debido-proceso" className="home-card">
           <div className="home-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7" />
